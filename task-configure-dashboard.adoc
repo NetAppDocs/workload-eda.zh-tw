@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: task-configure-dashboard.html 
+keywords: configure, dashboard, AWS tags, CloudWatch, FSx for ONTAP, Workload Factory, EDA, electronic design automation 
+summary: 透過新增標籤來配置您的EDA儀表板，以收集指標。 
+---
+= 使用儀表板
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+首次登入 EDA 時，您可以使用儀表板來觀察 FSx for ONTAP檔案系統和磁碟區中的項目使用情況。儀錶板包含幾個預設篩選器，您可以使用這些篩選器來自訂顯示的資訊。此外，您還可以建立和套用自己的 AWS 標籤，以便根據您特定的業務需求來組織和篩選資料。
+
+此儀錶板可協助您監控儲存使用情況，包括已分配容量、已使用容量、吞吐量和 IOPS。
+
+收集的 CloudWatch 指標包括：
+
+* 已配置容量：表示已配置儲存容量的磁碟區級指標。
+* 已使用容量：表示已使用儲存空間的磁碟區級指標。
+* 平均/最大吞吐量：計算方法為指定時間內 DataReadBytes 和 DataWriteBytes 總和的平均值或最大值。
+* 平均/最大 IOPS：計算方法為：在指定時間段內，資料讀取操作、資料寫入操作和元資料操作的總和的平均值或最大值。
+
+
+
+
+== 設定儀表板
+
+若要有效使用儀表板，請根據您的業務需求，在 FSx for ONTAP磁碟區上設定 AWS 標籤，例如代表專案或業務部門的標籤。詳情請見 <<配置自訂過濾器>>。
+
+AWS 標籤是 AWS 資源的元資料。它們可以幫助您以不同的方式對 AWS 資源進行分類，例如按專案、應用程式或業務部門。有關標籤的更多詳細信息，請參閱 https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/what-are-tags.html["什麼是標籤？"^] 和  https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/overview.html["AWS 資源組標記 API 參考"^]。
+
+配置完成後，在「標籤配置」頁面中提供 AWS 標籤金鑰名稱和要在控制台中顯示的相應標籤。
+
+套用這些標籤後，Workload Factory 開始收集和顯示相關的 CloudWatch 指標。
+
+您的儀錶板將成為一個動態工具，可以根據您的組織需求來組織、追蹤成本和篩選資源。
+
+
+
+=== 配置自訂過濾器
+
+. 使用以下任一方式登入 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主機體驗"^]。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *EDA*。
++
+如果您尚未設定儀表板，系統會自動提示您進行設定。
+
+. 對於每個需要的篩選器，新增篩選器標籤名稱和要與其關聯的 AWS 標籤鍵名稱。
+. 選擇*應用*。
+. 套用任何標籤或篩選器後，若要查看更改，請選擇儀表板上的刷新圖示。配置了新篩選器的動態儀表板將顯示在您的 EDA 專案儀表板中。
+. 若要稍後編輯儀表板配置，請選擇「配置」。
+
+
+
+
+=== 篩選儀表板
+
+您可以透過選擇以下一個或多個預設篩選器以及您建立的任何自訂篩選器來篩選儀表板上顯示的資訊：
+
+* 證書
+* 地區
+* 檔案系統
+* 卷類型
+* 時間範圍
+
+
+選擇所需的篩選條件後，點選刷新圖示即可更新儀錶板資訊。
+
+若要了解卡片上顯示的資訊的說明，請選擇該卡片的資訊圖示。

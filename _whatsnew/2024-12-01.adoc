@@ -1,0 +1,11 @@
+= 建構器工作負載初始版本
+:allow-uri-read: 
+
+
+
+
+=== 建構器工作負載初始版本
+
+BlueXP Workload Factory for Builders 簡化了軟體版本的使用和訪問，無需自訂工具或腳本。它使您能夠以即時克隆的形式使用軟體版本，並與 Perforce Helix Core 集成，作為您開發流程的便捷工作空間，從而節省時間和資源。
+
+初始版本包含管理專案和工作區以及使用 Codebox 自動執行操作的功能。您還可以將 Builders 與 Perforce Helix Core 集成，以便管理每個項目的不同版本並在它們之間快速切換。

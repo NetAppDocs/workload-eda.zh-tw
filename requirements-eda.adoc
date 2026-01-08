@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: requirements-eda.html 
+keywords: Builders, FSx, project, projects. eda, electronic design automation, requirements, setup, workload factory 
+summary: 在開始使用NetApp Workload Factory進行 EDA 之前，請確保 Workload Factory 和 AWS 已正確設定。這包括擁有您的 AWS 登入憑證、已部署的 FSx for ONTAP檔案系統等等。 
+---
+= 聯邦選舉委員會 (EDA) 要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在使用NetApp Workload Factory進行 EDA 之前，請確保 Workload Factory 和 AWS 已正確設定。這包括擁有您的 AWS 登入憑證、已部署的 FSx for ONTAP檔案系統等等。
+
+工作負載工廠登入和帳戶:: 你需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在 Workload Factory 上註冊一個帳戶"^] 並使用以下任一方式登入： https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主機體驗"^]。
+AWS憑證和權限:: 您需要在 Workload Factory 中新增具有讀取/寫入權限的 AWS 憑證，這表示您將以讀取/寫入模式使用 Workload Factory 進行 EDA。
+
+
+目前不支援基本模式和唯讀模式權限。
+
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何在 Workload Factory 中新增 AWS 憑證"^]
+
+FSx for ONTAP檔案系統:: 您至少需要一個 FSx for ONTAP檔案系統：
++
+--
+* EDA 將使用檔案系統來儲存您建立的專案和工作區。
++
+此 FSx for ONTAP檔案系統必須使用FlexVol磁碟區。不支援FlexGroup磁碟區。
+
+* 您需要知道 AWS FSx for ONTAP檔案系統所在的 AWS 區域、VPC 和子網路。
+* 檔案系統中至少需要一個具有以下配置的磁碟區：
++
+** 該磁碟區必須配置為 NFS 共用。
+** 文件系統必須配置連結。 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["了解有關連結的更多信息"^]。
+
+
+* 您需要考慮要套用於此部署中的 AWS 資源的標籤鍵/值對（可選）。
++
+https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["了解如何部署和管理 FSx for ONTAP檔案系統"^]
+
+
+
+--
+

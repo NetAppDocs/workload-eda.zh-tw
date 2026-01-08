@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: learn-eda.html 
+keywords: software builders, development, benefits, eda, electronic design automation 
+summary: NetApp Workload Factory for EDA 可協助您最佳化 FSx for ONTAP使用效能。 
+---
+= 了解NetApp Workload Factory for EDA
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory for EDA 可協助您在多個檔案系統中最佳化 FSx for ONTAP 。您可以自動化儲存參數、分析效能限制，從而優化效能並降低營運成本，並獲得 EDA 專案的見解。
+
+它旨在與您的基礎設施即代碼 (IaC) 框架整合。
+
+Workload Factory for EDA 提供儀表板和儲存自動化框架及實用程序，協助您管理多個 FSx for ONTAP檔案系統。
+
+它提供以下服務：
+
+* link:task-configure-dashboard.html["EDA專案儀表板"]：提供 FSx for ONTAP檔案系統儲存消耗的集中視圖，以協助您規劃、評估成本並收集有關專案儲存使用情況的資訊。
+* link:learn-eda-workloads.html["CI/CD"]：利用 FSx for ONTAP磁碟區複製功能，簡化並縮短軟體建置時間。
+

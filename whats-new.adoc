@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, Workload Factory, builders, Workload Factory, EDA, electronic design automation' 
+summary: 了解 Workload Factory for EDA 的最新功能。 
+---
+= NetApp Workload Factory for EDA 有哪些新功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解 Workload Factory 的 EDA 功能有哪些新功能。
+
+
+
+== 2026年1月4日
+
+
+
+=== NetApp Workload Factory for Builders 現已更名為NetApp Workload Factory for EDA
+
+面向建築業的 Workload Factory 現已更名為 EDA 的 Workload Factory。更名體現了對電子設計自動化 (EDA) 工作負載的關注。
+
+Workload Factory for EDA 可協助您在多個檔案系統中最佳化 FSx for ONTAP 。您可以自動化儲存參數、分析效能限制，從而優化效能並降低營運成本，並獲得 EDA 專案的見解。Workload Factory for EDA 旨在與您的基礎架構即程式碼 (IaC) 框架整合。
+
+
+
+=== 問我關於人工智慧助理首頁整合的問題
+
+Workload Factory 控制台主頁嵌入了 Ask me AI 助手，讓您可以詢問有關您自己的儲存環境的問題，直接從您的環境中獲取個人化見解，並參考先前的對話。您可以與「問我」進行交互，以了解您的工作負載、解決問題並了解更多關於工作負載工廠的資訊——所有這些都無需離開控制台。
+
+
+
+== 2025年10月5日
+
+
+
+=== BlueXP workload factory現為NetApp Workload Factory
+
+BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。因此， BlueXP workload factory已重新命名為NetApp Workload Factory。
+
+
+
+== 2025年6月16日
+
+
+
+=== 克隆支持
+
+現在您可以在BlueXP Workload Factory for Builders 中克隆項目。複製項目時，Builders 會根據快照建立一個新項目，其配置與原始項目相同。克隆功能可用於快速建立類似項目或用於測試目的。您可以按照 Builders 中的說明掛載新的項目克隆。
+
+https://docs.netapp.com/us-en/workload-builders/version-projects.html["管理BlueXP Workload Factory for Builders 專案的版本"]
+
+
+
+== 2025年5月4日
+
+
+
+=== 更新了權限術語
+
+Workload Factory 使用者介面和文件現在使用「只讀」來指涉讀取權限，使用「讀取/寫入」來指稱自動化權限。
+
+
+
+== 2024年12月1日
+
+
+
+=== 建構器工作負載初始版本
+
+BlueXP Workload Factory for Builders 簡化了軟體版本的使用和訪問，無需自訂工具或腳本。它使您能夠以即時克隆的形式使用軟體版本，並與 Perforce Helix Core 集成，作為您開發流程的便捷工作空間，從而節省時間和資源。
+
+初始版本包含管理專案和工作區以及使用 Codebox 自動執行操作的功能。您還可以將 Builders 與 Perforce Helix Core 集成，以便管理每個項目的不同版本並在它們之間快速切換。

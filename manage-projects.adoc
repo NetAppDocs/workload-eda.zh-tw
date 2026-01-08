@@ -1,0 +1,134 @@
+---
+sidebar: sidebar 
+permalink: manage-projects.html 
+keywords: Microsoft SQL Server instance, server instance, manage host, view host, database host, database instance, manage, unmanage 
+summary: 在 Workload Factory for Databases 中管理 Microsoft SQL Server 執行個體。 
+---
+= 管理EDA項目
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以管理 EDA 項目，以控制NetApp Workload Factory for EDA 中每個項目的程式碼和工件的管理方式。
+
+
+
+== 創建專案
+
+您可以建立一個新的 EDA 項目，以便利用 Amazon FSX for NetApp ONTAP檔案系統的資料保護功能來保護您的程式碼和工件。步驟
+
+. 使用以下任一方式登入 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主機體驗"^]。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *EDA*。
+. 選擇 *CI/CD*。
+. 選擇“建立項目”。
+. 在「建立專案」頁面上，提供以下資訊：
++
+.. 項目名稱：請輸入項目名稱。
+.. *項目描述*：請輸入項目描述。
+.. *檔案系統*：請提供以下資訊：
++
+... *憑證*：選擇要使用的亞馬遜 AWS 憑證。EDA 使用這些憑證來發現可用於此專案的 FSx for ONTAP檔案系統，並建立專案的複製和快照。
+... *區域*：選擇此 FSx for ONTAP檔案系統所在的區域。
+... *FSx for ONTAP檔案系統*：選擇要與此項目一起使用的 FSx for ONTAP檔案系統。
++
+您只能選擇已設定連結的檔案系統。 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["了解有關連結的更多信息"^]。
+
+... *選擇一個磁碟區*：選擇一個磁碟區來儲存專案；EDA 使用此磁碟區作為軟體儲存庫。
++
+您只能選擇配置為 NFS 共用的磁碟區。
+
+
+
+.. *營運策略*：對專案克隆數量進行限制：
++
+... *最長保留天數*：輸入克隆體應保留的最長天數。天數過後，工作負載工廠會刪除複製檔案。
+... *每個使用者或群組的最大克隆數*：輸入可以為使用者或群組配置的最大克隆數。
+... *最大克隆大小（GiB）*：輸入項目克隆的最大大小（GiB）。
+
+
+.. *存取策略*：明確授予特定使用者或使用者群組項目存取權限：
++
+... *政策執行範圍*：輸入單一 IP 位址或 IP 位址範圍，以將項目存取權限限制為僅允許這些 IP 位址或範圍。
++
+例如： `172.16.0.0/24`
+
+... *使用者或群組標識符*：輸入使用者或群組標識符，以將項目存取權限限制為僅限這些使用者或群組。
++
+例如： `User1234`
+
+
+
+
+
+. 選擇“*創建*”。
+
+
+.結果
+項目已創建，並顯示在「項目」頁面的項目清單中。
+
+
+
+== 查看現有項目
+
+您可以按照下列步驟查看在NetApp Workload Factory for EDA 中建立的現有專案。
+
+.步驟
+. 使用以下任一方式登入 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主機體驗"^]。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *EDA*。
+. 選擇 *CI/CD*。
+. 選擇“轉到項目頁面”。
+. 查看「項目」頁面上列出的現有項目。
+
+
+
+
+== 編輯項目
+
+您可以隨時編輯項目的設定。
+
+.步驟
+. 使用以下任一方式登入 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主機體驗"^]。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *EDA*。
+. 選擇 *CI/CD*。
+. 選擇“轉到項目頁面”。
+. 在「項目」頁面上，選擇 image:icon-action.png["選項按鈕"] 針對您想要編輯的項目。
+. 對專案配置進行必要的變更。
+. 選擇*儲存*。
+
+
+
+
+== 查看專案的工作區
+
+專案的克隆或快照稱為工作區。建立工作區後，只要專案運作策略允許，工作區就會一直保留。您可以按照以下步驟查看專案的現有工作區。
+
+.步驟
+. 使用以下任一方式登入 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主機體驗"^]。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *EDA*。
+. 選擇 *CI/CD*。
+. 選擇“轉到項目頁面”。
+. 在「項目」頁面上，選擇一個項目，然後選擇「檢視」。
+. 查看此項目所有工作區的狀態和詳細資訊。
+. 如果看到工作區的警報或警告，請將滑鼠停留在警報或警告圖示上以查看原因。
+
+
+
+
+== 刪除項目
+
+請依照以下步驟，即可在不再需要時刪除項目。
+
+.步驟
+. 使用以下任一方式登入 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主機體驗"^]。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *EDA*。
+. 選擇 *CI/CD*。
+. 選擇“轉到項目頁面”。
+. 在「項目」頁面上，選擇 image:icon-action.png["選項按鈕"] 針對您想要刪除的項目。
+. 選擇*刪除*。
+. 在確認對話方塊中，選擇「刪除」。
+
+
+.結果
+項目已被刪除，與該項目相關的任何程式碼或工件都將從磁碟區中刪除。項目快照和克隆版本將被保留。

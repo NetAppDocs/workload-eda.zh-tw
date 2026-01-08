@@ -1,0 +1,8 @@
+---
+permalink: quick-start-builders.html 
+redirect: workload-builders/quick-start-eda.html 
+---
+= 
+:allow-uri-read: 
+
+

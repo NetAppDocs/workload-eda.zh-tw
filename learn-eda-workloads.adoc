@@ -1,0 +1,90 @@
+---
+sidebar: sidebar 
+permalink: learn-eda-workloads.html 
+keywords: software builders, development, benefits, eda, electronic design automation, perforce integration, ci, cd 
+summary: 了解如何在NetApp Workload Factory中使用 Perforce 整合進行 EDA 分析。 
+---
+= 了解NetApp Workload Factory for EDA 中 Perforce 的集成
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+將 Perforce 與 CI/CD 管道集成，透過自動化建置、測試和部署來增強開發流程，從而實現更快、更可靠的軟體交付。
+
+EDA 中的持續整合和持續部署 (CI/CD) 是為軟體建構者提供的快速建置環境建立工具。它能夠快速建立個人開發環境，節省時間，並為開發人員提供自助服務，同時使 DevOps 團隊能夠保持對基礎設施的控制。使用 CI/CD，軟體開發人員可以快速建立工作區，而無需專門的資料儲存或了解開發基礎設施。
+
+
+
+== 什麼是 CI/CD？
+
+透過使用 CI/CD，您可以簡化開發人員管理和互動其軟體不同版本的方式。它與 Perforce Helix Core 配合使用，可立即複製軟體版本並建立用於開發、QA 和 CI/CD 的工作區。
+
+您可以輕鬆建立一個項目，並指派一個磁碟區來表示您的軟體環境及其工件。在更新軟體時，您可以對磁碟區進行快照，從而擷取軟體在那一刻的狀態。您可以立即存取任何軟體版本，無需重新同步，從而節省時間和資源。
+
+利用NetApp ONTAP的快照和複製功能，您可以快速存取軟體的不同版本，從而更快地開發和發布更新。有關 Workload Factory 的更多信息，請參閱 link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作負載工廠概覽"^]。
+
+
+
+== CI/CD 功能
+
+* 建立、編輯和刪除項目。看 link:manage-projects.html["專案管理"]。
+* 建立已定義軟體版本的快照。看 link:version-projects.html["管理專案版本"]。
+* 建立和刪除工作區（基於克隆）。看 link:create-workspaces.html["建立工作區"]。
+* 建立存取策略以控制對專案的存取。
+* 分析每個項目的產能利用率。
+* 控制每個項目的克隆大小限制和克隆保留期限。
+* 與 Perforce 等版本控制系統整合。看 link:integrate-perforce.html["與 Perforce 集成"]。
+
+
+
+
+== EDA 中的專案和工作區
+
+您可以建立一個項目，並指派一個磁碟區來表示您的軟體環境及其工件。每次建立新版本的軟體時，都需要重新同步磁碟區資料並建立專案快照，以將磁碟區狀態標記為已知版本。專案來源磁碟區可能會進行捲動更新，並有多個快照來標記多個版本。您可以立即將每個快照用作即時複製，即可供開發人員、QA 或建置流程使用的專用或共用可編輯儲存庫。在特定軟體版本中，克隆體就是一個工作區。
+
+
+
+== 使用 Workload Factory Codebox 實現自動化
+
+Workload factory 透過 _Codebox_ 引入了內建自動化功能。Codebox 提供以下自動化優勢：
+
+* *程式碼片段產生*：在資源建立期間產生基礎設施即程式碼 (IaC) 片段，從而實現與現有編排工作流程的無縫整合。
+* *基礎架構即程式碼輔助工具*：Codebox 是一個基礎架構即程式碼 (IaC) 輔助工具，可協助開發人員和 DevOps 產生程式碼以執行 Workload Factory 支援的任何操作。
+* *程式碼檢視器和自動化目錄*：Codebox 提供了一個程式碼檢視器，用於快速分析自動化，以及一個自動化目錄，用於將來快速重複使用。
+
+
+
+
+== 成本
+
+使用 Workload Factory 的 CI/CD 功能是完全免費的。
+
+
+
+== 授權
+
+使用 Workload Factory 的 CI/CD 功能無需獲得NetApp的特殊許可。
+
+
+
+== 區域
+
+在所有支援 FSx for ONTAP 的商業區域，EDA 均受支援。 https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["看看支援的亞馬遜區域。"^]
+
+以下 AWS 區域不受支援：
+
+* 中國地區
+* GovCloud（美國）區域
+* 秘密雲
+* 絕密雲
+
+
+
+
+== 獲取協助
+
+Amazon FSx for NetApp ONTAP是 AWS 第一方解決方案。如需協助，請使用 AWS 管理主控台中的支援中心提交案例。選擇“FSx for ONTAP”及其類別，然後提供所需資訊。
+
+有關 Workload Factory 或 Workload Factory 應用程式和服務的一般性問題，請參閱 link:get-help-eda.html["取得 Workload Factory 的 EDA 協助"]。

@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: known-limitations.html 
+keywords: limitations, builders, eda, electronic design automation 
+summary: 已知限制標識了該產品的此版本不支援或無法與其正確互通的平台、裝置或功能。仔細審查這些限制。 
+---
+= NetApp Workload Factory在 EDA 方面的已知局限性
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+已知限制標識了該產品的此版本不支援或無法與其正確互通的平台、裝置或功能。仔細審查這些限制。
+
+
+
+== 需要操作員權限
+
+NetApp Workload Factory for EDA 需要操作員權限才能正常運作。

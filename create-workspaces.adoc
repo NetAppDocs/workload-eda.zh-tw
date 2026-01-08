@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: create-workspaces.html 
+keywords: manage, workspace, snapshot, project 
+summary: NetApp Workload Factory for EDA 中的工作區是基於專案快照的專案的 Perforce 表示。您可以在 EDA 專案中建立工作區。 
+---
+= 創建EDA工作區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory for EDA 中的工作區是專案在特定時間點的 Perforce 表示。工作區以專案快照為基礎建立。您可以在 EDA 專案中建立新的工作區。您可以透過 Perforce 使用者介面建立工作區。
+
+.開始之前
+請確保已將 EDA 與 Perforce Helix Visual Client 整合。看 link:integrate-perforce.html["將 EDA 與 Perforce 集成"^] 了解更多。
+
+.步驟
+. 登入 Perforce。
+. 在 Perforce 選單中，選擇 *視圖* > *工作流程*。
++
+Workload Factory 登入介面顯示在 Perforce 使用者介面中。
+
+. 使用以下任一方式登入 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主機體驗"^]。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *EDA*。
+. 選擇 *CI/CD*。
+. 選擇“建立專案”，然後選擇“建立工作區”。
+. 在「建立工作區專案」頁面上，提供以下資訊：
++
+.. 選擇一個快照作為工作區的基礎。
+.. 請輸入工作區名稱。
+.. （可選）輸入使用者識別碼以認領工作區。此識別碼應與將使用此工作區的開發人員的 Perforce 使用者 ID 相符。
+
+
+. 選擇“*創建*”。
+
+
+.結果
+工作區已創建，並顯示在「工作區」頁面的工作區清單中。
