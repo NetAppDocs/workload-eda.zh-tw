@@ -351,17 +351,13 @@
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">請務必複製上面用於序號欄位的帳戶序號（960xxxx）。這將加快帳戶處理速度。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp應該在過程中與您聯繫。這是針對新用戶的一次性入職培訓。</block>
   <block id="f335678326583cea28377216c5515221" category="paragraph">取得NetApp支援網站帳號後，請依照下列步驟將帳號與您的NetApp Console登入資訊關聯。 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
-  <block id="487644be42ec68bfbe1af8bedccf87d4" category="summary">透過新增標籤來配置您的EDA儀表板，以收集指標。</block>
   <block id="b5ca39077f3b34df657d01b0e4e66348" category="doc">使用儀表板</block>
-  <block id="9f87c2937598d5a669f7fda9b2860b22" category="paragraph">首次登入 EDA 時，您可以使用儀表板來觀察 FSx for ONTAP檔案系統和磁碟區中的項目使用情況。儀錶板包含幾個預設篩選器，您可以使用這些篩選器來自訂顯示的資訊。此外，您還可以建立和套用自己的 AWS 標籤，以便根據您特定的業務需求來組織和篩選資料。</block>
-  <block id="9108e435212992e269c4a0e10c304297" category="paragraph">此儀錶板可協助您監控儲存使用情況，包括已分配容量、已使用容量、吞吐量和 IOPS。</block>
   <block id="00909736de459ef354dd54f7a12c7137" category="paragraph">收集的 CloudWatch 指標包括：</block>
   <block id="83ec7827b9a51abd480f21f9797d1c3b" category="list-text">已配置容量：表示已配置儲存容量的磁碟區級指標。</block>
   <block id="99051abc318cae9824d95692d1c95b25" category="list-text">已使用容量：表示已使用儲存空間的磁碟區級指標。</block>
   <block id="ff1cfca20a1660c53ade527b17be8ad8" category="list-text">平均/最大吞吐量：計算方法為指定時間內 DataReadBytes 和 DataWriteBytes 總和的平均值或最大值。</block>
   <block id="a0932dae893409aa61370e810d740d59" category="list-text">平均/最大 IOPS：計算方法為：在指定時間段內，資料讀取操作、資料寫入操作和元資料操作的總和的平均值或最大值。</block>
   <block id="c4d073c70378b04dc94a31c6e002190c" category="section-title">設定儀表板</block>
-  <block id="4a77707914ca5addc817ef4b8452e03d" category="paragraph">若要有效使用儀表板，請根據您的業務需求，在 FSx for ONTAP磁碟區上設定 AWS 標籤，例如代表專案或業務部門的標籤。詳情請見 <block ref="56431a7f0461e9258a1144a0e01a6b8d" category="inline-xref-macro-rx"></block>。</block>
   <block id="4c6f0009ac1f9c550c3c27ca47734a94" category="inline-link">什麼是標籤？</block>
   <block id="6ec564eeb8bbd7d65ea723d7377e4535" category="inline-link">AWS 資源組標記 API 參考</block>
   <block id="3c533aef31dd27afb54ebf253685f3c2" category="paragraph">AWS 標籤是 AWS 資源的元資料。它們可以幫助您以不同的方式對 AWS 資源進行分類，例如按專案、應用程式或業務部門。有關標籤的更多詳細信息，請參閱<block ref="3a728828042c1a731e3aa740ed780475" category="inline-link-rx"></block> 和 <block ref="53b3c63786d21199a28ae32477919693" category="inline-link-rx"></block>。</block>
@@ -370,12 +366,10 @@
   <block id="40dded464250d8f5174e221d1ee142f9" category="paragraph">您的儀錶板將成為一個動態工具，可以根據您的組織需求來組織、追蹤成本和篩選資源。</block>
   <block id="976e508c4d7059185077a486bc23c939" category="section-title">配置自訂過濾器</block>
   <block id="0de06b59453acb74b09edb405890d19b" category="paragraph">如果您尚未設定儀表板，系統會自動提示您進行設定。</block>
-  <block id="b5aff8f837547a2440ebe2a08de996e4" category="list-text">對於每個需要的篩選器，新增篩選器標籤名稱和要與其關聯的 AWS 標籤鍵名稱。</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">選擇*應用*。</block>
   <block id="cd272c40b08a69d4fcdc74ed592a2f25" category="list-text">套用任何標籤或篩選器後，若要查看更改，請選擇儀表板上的刷新圖示。配置了新篩選器的動態儀表板將顯示在您的 EDA 專案儀表板中。</block>
   <block id="365caa3dff9ac22391eab30998fdad59" category="list-text">若要稍後編輯儀表板配置，請選擇「配置」。</block>
   <block id="26949f06981e97a3e3cda29668de2aff" category="section-title">篩選儀表板</block>
-  <block id="6e25e66f3be3bae488d3ee4d44bfdd2d" category="paragraph">您可以透過選擇以下一個或多個預設篩選器以及您建立的任何自訂篩選器來篩選儀表板上顯示的資訊：</block>
   <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">證書</block>
   <block id="f447ac856e7e72435904956e3b15f433" category="list-text">地區</block>
   <block id="53b936091a984a22f4042eeb94499891" category="list-text">檔案系統</block>
@@ -404,7 +398,6 @@
   <block id="91ff6a222c07990103d82fb8831e3c69" category="summary">了解 Workload Factory for EDA 的最新功能。</block>
   <block id="8aa901901d7a7435a17fc1f732006316" category="doc">NetApp Workload Factory for EDA 有哪些新功能</block>
   <block id="ddd57eb702782b0c009fb89b951edaae" category="paragraph">了解 Workload Factory 的 EDA 功能有哪些新功能。</block>
-  <block id="0ccb64fb4de18921b08df0c5dcb5549f" category="section-title">2026年1月4日</block>
   <block id="992efefab3dd15099f5eff3f904d8df4" category="section-title">2025年10月5日</block>
   <block id="f6db487abe903d447c5070f569416c3a" category="section-title">2025年6月16日</block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025年5月4日</block>
@@ -430,4 +423,140 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">什麼是新的</block>
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">已知限制</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="sidebar">法律聲明</block>
+  <block id="efc6f47d5e8620dbd993bbf5427fa876" category="doc">增強型儀表板篩選功能，支援自訂標籤</block>
+  <block id="1c074117512c813d0d3c5474c6839792" category="paragraph">現在，您可以在 EDA 控制面板上根據您的 AWS 標籤配置多達五個自訂篩選器。每個自訂篩選器都包含標籤名稱、AWS 標籤鍵和選擇類型（單選或多選）。</block>
+  <block id="a290a89777e8fd7db6061c83affdbda9" category="paragraph">多選功能可讓您同時選擇多個值，而單選功能則一次只能選擇一個值。自訂篩選器會依照您配置的順序顯示，方便您整理最常用的篩選器。</block>
+  <block id="a9f4d955c73322ea2697149d48ca3230" category="paragraph">如果您不配置自訂篩選器，則預設篩選器（檔案系統、磁碟區類型和時間範圍）仍然可用，以便您可以繼續檢視儀表板並與之互動。</block>
+  <block id="7f599cf351ac708ac51a573f45f1adfe" category="inline-link">深入瞭解如何設定自訂篩選器</block>
+  <block id="b4d8b5d35eb5ad238c4bc40c7bfa5cc8" category="paragraph"><block ref="0fffea6d188f5a3a46b25be10dcf1dca" category="inline-link-rx"></block>。</block>
+  <block id="5908526b06383bf6b835d957813a0a5b" category="section-title">磁碟區詳細資料檢視，用於精細效能分析</block>
+  <block id="be14699d8f808150c6e3ec8fd5f5fb6f" category="paragraph">儀錶板現在提供兩種檢視模式：總體檢視和磁碟區檢視。總體檢視顯示所有磁碟區的彙總指標，而磁碟區檢視則顯示前 10 個磁碟區隨時間變化的個別效能。</block>
+  <block id="6828b4aa70bf0499581d68bc0a737c8a" category="paragraph">在 Volume 檢視中，互動式懸停工具提示可提供每個磁碟區的詳細資訊，包括磁碟區名稱、指標和特定時間值。當相同的磁碟區出現在多個元件中時，一致的顏色編碼可讓您更輕鬆地追蹤不同指標中的特定磁碟區。</block>
+  <block id="b7259cf0b1b93b9f8f56fd85b8a2075f" category="inline-link">深入瞭解檢視磁碟區詳細資料</block>
+  <block id="3d218b60cf53ed75572aecfde4c1d233" category="paragraph"><block ref="fdc27d3397a23552fa2bc2b42dee0c76" category="inline-link-rx"></block>。</block>
+  <block id="a63dd8c708227f66adf2e93b1b973bfe" category="section-title">用於主動效能監控的延遲分析</block>
+  <block id="4eca5955b4d0f7b664a2f65c49306dcf" category="paragraph">延遲分析功能可協助您監控 FSx for ONTAP 檔案系統的磁碟區讀取和寫入延遲。您可以配置自訂的警告和嚴重事件閾值，以便在效能瓶頸影響 EDA 工作負載之前主動識別它們。</block>
+  <block id="40a74d0e93037927ed8b742952444782" category="paragraph">延遲事件表顯示所有警告和嚴重事件，可讓您監控磁碟區效能並識別需要最佳化的磁碟區。</block>
+  <block id="40599551b14b033049a0306f8d7e0da2" category="paragraph">此功能需要 AWS 憑證，可透過 EDA 控制面板中的延遲功能表存取。</block>
+  <block id="195b656b2b34184ab7cb51ea0158eba0" category="inline-link">深入瞭解延遲分析</block>
+  <block id="3589dd4e8f5f2cbdba29810271d0f1d9" category="paragraph"><block ref="6f22f53277ef02f84f5ed64bde49085d" category="inline-link-rx"></block>。</block>
+  <block id="6b1bfc4b2985b92dcf5662055b7cd336" category="inline-link-macro">延遲監控</block>
+  <block id="6932162a874668e2d1dc901452dbb1b8" category="list-text"><block ref="fecda44c58c462f47e8a148f1d0d4382" category="inline-link-macro-rx"></block>：主動監控磁碟區讀取和寫入延遲效能，並可設定警告和嚴重事件臨界值，以識別潛在的效能瓶頸。</block>
+  <block id="7e565772caac09d981d6b3641bb20148" category="inline-link-macro">了解延遲監控</block>
+  <block id="d3e9e776c97e0f2d8388d6d741dd47a8" category="admonition">使用延遲監控功能時也需要 AWS 憑證，該功能會收集 CloudWatch 指標以進行磁碟區效能分析。<block ref="123cec35459a259baaf9454185c7e6c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="2106cf3366c1f8905dc8d0decf2ac6cc" category="summary">透過新增標籤來配置您的 EDA 儀表板，以便收集指標。自訂單選或多選篩選器，以滿足您的業務需求。</block>
+  <block id="f085cface8e84ac185b38370c5a4aead" category="paragraph">首次登入 EDA 時，您可以使用儀表板查看 FSx for ONTAP 檔案系統和磁碟區中的專案使用情況。儀表板包含多個預設篩選器，可用於自訂顯示的資訊。此外，您還可以基於 AWS 標籤建立最多五個自訂篩選器，並可選擇單選或多選，以便根據您的特定業務需求組織和篩選資料。</block>
+  <block id="9918911ccf4f48662bd23b3fa6ea97a8" category="inline-link-macro">監控磁碟區延遲</block>
+  <block id="c09e7b1ab90792168923158989ca6297" category="paragraph">此儀表板可協助您監控儲存使用情況，包括已分配容量、已使用容量、吞吐量和 IOPS。有關主動延遲效能監控，請參閱 <block ref="4d71518cae1e26b3714fb432b3fb2249" category="inline-link-macro-rx"></block>。</block>
+  <block id="3eeb776c775a0a186eaac0ae86ca4408" category="paragraph">為了有效使用控制台，請根據業務需求，在 FSx for ONTAP 磁碟區上配置最多五個 AWS 標籤，例如代表專案或業務部門的標籤。有關詳細信息，請參閱<block ref="56431a7f0461e9258a1144a0e01a6b8d" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b915af974b3255995db1b551b1e1dcbb" category="paragraph">您可以根據 AWS 標籤配置最多五個自訂篩選器。每個自訂篩選器需要三個元件：篩選器標籤名稱、AWS 標籤鍵名稱和選擇類型（單選或多選）。如果您未配置任何自訂篩選器，則預設篩選器（檔案系統、磁碟區類型和時間範圍）仍然可用，因此您仍然可以查看儀表板並與之互動。</block>
+  <block id="27e0e44d189c553eb00dc006b35029f5" category="list-text">選擇 *+ Add filters*。</block>
+  <block id="5678492274c56b0e9a6e36ba6f34b836" category="list-text">對於您要建立的每個自訂篩選器（最多五個），請提供以下資訊：</block>
+  <block id="7371329c5bc9fb1913a92db5445368eb" category="list-text">*篩選標籤名稱*：顯示在儀表板中的顯示名稱。</block>
+  <block id="9dc66313c07505b9b6ee97b9490648d4" category="list-text">*AWS 標籤鍵名稱*：與此篩選器對應的 AWS 資源標籤鍵。</block>
+  <block id="6245bc7faa3c897c2839919b1e0f6c5d" category="list-text">*多選*：選擇此篩選器允許單選還是多選。選擇 *多選* 後，您可以同時為此篩選器選擇多個值。單選則限制您一次只能選擇一個值。</block>
+  <block id="0be6ab8a3d394d63c0aaea5444fc4d94" category="admonition">篩選器會依照您設定的順序顯示在儀表板上。建議您先整理最常用的篩選器，以便快速存取。</block>
+  <block id="58812a046615ae0cede06aa76e867511" category="paragraph">您可以在套用變更之前選擇自訂篩選器旁邊的垃圾桶圖示來刪除該篩選器。</block>
+  <block id="7ad57d97a4e7251a593b560f3edd7c6c" category="paragraph">您可以使用預設篩選器和您建立的任何自訂篩選器的組合來篩選儀表板上顯示的資訊。</block>
+  <block id="0893a6eb6fac2bd4489c23ad574e3e32" category="paragraph">以下預設篩選器始終可用：</block>
+  <block id="b6c5b00ab5f9877d11bf9e5b5bc8b2fa" category="paragraph">除了這些預設篩選器之外，您配置的自訂篩選器也會顯示在儀表板上。使用篩選器時：</block>
+  <block id="0d9da1f1a6c87419d9a59e59c2f60af2" category="list-text">*多選篩選器* 可讓您同時選擇多個值，從而擴展您的視圖。例如，您可以選擇多個項目來查看綜合指標。</block>
+  <block id="2ad8dabd47e501a4ed1c3d01be491886" category="list-text">*單選篩選器* 限制您一次只能選擇一個值，當您需要專注於特定資源或類別時非常有用。</block>
+  <block id="ec4fc4cb1b37373b785aaee6062cfec7" category="section-title">檢視磁碟區詳細資料</block>
+  <block id="c42e01801b1f2ef2fbdf3f8841353b73" category="paragraph">控制面板提供兩種檢視模式，協助您分析儲存指標：總計檢視和磁碟區檢視。您可以使用控制面板上的標籤在這些模式之間切換。</block>
+  <block id="ee855ba807a55874eb4b38814389078f" category="section-title">總檢視</block>
+  <block id="e7dd4c9a6d36b6512dda7f2c3e278b77" category="paragraph">「總計」檢視（預設）顯示符合您所選篩選條件的所有磁碟區的彙總指標。此檢視提供整體儲存效能的高階概覽，顯示合併的容量、IOPS 和處理量指標。</block>
+  <block id="515b555dcf569c4cc1d2a938ae9822d3" category="section-title">磁碟區檢視</block>
+  <block id="e3f5fd2f57f7a82a665af7de374483ac" category="paragraph">「卷」視圖顯示各個卷隨時間推移的效能，並顯示每個指標排名前 10 的卷。此視圖可協助您識別導致資源使用量激增的特定卷，並觀察它們在所選時間段內的行為。</block>
+  <block id="5753fce8315ebaa06a713e75985750bf" category="paragraph">若要切換到 Volume 視圖，請在儀表板上選擇 *Volume* 標籤。</block>
+  <block id="f768a8e9133dfc338015fd0d83ec2cf0" category="section-title">顯示的磁碟區指標</block>
+  <block id="2347e9819148413af6cc4e5827b02d4e" category="paragraph">當您選擇 Volume 視圖時，儀表板會顯示卷總數中排名前 10 的卷。* *Volume used capacity*：顯示目前已使用容量最高的卷。* *IOPS*：顯示在所選時間段內平均 IOPS 最高的卷。* *Throughput*：顯示在所選時間段內平均吞吐量最高的卷。</block>
+  <block id="286b672abb5d35bb05baef5e5758a310" category="admonition">儀錶板僅顯示每個指標的前 10 個磁碟區。如果您有超過 10 個磁碟區，則某些磁碟區可能不會顯示在詳細檢視中。</block>
+  <block id="502ab59dcef25c014584999b381b739b" category="paragraph">當相同的磁碟區出現在 *Volume used capacity*、*IOPS* 和 *Throughput* 指標中時，儀表板會在圖例中使用一致的顏色編碼，以便更輕鬆地追蹤不同指標中的特定磁碟區。</block>
+  <block id="4745a2c999b128a25bda01aed19ab2f8" category="paragraph">橫軸顯示時間範圍，而圖例顯示圖表中表示的所有磁碟區 (最多 10 個)。</block>
+  <block id="90681f223ffce7f43af4ac6e8572f319" category="section-title">互動式磁碟區資料</block>
+  <block id="409e7e820a2aec1df14db5a88edd443e" category="paragraph">您可以將滑鼠懸停在圖表中的任何磁碟區線上，以檢視詳細資訊：</block>
+  <block id="66098fe1f75297ccbc3e4c2332830104" category="paragraph">*磁碟區已使用容量*：顯示磁碟區名稱、該時間點的已使用容量和已分配容量。</block>
+  <block id="748334bb99d46cf2ef3aa45e610baf24" category="paragraph">*IOPS*：顯示磁碟區名稱、時間範圍內的平均 IOPS 和時間範圍內的最大 IOPS。</block>
+  <block id="04eeb8d03cf6b4755481c052a6e535e6" category="paragraph">*吞吐量*：顯示磁碟區名稱、時間範圍的平均吞吐量，以及時間範圍的最大吞吐量。</block>
+  <block id="f2c7e3d31586c840e7c17c779b7d70dd" category="paragraph">此互動式資料可協助您分析磁碟區效能模式，並識別潛在的瓶頸或最佳化機會。</block>
+  <block id="300ec882ed0bc603a8bc31f188dc28e5" category="summary">透過可設定的警告和嚴重事件臨界值來監控和分析磁碟區延遲效能，以主動識別效能瓶頸。</block>
+  <block id="90d997e137ee990e196229395af6d6a7" category="paragraph">利用延遲分析，您可以追蹤 FSx for ONTAP 檔案系統的讀寫延遲指標，從而主動監控磁碟區效能。配置可自訂的警告和嚴重事件閾值，以便在潛在的效能瓶頸影響 EDA 工作負載之前識別它們。</block>
+  <block id="3b878279a04dc47d60932cb294d96259" category="section-title">概況</block>
+  <block id="1c42660fdf55fec5341f109b1c18ae8c" category="paragraph">延遲分析會收集並監控磁碟區讀取和寫入作業的 CloudWatch 指標。當指定時間範圍內所有資料點的延遲和 IOPS 閾值均被突破時，系統會產生警示，這些警示會顯示在延遲事件表中。這使您可以：</block>
+  <block id="52840e6ea19e30e010425ac96fc1fd74" category="list-text">找出效能降低的磁碟區。</block>
+  <block id="8111593c4b9e675b40060181e91582b7" category="list-text">區分警告等級和嚴重等級的效能問題。</block>
+  <block id="029070dac474b47b91825e694dd48f7e" category="list-text">追蹤一段時間內的延遲趨勢，以優化儲存配置。</block>
+  <block id="82bfba3efae839fe6bbe2de97d83c475" category="list-text">在延遲影響工作負載效能之前採取主動措施。</block>
+  <block id="b18d695fc7384219d11ff79654f49701" category="paragraph">若要使用延遲分析功能，您必須在 Workload Factory 中設定 AWS 憑證。此功能需要存取與您的 AWS 憑證關聯的所有 FSx for ONTAP 磁碟區的 CloudWatch 指標。</block>
+  <block id="196a1b1d4d7eff75b0b7bc0f6fa282e7" category="inline-link-macro">新增 AWS 憑證</block>
+  <block id="70317e3abbdadfb99e6ea364d432bd9b" category="paragraph">如果您尚未配置 AWS 憑證，請參閱 <block ref="53eda59ec5ff13cb6e6660c47027e8c7" category="inline-link-macro-rx"></block>。</block>
+  <block id="b7a6e29a17f641a5bd663b0c27c433ed" category="section-title">設定延遲臨界值</block>
+  <block id="9b53289586841271ac6d175ca4a5af63" category="paragraph">您可以為警告事件和嚴重事件配置閾值。每種事件類型都包含讀取操作和寫入操作的單獨閾值。系統會持續評估這些閾值，並在滿足條件時產生警報。</block>
+  <block id="2542d3fbcc77fe58daf4a8287e4dc4ae" category="admonition">您必須將關鍵事件閾值設定得高於警告事件閾值，以確保警報能夠正確升級。否則，您將無法儲存配置。</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">關於此任務</block>
+  <block id="92aac57dc8699e8869b6e3f2aec6b360" category="paragraph">警報觸發的條件是，指定時間範圍內所有資料點的延遲閾值和 IOPS 閾值都必須同時被突破。這種雙重條件邏輯有助於減少誤報，確保高延遲在高負載下持續存在。</block>
+  <block id="e1cf2ece0db166d8b4c6b87f20794e11" category="inline-image-macro">漢堡選單圖示</block>
+  <block id="c625174f1f2ee54505e8df5c7884aaa1" category="list-text">選擇選單 <block ref="438b712f6e6afc173ce78a756adc207c" category="inline-image-macro-rx" type="image"></block>，然後選擇 *EDA*。</block>
+  <block id="6522859d513a1a4996b48c2075e5629d" category="list-text">從 EDA 選單中，選擇 *Latency*。</block>
+  <block id="e98927daa3269d89ed40e1d00b9894f4" category="list-text">在 EDA 延遲組態頁面中，設定以下臨界值：</block>
+  <block id="6a92339b37a09c472028f07967682c85" category="list-text">*警告事件*</block>
+  <block id="7a9ff4c8c2260709d5b8ca3ea5720d48" category="list-text">*讀取延遲閾值*：輸入延遲閾值（以毫秒為單位）。預設值：6 ms。</block>
+  <block id="c7ffe38ce2716364ec13888fb0fb4d18" category="list-text">*讀取 IOPS 閾值*：輸入每秒操作數的 IOPS 閾值。預設值：100 操作/秒。</block>
+  <block id="a9c123b2457943cad2a4a7b1da9e2ba2" category="list-text">*讀取時間範圍*：請輸入時間範圍，單位為分鐘（5-20）。預設值：10 分鐘。</block>
+  <block id="0bb2971cdc9904893b398e127f86ccc1" category="list-text">*寫入延遲閾值*：輸入延遲閾值（以毫秒為單位）。預設值：8 ms。</block>
+  <block id="f1d2b429b535ce1659d20f6a98f239da" category="list-text">*寫入 IOPS 閾值*：輸入每秒操作數的 IOPS 閾值。預設值：100 操作/秒。</block>
+  <block id="a0274640a4f41ca07311c67d74f332b1" category="list-text">*寫入時間範圍*：輸入時間範圍（以分鐘為單位）（5-20）。預設值：10 分鐘。</block>
+  <block id="a3ca3437ce0a7bbf111f75af4d05ea72" category="list-text">*重大事件*</block>
+  <block id="fe225c18ccd35d621ab2e58cf79459b5" category="list-text">*讀取延遲閾值*：輸入延遲閾值，單位為毫秒。預設值：12 毫秒。</block>
+  <block id="84da8d5b9264494d5cd9cb035bc28120" category="list-text">*寫入延遲閾值*：輸入延遲閾值（以毫秒為單位）。預設值：15 毫秒。</block>
+  <block id="0073a211209725d1fd56c6533d4ffec3" category="paragraph">Workload Factory 開始收集與您的 AWS 憑證關聯的所有 FSx for ONTAP 磁碟區的延遲指標。指標至少每 20 分鐘收集一次。延遲事件表會顯示任何超出您配置閾值的磁碟區。</block>
+  <block id="6bc0e94d709a00317b3fdd4f3958342b" category="section-title">了解警示</block>
+  <block id="c00d3202c1a4245d5310c03fe4c4d124" category="paragraph">延遲分析功能使用 CloudWatch 警報來監控磁碟區效能。了解警報的觸發方式有助於您配置適當的閾值並解讀結果。</block>
+  <block id="ee34286f143c9ac572df816e88226163" category="section-title">收集的指標</block>
+  <block id="bea060c037959de7378c9c2f91ea4219" category="paragraph">系統會針對每個磁碟區收集以下 CloudWatch 指標：</block>
+  <block id="9115f34400f66fb673aa39683fefc0a8" category="list-text">*讀取延遲閾值*：計算公式為 1000 * m2/(m1+0.000001)，其中 m1 = DataReadOperations 且 m2 = DataReadOperationTime</block>
+  <block id="507575c143ec3020fe407125ed3df334" category="list-text">*寫入延遲閾值*：計算公式為 1000 * m2/(m1+0.000001)，其中 m1 = DataWriteOperations 且 m2 = DataWriteOperationTime</block>
+  <block id="6c2de48345c28d8092d96aca583778d0" category="section-title">警示觸發條件</block>
+  <block id="9242656254a25093b3f3351379ea0f02" category="paragraph">當滿足以下所有條件時，就會觸發警示：</block>
+  <block id="186a1bcf007367f6bc6fa82ec4719e16" category="list-text">操作類型 (讀取或寫入) 的延遲閾值已超過。</block>
+  <block id="e276786b9c415526db7d13f4aa5efadd" category="list-text">該操作類型的 IOPS 閾值已超過。</block>
+  <block id="d4f2d389a3d4d575b8158ca4417bf9a5" category="list-text">在設定的時間範圍內，所有資料點都符合這兩個條件。</block>
+  <block id="6efa4b954c442dd4f15a0f58f1b0bd86" category="paragraph">例如，使用預設警告閾值，只有當 10 分鐘內所有資料點的讀取延遲超過 6 毫秒且讀取 IOPS 超過 100 ops/sec 時，才會觸發讀取警報。</block>
+  <block id="e0b18d5b04f677d427e5a029d591d7a9" category="section-title">事件嚴重性</block>
+  <block id="c5dada127d514b30222d50c180808dff" category="list-text">*警告事件*：表示延遲升高，可能需要注意。</block>
+  <block id="3b1132558500e795d2918a031b3533ea" category="list-text">*關鍵事件*：表示有嚴重的延遲，需要立即進行調查。</block>
+  <block id="a0136d636bd452e02818b34b1fb9eb98" category="section-title">檢視延遲事件</block>
+  <block id="7965c28e3a946fcfe26f8d31449a72e3" category="paragraph">延遲事件表顯示過去 72 小時內偵測到的所有警告和嚴重事件。使用此表可以監控磁碟區效能並識別需要最佳化的磁碟區。</block>
+  <block id="0f68b904e33d9ac04605aecc958bcf52" category="list-title">其他資訊</block>
+  <block id="0fd27ce965f59d9ce188afda7be707f7" category="list-text">表格中僅顯示每個磁碟區的最新一次違規事件。如果一個磁碟區發生多次違規，則僅顯示最近一次事件。</block>
+  <block id="7776f517a75d578f349901d6f0886405" category="list-text">事件會在 72 小時後自動刪除。</block>
+  <block id="99789473cc53d4c5f2666a4ab79ebb39" category="list-text">表格最多顯示 200 個事件。隨著新事件的添加，較早的事件將被刪除。</block>
+  <block id="fa25e0e326e38037315b4df99a68a595" category="list-text">在 *Latency* 標籤中，查看延遲事件表。</block>
+  <block id="dcc9848cbc440e33ab31099e592f3548" category="list-text">請查看各項事件的相關資訊，包括：</block>
+  <block id="93051970a8383738704f4809fd35779f" category="list-text">*嚴重程度*：指示事件是「嚴重」還是「警告」。</block>
+  <block id="9d0418bddad0434b22eddfa9e6ac70b3" category="list-text">*Volume name*：受影響卷的名稱。</block>
+  <block id="3970adb265372ae157b79f5cf32c4654" category="list-text">*Volume ID*：受影響磁碟區的 ID。</block>
+  <block id="94785a36456605abe135e07954560b83" category="list-text">*檔案系統*：包含該磁碟區的 FSx for ONTAP 檔案系統。</block>
+  <block id="fe78c594fbd3ab20c9638e8c15888f03" category="list-text">*偵測到的時間*：偵測到漏洞的時間</block>
+  <block id="f24df78eef3360387dd1a4f2d6a0fdb0" category="list-text">*中位數延遲*：違規期間的中位數延遲值。</block>
+  <block id="ffdc22229e20f79439c83c1406c5988f" category="list-text">若要對表格進行排序，請選擇任意欄標題。預設情況下，重大事件會先依時間排序顯示，接著是依時間排序的警告事件。</block>
+  <block id="c010e7ccfe39dff8710b56fb1e570258" category="list-text">若要關閉一個或多個事件，請在每個事件旁邊選取 *Dismiss*。</block>
+  <block id="4592e1df7d97ccf7061a86a746d9261d" category="list-text">若要將欄新增至表格，請選取欄圖示，選擇欄，然後選取 *Apply* 。</block>
+  <block id="01bd639bef6ec9a56687ee7ffd9f246c" category="section-title">管理延遲組態</block>
+  <block id="7851fb52b1039fde0650c3e8173c2a5a" category="paragraph">完成初始配置後，您可以編輯閾值。</block>
+  <block id="6fe6ef1cbd27d3257ff9500aab5f9ab9" category="list-text">在 *Latency* 頁面中，選擇 *Edit*。</block>
+  <block id="d53bdccd3ec334ddfd63d2269906352a" category="list-text">根據需要修改任何臨界值。</block>
+  <block id="247a926ff070f20efece2fd2ed4162c3" category="admonition">請確保關鍵臨界值高於警告臨界值。如果將關鍵臨界值配置得低於警告臨界值，系統將顯示錯誤。</block>
+  <block id="d3152a664d12079fbf89a50fcb166ef3" category="list-text">選擇 *Apply* 以儲存變更。</block>
+  <block id="c2ffe02d76c4f089648f1647b43e4ee5" category="section-title">最佳實務</block>
+  <block id="9034aebe9b693f759faa32d33c7d1358" category="paragraph">配置和使用延遲分析時，請考慮以下建議：</block>
+  <block id="6a17347e669ad40689359f41fee3efc9" category="list-text">*設定合理的閾值*：根據您的工作負載需求配置閾值。預設值提供了一個起點，但可能需要根據您的特定環境進行調整。</block>
+  <block id="8d2a6ec04c3428e17318eec752e34640" category="list-text">*從警告閾值開始*：在微調關鍵閾值之前，使用警告事件來建立基準效能預期。</block>
+  <block id="1f3a99c8bf0d4110ea6d8f943c76ad49" category="list-text">*請仔細考慮時間範圍*:較短的時間範圍 (5-10 分鐘) 能更快地偵測到問題,但可能會產生更多警報。較長的時間範圍 (15-20 分鐘) 能減少誤報,但可能會延遲偵測。</block>
+  <block id="10c6a588ad4a1a320036ec18537a9783" category="list-text">*監控趨勢*：定期檢閱延遲事件表格，以識別可能表示潛在組態問題的模式或重複出現的問題。</block>
+  <block id="582145492bc6491a13bd3c8e766df7f4" category="list-text">*協調 IOPS 和延遲閾值*：雙重條件邏輯意味著兩者都必須被超越。設定過高的 IOPS 閾值可能會導致即使延遲存在問題也無法發出警報。</block>
+  <block id="829d4cdd3177ddf6591982d99aa444ab" category="list-text">*審查被駁回的事件*：定期審查事件被駁回的原因，以發現調整門檻或改進基礎設施的機會。</block>
+  <block id="8d2488f820b40da5c2d7dfd912588e9a" category="section-title">2026 年 2 月 1 日</block>
+  <block id="2c421bc29b0b255dff7d2788d0d1a127" category="section-title">2026 年 1 月 4 日</block>
 </blocks>

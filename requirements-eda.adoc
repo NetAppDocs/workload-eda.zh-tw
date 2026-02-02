@@ -19,6 +19,9 @@ AWS憑證和權限:: 您需要在 Workload Factory 中新增具有讀取/寫入�
 
 目前不支援基本模式和唯讀模式權限。
 
+
+NOTE: 使用延遲監控功能時也需要 AWS 憑證，該功能會收集 CloudWatch 指標以進行磁碟區效能分析。link:task-monitor-latency.html["了解延遲監控"]。
+
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何在 Workload Factory 中新增 AWS 憑證"^]
 
 FSx for ONTAP檔案系統:: 您至少需要一個 FSx for ONTAP檔案系統：
