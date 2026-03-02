@@ -188,8 +188,6 @@
   <block id="7e352fac3dcf36358e8bc2cf1bfa3922" category="paragraph">它旨在與您的基礎設施即代碼 (IaC) 框架整合。</block>
   <block id="9f3e7d074ca9509cad5dc61c364243ae" category="paragraph">Workload Factory for EDA 提供儀表板和儲存自動化框架及實用程序，協助您管理多個 FSx for ONTAP檔案系統。</block>
   <block id="26436f2413992fe24dbc64926658bc5b" category="paragraph">它提供以下服務：</block>
-  <block id="7ab37bddd2d34b72128a35046a2b28fa" category="inline-link-macro">EDA專案儀表板</block>
-  <block id="9bb927b46ba8405e6b26ef482f63fce8" category="list-text"><block ref="b9507aa4ad79652e28b98ba9f8b1d274" category="inline-link-macro-rx"></block>：提供 FSx for ONTAP檔案系統儲存消耗的集中視圖，以協助您規劃、評估成本並收集有關專案儲存使用情況的資訊。</block>
   <block id="a91e4ff4bf49e8de7de911d95062662e" category="inline-link-macro">CI/CD</block>
   <block id="737d3db4a03ab89d7e0df877e3aa077f" category="list-text"><block ref="fedcbac8f77f4477ef069024bcbbfdde" category="inline-link-macro-rx"></block>：利用 FSx for ONTAP磁碟區複製功能，簡化並縮短軟體建置時間。</block>
   <block id="5f225b11f8fcd5f0bc2d9460c6da4cd8" category="doc">NetApp Workload Factory for EDA 的法律聲明</block>
@@ -280,12 +278,10 @@
   <block id="7601729d359de4f5cd6af27402c9e70e" category="inline-link-macro">了解更多關於EDA要求的信息</block>
   <block id="10b5ea1be0d70891fd944479056f796a" category="paragraph"><block ref="52ec48856eba661b3a8f3a8489ac6cc4" category="inline-link-macro-rx"></block>。</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
-  <block id="34eeb12f254dcf2a9f8b56de71337ad8" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 配置專案儀表板</block>
   <block id="912684b68ca184698a4e55744c3cbcca" category="paragraph">配置專案儀表板以監控系統運作狀況、效能和儲存使用情況，從而有效優化您的 EDA 環境。</block>
   <block id="28af2b5a7e7a84074709a118bb9b0eb5" category="inline-link-macro">了解如何配置專案儀表板</block>
   <block id="7313277f6c1d299dab9d7a1fbeaa1986" category="paragraph"><block ref="08702ddc4fe94c202550bb766938b242" category="inline-link-macro-rx"></block>。</block>
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
-  <block id="22323438d1bdd2e3d1e9f7aa97e6fcac" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 與其他服務集成</block>
   <block id="816e9ad4acc00dc8e266d7bd5cec516b" category="paragraph">使用工作負載工廠 REST API 將 EDA 與其他服務（例如服務入口網站或 Perforce Helix Core）整合。</block>
   <block id="dce6d9a52d216801c96ea309acf6ac73" category="inline-link-macro">了解如何將 EDA 與 Perforce 集成</block>
   <block id="79d86c078f10e35b854431eab12b31a6" category="paragraph"><block ref="46b2e9ce515b7538a0db67e1aa1bc892" category="inline-link-macro-rx"></block>。</block>
@@ -351,7 +347,6 @@
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">請務必複製上面用於序號欄位的帳戶序號（960xxxx）。這將加快帳戶處理速度。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp應該在過程中與您聯繫。這是針對新用戶的一次性入職培訓。</block>
   <block id="f335678326583cea28377216c5515221" category="paragraph">取得NetApp支援網站帳號後，請依照下列步驟將帳號與您的NetApp Console登入資訊關聯。 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
-  <block id="b5ca39077f3b34df657d01b0e4e66348" category="doc">使用儀表板</block>
   <block id="00909736de459ef354dd54f7a12c7137" category="paragraph">收集的 CloudWatch 指標包括：</block>
   <block id="83ec7827b9a51abd480f21f9797d1c3b" category="list-text">已配置容量：表示已配置儲存容量的磁碟區級指標。</block>
   <block id="99051abc318cae9824d95692d1c95b25" category="list-text">已使用容量：表示已使用儲存空間的磁碟區級指標。</block>
@@ -360,7 +355,6 @@
   <block id="c4d073c70378b04dc94a31c6e002190c" category="section-title">設定儀表板</block>
   <block id="4c6f0009ac1f9c550c3c27ca47734a94" category="inline-link">什麼是標籤？</block>
   <block id="6ec564eeb8bbd7d65ea723d7377e4535" category="inline-link">AWS 資源組標記 API 參考</block>
-  <block id="3c533aef31dd27afb54ebf253685f3c2" category="paragraph">AWS 標籤是 AWS 資源的元資料。它們可以幫助您以不同的方式對 AWS 資源進行分類，例如按專案、應用程式或業務部門。有關標籤的更多詳細信息，請參閱<block ref="3a728828042c1a731e3aa740ed780475" category="inline-link-rx"></block> 和 <block ref="53b3c63786d21199a28ae32477919693" category="inline-link-rx"></block>。</block>
   <block id="12b1905f436fbb7db0d6037ed14f827e" category="paragraph">配置完成後，在「標籤配置」頁面中提供 AWS 標籤金鑰名稱和要在控制台中顯示的相應標籤。</block>
   <block id="b7292e9663476d06f727bb41cc243d7b" category="paragraph">套用這些標籤後，Workload Factory 開始收集和顯示相關的 CloudWatch 指標。</block>
   <block id="40dded464250d8f5174e221d1ee142f9" category="paragraph">您的儀錶板將成為一個動態工具，可以根據您的組織需求來組織、追蹤成本和篩選資源。</block>
@@ -440,12 +434,8 @@
   <block id="40599551b14b033049a0306f8d7e0da2" category="paragraph">此功能需要 AWS 憑證，可透過 EDA 控制面板中的延遲功能表存取。</block>
   <block id="195b656b2b34184ab7cb51ea0158eba0" category="inline-link">深入瞭解延遲分析</block>
   <block id="3589dd4e8f5f2cbdba29810271d0f1d9" category="paragraph"><block ref="6f22f53277ef02f84f5ed64bde49085d" category="inline-link-rx"></block>。</block>
-  <block id="6b1bfc4b2985b92dcf5662055b7cd336" category="inline-link-macro">延遲監控</block>
-  <block id="6932162a874668e2d1dc901452dbb1b8" category="list-text"><block ref="fecda44c58c462f47e8a148f1d0d4382" category="inline-link-macro-rx"></block>：主動監控磁碟區讀取和寫入延遲效能，並可設定警告和嚴重事件臨界值，以識別潛在的效能瓶頸。</block>
   <block id="7e565772caac09d981d6b3641bb20148" category="inline-link-macro">了解延遲監控</block>
   <block id="d3e9e776c97e0f2d8388d6d741dd47a8" category="admonition">使用延遲監控功能時也需要 AWS 憑證，該功能會收集 CloudWatch 指標以進行磁碟區效能分析。<block ref="123cec35459a259baaf9454185c7e6c4" category="inline-link-macro-rx"></block>。</block>
-  <block id="2106cf3366c1f8905dc8d0decf2ac6cc" category="summary">透過新增標籤來配置您的 EDA 儀表板，以便收集指標。自訂單選或多選篩選器，以滿足您的業務需求。</block>
-  <block id="f085cface8e84ac185b38370c5a4aead" category="paragraph">首次登入 EDA 時，您可以使用儀表板查看 FSx for ONTAP 檔案系統和磁碟區中的專案使用情況。儀表板包含多個預設篩選器，可用於自訂顯示的資訊。此外，您還可以基於 AWS 標籤建立最多五個自訂篩選器，並可選擇單選或多選，以便根據您的特定業務需求組織和篩選資料。</block>
   <block id="9918911ccf4f48662bd23b3fa6ea97a8" category="inline-link-macro">監控磁碟區延遲</block>
   <block id="c09e7b1ab90792168923158989ca6297" category="paragraph">此儀表板可協助您監控儲存使用情況，包括已分配容量、已使用容量、吞吐量和 IOPS。有關主動延遲效能監控，請參閱 <block ref="4d71518cae1e26b3714fb432b3fb2249" category="inline-link-macro-rx"></block>。</block>
   <block id="3eeb776c775a0a186eaac0ae86ca4408" category="paragraph">為了有效使用控制台，請根據業務需求，在 FSx for ONTAP 磁碟區上配置最多五個 AWS 標籤，例如代表專案或業務部門的標籤。有關詳細信息，請參閱<block ref="56431a7f0461e9258a1144a0e01a6b8d" category="inline-xref-macro-rx"></block>。</block>
@@ -465,9 +455,7 @@
   <block id="ec4fc4cb1b37373b785aaee6062cfec7" category="section-title">檢視磁碟區詳細資料</block>
   <block id="c42e01801b1f2ef2fbdf3f8841353b73" category="paragraph">控制面板提供兩種檢視模式，協助您分析儲存指標：總計檢視和磁碟區檢視。您可以使用控制面板上的標籤在這些模式之間切換。</block>
   <block id="ee855ba807a55874eb4b38814389078f" category="section-title">總檢視</block>
-  <block id="e7dd4c9a6d36b6512dda7f2c3e278b77" category="paragraph">「總計」檢視（預設）顯示符合您所選篩選條件的所有磁碟區的彙總指標。此檢視提供整體儲存效能的高階概覽，顯示合併的容量、IOPS 和處理量指標。</block>
   <block id="515b555dcf569c4cc1d2a938ae9822d3" category="section-title">磁碟區檢視</block>
-  <block id="e3f5fd2f57f7a82a665af7de374483ac" category="paragraph">「卷」視圖顯示各個卷隨時間推移的效能，並顯示每個指標排名前 10 的卷。此視圖可協助您識別導致資源使用量激增的特定卷，並觀察它們在所選時間段內的行為。</block>
   <block id="5753fce8315ebaa06a713e75985750bf" category="paragraph">若要切換到 Volume 視圖，請在儀表板上選擇 *Volume* 標籤。</block>
   <block id="f768a8e9133dfc338015fd0d83ec2cf0" category="section-title">顯示的磁碟區指標</block>
   <block id="2347e9819148413af6cc4e5827b02d4e" category="paragraph">當您選擇 Volume 視圖時，儀表板會顯示卷總數中排名前 10 的卷。* *Volume used capacity*：顯示目前已使用容量最高的卷。* *IOPS*：顯示在所選時間段內平均 IOPS 最高的卷。* *Throughput*：顯示在所選時間段內平均吞吐量最高的卷。</block>
@@ -480,15 +468,11 @@
   <block id="748334bb99d46cf2ef3aa45e610baf24" category="paragraph">*IOPS*：顯示磁碟區名稱、時間範圍內的平均 IOPS 和時間範圍內的最大 IOPS。</block>
   <block id="04eeb8d03cf6b4755481c052a6e535e6" category="paragraph">*吞吐量*：顯示磁碟區名稱、時間範圍的平均吞吐量，以及時間範圍的最大吞吐量。</block>
   <block id="f2c7e3d31586c840e7c17c779b7d70dd" category="paragraph">此互動式資料可協助您分析磁碟區效能模式，並識別潛在的瓶頸或最佳化機會。</block>
-  <block id="300ec882ed0bc603a8bc31f188dc28e5" category="summary">透過可設定的警告和嚴重事件臨界值來監控和分析磁碟區延遲效能，以主動識別效能瓶頸。</block>
-  <block id="90d997e137ee990e196229395af6d6a7" category="paragraph">利用延遲分析，您可以追蹤 FSx for ONTAP 檔案系統的讀寫延遲指標，從而主動監控磁碟區效能。配置可自訂的警告和嚴重事件閾值，以便在潛在的效能瓶頸影響 EDA 工作負載之前識別它們。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">概況</block>
-  <block id="1c42660fdf55fec5341f109b1c18ae8c" category="paragraph">延遲分析會收集並監控磁碟區讀取和寫入作業的 CloudWatch 指標。當指定時間範圍內所有資料點的延遲和 IOPS 閾值均被突破時，系統會產生警示，這些警示會顯示在延遲事件表中。這使您可以：</block>
   <block id="52840e6ea19e30e010425ac96fc1fd74" category="list-text">找出效能降低的磁碟區。</block>
   <block id="8111593c4b9e675b40060181e91582b7" category="list-text">區分警告等級和嚴重等級的效能問題。</block>
   <block id="029070dac474b47b91825e694dd48f7e" category="list-text">追蹤一段時間內的延遲趨勢，以優化儲存配置。</block>
   <block id="82bfba3efae839fe6bbe2de97d83c475" category="list-text">在延遲影響工作負載效能之前採取主動措施。</block>
-  <block id="b18d695fc7384219d11ff79654f49701" category="paragraph">若要使用延遲分析功能，您必須在 Workload Factory 中設定 AWS 憑證。此功能需要存取與您的 AWS 憑證關聯的所有 FSx for ONTAP 磁碟區的 CloudWatch 指標。</block>
   <block id="196a1b1d4d7eff75b0b7bc0f6fa282e7" category="inline-link-macro">新增 AWS 憑證</block>
   <block id="70317e3abbdadfb99e6ea364d432bd9b" category="paragraph">如果您尚未配置 AWS 憑證，請參閱 <block ref="53eda59ec5ff13cb6e6660c47027e8c7" category="inline-link-macro-rx"></block>。</block>
   <block id="b7a6e29a17f641a5bd663b0c27c433ed" category="section-title">設定延遲臨界值</block>
@@ -527,8 +511,6 @@
   <block id="c5dada127d514b30222d50c180808dff" category="list-text">*警告事件*：表示延遲升高，可能需要注意。</block>
   <block id="3b1132558500e795d2918a031b3533ea" category="list-text">*關鍵事件*：表示有嚴重的延遲，需要立即進行調查。</block>
   <block id="a0136d636bd452e02818b34b1fb9eb98" category="section-title">檢視延遲事件</block>
-  <block id="7965c28e3a946fcfe26f8d31449a72e3" category="paragraph">延遲事件表顯示過去 72 小時內偵測到的所有警告和嚴重事件。使用此表可以監控磁碟區效能並識別需要最佳化的磁碟區。</block>
-  <block id="0f68b904e33d9ac04605aecc958bcf52" category="list-title">其他資訊</block>
   <block id="0fd27ce965f59d9ce188afda7be707f7" category="list-text">表格中僅顯示每個磁碟區的最新一次違規事件。如果一個磁碟區發生多次違規，則僅顯示最近一次事件。</block>
   <block id="7776f517a75d578f349901d6f0886405" category="list-text">事件會在 72 小時後自動刪除。</block>
   <block id="99789473cc53d4c5f2666a4ab79ebb39" category="list-text">表格最多顯示 200 個事件。隨著新事件的添加，較早的事件將被刪除。</block>
@@ -559,4 +541,192 @@
   <block id="829d4cdd3177ddf6591982d99aa444ab" category="list-text">*審查被駁回的事件*：定期審查事件被駁回的原因，以發現調整門檻或改進基礎設施的機會。</block>
   <block id="8d2488f820b40da5c2d7dfd912588e9a" category="section-title">2026 年 2 月 1 日</block>
   <block id="2c421bc29b0b255dff7d2788d0d1a127" category="section-title">2026 年 1 月 4 日</block>
+  <block id="d2afe782a3799f9f13f95374a1156d01" category="doc">EDA 儲存管理概覽儀表板</block>
+  <block id="4954af78de30fa7a68e150cce01a1ef1" category="paragraph">身為管理數十個 FSx for ONTAP 檔案系統的 IT 管理員，您可以使用概覽儀表板來回答有關叢集健全狀況、使用率和磁碟區放置的常見操作問題。</block>
+  <block id="c9b7c8834662d595e73e6ec795a1438e" category="paragraph">概覽儀表板包括：</block>
+  <block id="6295e7aeea412421b1717d5ccabe235b" category="list-text">*叢集健全狀況狀態*：儀表板頂端摘要的資訊，重點說明叢集的效能、容量、可用度與保護及安全性事件。</block>
+  <block id="5ea38aab7fec2dffdc805f386d0132ab" category="list-text">*叢集表*：一個可搜尋、可篩選、可分頁的表格，顯示每個叢集的 SSD 容量、容量集區和處理量指標，支援欄自訂和 CSV 匯出。</block>
+  <block id="b3e3b4895cbd35f5a2365afa09005d4f" category="paragraph">之前的主儀表板現在可以在 *Project* 標籤中存取。EDA 標籤現在的順序為：Overview、Latency、Project、CI/CD。</block>
+  <block id="ad69b5e513be7d3ed6dfa533b8fa5d7b" category="inline-link">深入瞭解總覽儀表板</block>
+  <block id="a9268f7b1948a5e9223d90e6f5ee62ec" category="paragraph"><block ref="ed263773f1ab4c65130c8c21ca91276d" category="inline-link-rx"></block>.</block>
+  <block id="ceadd545963dc65de11a451079ea494e" category="section-title">自動延遲分析</block>
+  <block id="bb185e5021bfe9db8739ffc98c9e991d" category="paragraph">延遲分析現已包含自動化基礎分析功能。當偵測到延遲事件時，系統會自動分析 ONTAP QoS 延遲中心指標，以識別延遲問題的來源。</block>
+  <block id="97d9985b0c67c7f1f1fab2857c6777c3" category="paragraph">基本分析評估 QoS 策略、磁碟效能、網路問題和叢集組態，以便在延遲事件表的「詳細資料」欄中提供即時深入分析。</block>
+  <block id="213d18bdbc3550e144008c033bcbdd2c" category="inline-link">深入瞭解基本延遲分析</block>
+  <block id="6469eb7981e75ae8c79c94f4a0fb1f29" category="paragraph"><block ref="ea3e0953bbba2ace45ca5d689b29167b" category="inline-link-rx"></block>.</block>
+  <block id="129560e32411be4dc94c9cfeada8ea67" category="section-title">Workload Factory 中新增了「問我」書籤</block>
+  <block id="4ea89e975474ebd5bba8d32ced2e95cc" category="paragraph">我們在 Workload Factory 控制台的每個畫面上都新增了 Ask Me 書籤。這項改進讓您在需要協助時更輕鬆快速地存取 Ask Me。Ask Me 是我們的 AI 助手，您可以詢問有關自身工作負載環境的問題，直接從您的環境中獲取個人化見解，並查看先前的對話記錄。</block>
+  <block id="b365ed726bb3010ba5b4a6a1479128f9" category="paragraph">您可以點擊新增的書籤，從任何頁面開啟 Ask Me。它會在側邊面板中啟動 Ask Me，不會中斷您目前的工作，並提供與您目前操作相關的快速說明和建議。</block>
+  <block id="80dcbdee31e7f18a301f863f8b73dc64" category="inline-link-macro">深入瞭解 Ask Me</block>
+  <block id="df84e5c661ad9c55d4921f236021aac2" category="paragraph"><block ref="df84e5c661ad9c55d4921f236021aac2" category="inline-link-macro-rx"></block></block>
+  <block id="d4a0e4418e48187c39fc79bce6f0a3fe" category="inline-link-macro">概覽儀表板</block>
+  <block id="64f4dc7150a69dc0fba26cc15d5ceb72" category="list-text"><block ref="0b176b20e3b719a217d795ff99c05e17" category="inline-link-macro-rx"></block>：提供集中式叢集檢視，協助您監控 FSx for ONTAP 叢集的運作狀況、容量和處理量，確定新磁碟區的放置位置，並就擴充容量和處理量做出明智的決策。</block>
+  <block id="af1eef28f8038566e17f51ba82615700" category="inline-link-macro">FSx 延遲分析</block>
+  <block id="0d573ff6e46393e683134e95615decb1" category="list-text"><block ref="2a69c5ddcbc71f72803fea54e985fdc0" category="inline-link-macro-rx"></block>：主動監控磁碟區讀取和寫入延遲效能，並可設定警告和嚴重事件臨界值。包括使用 ONTAP QoS 延遲中心指標進行自動化基本分析。</block>
+  <block id="9f8fc4b6d5129d1b72493ddaf0f177cd" category="inline-link-macro">專案儀表板</block>
+  <block id="2621556594828dd93047cabafe8b26f2" category="list-text"><block ref="bac4b9b5c5366540fe87e1b00f6342f2" category="inline-link-macro-rx"></block>：提供 FSx for ONTAP 檔案系統儲存消耗的集中檢視，以協助您規劃、評估成本並收集有關專案儲存使用情況的資訊。</block>
+  <block id="d7c847dd4ddfac16cf9160d9baee6324" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 啟用概覽儀表板</block>
+  <block id="cb8dafee031dacb383e74f22a9b10b82" category="paragraph">啟用概覽儀表板，以監控 FSx for ONTAP 叢集的運作狀況、容量和吞吐量。接受同意提示，允許 Workload Factory 開始收集 CloudWatch 指標。</block>
+  <block id="f6b68f0f1de9f70ab828af745c0179b2" category="inline-link-macro">了解如何啟用概覽儀表板</block>
+  <block id="ffe2e9176f65c4038a9b9d3a3cd1af11" category="paragraph"><block ref="1126147a2183189821adb7eef47d66ed" category="inline-link-macro-rx"></block>.</block>
+  <block id="da4a14d63072b453ae5aad5d11d2be2b" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 配置專案儀表板</block>
+  <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六</block>
+  <block id="036ef06a76b0cf0f6ab9f48a023460ac" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 配置 FSx 延遲分析</block>
+  <block id="461d3eaddb4bf31101a414036e9e1bf8" category="paragraph">設定延遲閾值，以便在效能問題影響模擬執行時間之前主動識別並解決這些問題。配置警告和嚴重警報，並利用自動化基本分析。</block>
+  <block id="7a13522750dff612c4af95a525a5075b" category="inline-link-macro">了解如何設定延遲監控</block>
+  <block id="3bc5828357e9bc5a0fa43a8464306aef" category="paragraph"><block ref="6c39ec3dea19789c91686480a2e1a7b5" category="inline-link-macro-rx"></block>.</block>
+  <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">七</block>
+  <block id="28d16b2155b937481f163959c1136c11" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> 與其他服務整合</block>
+  <block id="949795020369dbdb54db20a16e80f406" category="summary">透過新增標籤來配置 EDA 專案儀表板，以便收集指標。自訂單選或多選篩選器，以滿足您的業務需求。</block>
+  <block id="0069d41df3c7692bcf3427c1413ed191" category="paragraph">身為負責 EDA 工作負載的 IT 管理員或專案經理，您可以使用「專案」標籤來觀察和分析 FSx for ONTAP 檔案系統和磁碟區中的專案使用情況。此儀表板可協助您規劃容量、評估成本並根據數據做出資源分配決策。您可以基於 AWS 標籤建立最多五個自訂篩選器，並可選擇單選或多選，以便根據專案、團隊或應用程式等特定業務需求組織和篩選資料。</block>
+  <block id="93dd1acc9636871cfa2441fefe5fb419" category="paragraph">此儀表板可顯示儲存使用模式，協助您識別資源密集型專案、追蹤成本，並在容量或效能問題影響 EDA 模擬之前優化儲存分配。</block>
+  <block id="1f50074b022d705f9703972869c8b8c2" category="paragraph">設定自訂篩選器後，您可以按業務結構（例如專案、團隊或應用程式）查看指標。這種組織方式有助於您準確追蹤成本、識別哪些專案消耗的資源最多，並就資源分配和預算規劃做出明智的決策。</block>
+  <block id="1df61e5b936693f0edc17d20c2d57f5e" category="paragraph">AWS 標籤是 AWS 資源的元資料。它們可以幫助您以不同的方式對 AWS 資源進行分類，例如按專案、應用程式或業務部門。有關標籤的更多詳細信息，請參閱<block ref="3a728828042c1a731e3aa740ed780475" category="inline-link-rx"></block>和<block ref="53b3c63786d21199a28ae32477919693" category="inline-link-rx"></block>。</block>
+  <block id="dda7026e6852b88f166851023fbe8d16" category="admonition">只有第一個存取專案儀表板的管理員使用者才能設定、新增或刪除自訂篩選器。所有其他使用者（包括後續管理員）都只有篩選器的唯讀存取權限。</block>
+  <block id="70a93a55e7195aacefbcc36526b9120a" category="paragraph">自訂篩選器可讓您根據組織的運作方式整理儀表板資料。透過將篩選器與專案結構、團隊或成本中心相匹配，您可以快速存取所需的特定資料，而無需瀏覽無關資訊。這使得容量規劃、成本追蹤和效能監控更有效率。</block>
+  <block id="ebc79d489165a581dfeb4961b6f2036f" category="list-text">選擇 *Project* 。</block>
+  <block id="e1d216bb41cdf9c41639ce06fa5f7892" category="paragraph">篩選功能可協助您專注於儲存資源的特定子集，從而更輕鬆地分析趨勢、識別問題並為利害關係人產生報告。透過組合多個篩選條件，您可以回答特定的業務問題，例如「我的 ASIC 專案團隊使用了多少儲存空間？」或「美國西部地區哪些 Volume 的 IOPS 最高？」</block>
+  <block id="618bee4f32c762781e00f2ae36db9103" category="paragraph">了解整體和個別 Volume 效能有助於您做出明智的容量規劃和效能最佳化決策。Total 檢視顯示整體趨勢，而 Volume 檢視則可協助您識別可能需要關注、最佳化或額外資源的特定 Volume。</block>
+  <block id="3b2e82a7db8895e573b7793ae75197df" category="paragraph">「總計」檢視（預設）顯示符合您所選篩選條件的所有磁碟區的彙總指標。此檢視提供整體儲存效能的高階概覽，顯示合併的容量、IOPS 和處理量指標。使用此檢視可以了解整體趨勢、規劃未來的容量需求，並報告專案或團隊的總資源使用量。</block>
+  <block id="50bd9972092e5f07d70cda13706daa20" category="paragraph">Volume 視圖顯示各個 Volume 的效能隨時間的變化情況，並顯示每個指標排名前 10 的 Volume。此視圖可協助您識別導致資源使用量激增的特定 Volume，並觀察它們在所選時間段內的行為。使用此視圖可以尋找效能瓶頸、識別可能需要調整大小的 Volume，或精確定位哪些特定專案或工作負載消耗的資源最多。</block>
+  <block id="d9bc5fa39156750788e0c19b51ff9b90" category="paragraph">互動式懸停資料可在特定時間點提供精確的指標，幫助您將效能變化與特定事件或時間段關聯起來。這些詳細資訊對於排查效能問題、驗證最佳化效果或向利害關係人解釋資源使用模式都至關重要。</block>
+  <block id="c71b8351410f1c02368d50df93b2ea3f" category="summary">透過可配置的警告和嚴重事件閾值，監控和分析磁碟區延遲效能。利用自動化基本分析功能，主動辨識並解決效能瓶頸。</block>
+  <block id="d96fe1e44083a9dcf823433db5fb7b02" category="doc">監控 EDA 工作負載中的磁碟區延遲</block>
+  <block id="5b2baf3d9307e0f09138ad964dabb542" category="paragraph">身為管理 EDA 工作負載的 IT 管理員或 DevOps 工程師，您可以使用延遲分析主動監控磁碟區效能，方法是追蹤 FSx for ONTAP 檔案系統的讀寫延遲指標。您可以配置可自訂的警告和嚴重事件閾值，以便在潛在的效能瓶頸影響模擬運行時間和產品上市時間之前識別它們。偵測到延遲事件時，自動化的基本分析功能可協助您確定根本原因。</block>
+  <block id="1629223dec1f21ab3067ea4e4397e608" category="paragraph">高延遲會直接影響 EDA 專案的模擬運作時間和產品上市時間。不健康的儲存卷會導致效能顯著下降，進而造成代價高昂的生產延誤。延遲分析可協助您主動識別、排查和修復整個儲存環境中的執行問題，避免其影響您的工作負載。</block>
+  <block id="10c15a7c1f59f78327e04af5159c4037" category="paragraph">延遲分析會收集並監控磁碟區讀取和寫入作業的 CloudWatch 指標。當指定時間範圍內所有資料點的延遲和 IOPS 閾值均被突破時，系統會產生警示，這些警示會顯示在延遲事件表中。</block>
+  <block id="6c5c508e2908415ebeec282a8a226986" category="paragraph">當偵測到延遲事件時，系統會自動使用 ONTAP QoS 延遲中心度量進行基本分析，以識別延遲來源。</block>
+  <block id="b6ab8f412eb3a8556d4a154628c26666" category="paragraph">這使您可以：</block>
+  <block id="14f0987b0da315c24979e928fa0662b1" category="list-text">自動分析延遲問題的根本原因。</block>
+  <block id="bb3f1fee880e4d3b2d95074d40c5f096" category="paragraph">若要使用延遲監控和分析功能，請確保滿足以下要求：</block>
+  <block id="c4909262f33027f9d6430abfd14a7941" category="list-text">您必須將具有讀取 / 寫入權限的 AWS 憑證新增至 Workload Factory 。延遲監控功能需要存取與您的 AWS 憑證關聯的所有 FSx for ONTAP 磁碟區的 CloudWatch 指標。</block>
+  <block id="cc46412c62594c5fa67c315fa41ae6fd" category="paragraph">延遲監控不支援 _Basic_ 模式和 _read-only_ 模式權限。</block>
+  <block id="c2ef204dc55e5ae693bd27e7c1a816a4" category="list-text">您的 AWS 環境中至少需要一個 FSx for ONTAP 檔案系統及其磁碟區。延遲監控功能會自動收集與您設定的 AWS 憑證關聯的所有磁碟區的指標。</block>
+  <block id="d65de0ffa05b31f0beebf22d3e28dbde" category="list-text">連結至 FSx for ONTAP</block>
+  <block id="67a1cb37acbd248af46ccc03d329ba82" category="list-text">要從基本分析中獲得洞察，您必須將連結與 FSx for ONTAP 檔案系統建立關聯。如果尚未建立關聯任何連結，請在 EDA 中選擇 *Associate link*，選擇是要建立新連結還是建立關聯現有連結，然後選擇 *Continue* 以自動前往 Storage workloads 中的連結建立頁面。</block>
+  <block id="8997880c88dd70fe80799ee97bb7ac0c" category="inline-link-macro">建立連結</block>
+  <block id="e631d9996b49ecdb5d4d4146db562c6d" category="paragraph">有關建立和關聯連結的說明，請參閱 <block ref="27f80dd01569e18971f783f257cc7294" category="inline-link-macro-rx"></block>。</block>
+  <block id="8f4794762d4bfeb8e6e893c31adcd1c5" category="paragraph">設定適當的延遲臨界值可讓您在磁碟區發生效能問題時及時收到通知。透過設定警告和嚴重臨界值，您可以區分需要關注的問題和需要立即採取行動的問題，讓您更有效地管理儲存資產，並防止效能問題影響正式作業工作負載。</block>
+  <block id="1e1f310f8c718aa0114b37a3aa3a7d5c" category="paragraph">作為管理多個檔案系統和磁碟區的管理員，延遲事件表提供了一個集中視圖，方便您查看所有需要關注的效能問題。表格顯示過去 72 小時內偵測到的所有警告和嚴重事件。每個事件的「詳細資料」欄位都包含自動產生的基本分析結果，可幫助您快速識別延遲問題的根本原因，並確定整個環境中修復工作的優先順序。</block>
+  <block id="e0a95eb691b605fd5121f687560ae836" category="list-text">*詳情*：自動基本分析結果，識別延遲來源並提出建議措施。</block>
+  <block id="54d8e530acdf0c4b7b3dc9aacdf0cb74" category="section-title">瞭解基本分析</block>
+  <block id="583d2f2572ed354170efec6fb7fcc96a" category="paragraph">基本分析功能可協助您快速識別延遲問題的根本原因，無需手動調查。偵測到延遲事件時，Workload Factory 會自動使用 ONTAP QoS 延遲中心指標執行基本分析。此分析會識別導致延遲的元件，並在延遲事件表的 Details 欄位中提供可操作的指導，幫助您了解根本原因。</block>
+  <block id="1ca1e4067fc4b6f31aac0c6e9c6b5efe" category="admonition">由於資料擷取方法不同，ONTAP QoS 分析所得的延遲值與 CloudWatch 資料之間可能存在細微差異。基礎分析使用 ONTAP 資料進行根本原因識別。</block>
+  <block id="9835fc326dfc498a6f8f2d8ec487878c" category="section-title">分析案例</block>
+  <block id="070b5698a9a73da65900b4100c8eda77" category="paragraph">基本分析會評估多個延遲組成部分，並根據每種場景的結果提供具體指導：</block>
+  <block id="fe34cf17a24155bf86ac1a93a5432ebf" category="list-text">*Flexcache*：每次 I/O 操作 FlexCache 的延遲</block>
+  <block id="9c627b85e70b8f1a8d2d3ccc081c1906" category="list-text">*容量池*：容量池操作的每次 I/O 操作延遲</block>
+  <block id="b76689effba7bb8bc79507d3071fdf3a" category="list-text">*QoS min*：QoS 原則群組下限的每次 I/O 作業延遲</block>
+  <block id="b5db6b8a8f0ce6e13efefed229645d9a" category="list-text">*QoS 最大值*：QoS 原則群組上限的每次 I/O 作業延遲</block>
+  <block id="b8adad2b1be31636c00504d7e989f28e" category="list-text">*磁碟*：儲存子系統中每次 I/O 作業的延遲</block>
+  <block id="5c725a9019c96ee95fa48964d0fb60d4" category="list-text">*資料*： WAFL 子系統檔案系統中每次 I/O 操作的延遲，包括 CPU 處理、元資料更新和快取管理等任務</block>
+  <block id="4e01d73ffb957fd88062823f8f46b8d8" category="list-text">* 叢集 *：叢集中內部連接節點間每次 I/O 操作的延遲</block>
+  <block id="39889af3ecd002c2075c9afedec02408" category="list-text">*其他*：FSx for ONTAP 子系統的每次 I/O 操作延遲</block>
+  <block id="fc2f0c969da0e9681da8ff003b3ff81e" category="summary">使用概覽儀表板監控 FSx for ONTAP 叢集的運作狀況、容量和吞吐量。大規模檢視叢集使用情況，並針對磁碟區放置和容量擴充做出明智決策。</block>
+  <block id="a82c0b89a38f22266d5487b5b51d81a1" category="doc">在 EDA 工作負載中使用概覽儀表板</block>
+  <block id="5c032a8d135856bd029401bf685ccd4b" category="paragraph">身為管理數十個 FSx for ONTAP 檔案系統上的 EDA 工作負載的 IT 管理員，您可以使用概覽儀表板來解答有關叢集狀態的常見日常運維問題。您可以利用它來確定新磁碟區或作業的放置位置，了解叢集的大規模使用情況，並就容量和吞吐量的擴展或縮減做出明智的決策。</block>
+  <block id="5aeb1c3bd79e4d748fc25aabb4c6550b" category="paragraph">概覽儀表板提供集中式叢集檢視，可協助您快速瞭解叢集在容量、處理量和 IOPS 方面的使用情況，並確定新磁碟區的放置位置或現有磁碟區和 SVM 的移動位置。</block>
+  <block id="ce963a448d1278ae4d6db6d01991d19b" category="paragraph">儀錶板包含：</block>
+  <block id="e4e9b4fbbd257803343facec173573c3" category="list-text">*叢集健全狀況狀態*：儀表板頂端摘要的資訊，重點顯示叢集的延遲、可用性和保護、安全性事件和容量建議。</block>
+  <block id="56be3ee01fbe65ddb9092b808e8f3ea8" category="list-text">*叢集表*：一個詳細的、可搜尋的表格，顯示每個 FSx for ONTAP 叢集的使用情況和效能指標，支援篩選、排序、分頁和 CSV 匯出。</block>
+  <block id="d5ccbbd8b885a8c73e1df074586789ee" category="paragraph">使用概覽儀表板之前、請確保您符合下列要求：</block>
+  <block id="bf7cc54e388f0b806386888989c37589" category="list-text">具有檢視權限的 AWS 憑證</block>
+  <block id="9c7ee271220c38d413d55a8fadeccab2" category="list-text">您必須在 Workload Factory 中設定 AWS 認證，且至少擁有對 General Storage 的讀取（檢視）權限。不支援以 _Basic_ 模式設定的認證。</block>
+  <block id="cedd219a79598e1f9fae20182f0c2844" category="paragraph">如果您尚未配置具有檢視權限的憑證，則開啟「概覽」標籤時，您將被重新導向至 AWS 憑證設定頁面。</block>
+  <block id="8bca5ebd093e14482c22b40a5131e0d0" category="list-text">啟動 EDA 儀表板</block>
+  <block id="305ab1864aa221f74c70b959ce68b531" category="list-text">確認具有檢視權限的憑證後，您必須啟動 Workload Factory 的儀表板，才能開始收集 FSx for ONTAP 檔案系統的 CloudWatch 指標。</block>
+  <block id="84655b4612a4abb6eb6d8897db0655a6" category="admonition">您同意後，指標收集可能需要一些時間。控制面板會在初始收集過程中通知您。</block>
+  <block id="2daabc6822724771970f17e8ae6a4cee" category="list-text">選擇 *Overview* 標籤。</block>
+  <block id="a2fbf7fa6f022aa585757c4d6cf5cfbe" category="list-text">如果未偵測到具有檢視權限的憑證，請選擇 *Add credentials*，然後依照提示配置具有檢視權限的 AWS 憑證。之後返回 *Overview* 選項卡。</block>
+  <block id="03cb5cf45e1d3709e52191d359385d38" category="list-text">請查看同意提示，其中描述了將為您的 FSx for ONTAP 檔案系統收集的 CloudWatch 指標。</block>
+  <block id="ee58964f46df645da6108475c6d86f30" category="list-text">選擇 *Activate* 以啟動儀表板並開始收集指標。</block>
+  <block id="6293fe6dfda5f1fd90b96ae3927bfa33" category="paragraph">Workload Factory 開始收集與您設定的 AWS 憑證關聯的所有 FSx for ONTAP 檔案系統的 CloudWatch 指標。概覽儀表板會在指標可用時更新。如果收集仍在進行中，則會顯示通知。</block>
+  <block id="f02a9e30f73aa86da624aae2f35a72b7" category="paragraph">使用概覽儀表板頂部的篩選器，將注意力集中在與目前任務相關的檔案系統上。這些是 Workload Factory 層級的篩選器，適用於延遲和 ONTAP 事件資訊以及叢集表。</block>
+  <block id="076f6cc58ee6a014913d5c5405ce8028" category="paragraph">可用篩選條件：</block>
+  <block id="e1f5223a6a7fff100d8e7f38b7321b39" category="list-text">*Region*：依一個或多個 AWS 區域篩選。</block>
+  <block id="cc88c8520cacdcbd154b678b080f5359" category="list-text">*AWS 帳戶*：依照與您設定的認證相關聯的一或多個 AWS 帳戶進行篩選。</block>
+  <block id="e34fcf7155a1fb78f439cfec93bc6920" category="paragraph">更新篩選條件後，所有資訊都會重新整理，只顯示相符的檔案系統和叢集。</block>
+  <block id="f1dd68ee490b7c8bd34a8f05569cfb01" category="section-title">叢集健全狀況</block>
+  <block id="2ba6f8749278a7d9961d69613aedf674" category="paragraph">在概覽儀表板頂部，會顯示已篩選叢集的事件活動和運作狀況的總計檢視。只有當至少有一個 FSx for ONTAP 連結與您的檔案系統相關聯時，才會顯示此資訊。如果沒有可用的連結，則會隱藏此資訊。</block>
+  <block id="26ae7bdd1d6fb8c4886e6fde8d12601c" category="section-title">延遲</block>
+  <block id="920ea4fd9ec42f7a9441909448cd6fed" category="paragraph">延遲部分顯示在範圍內的檔案系統中偵測到的延遲事件數量。</block>
+  <block id="4cf9780fe36a8f5a9f5a15459f5e80ea" category="list-text">該計數反映了 <block ref="2a69c5ddcbc71f72803fea54e985fdc0" category="inline-link-macro-rx"></block> 功能產生的延遲事件。</block>
+  <block id="f86c274b3ebca8228e9cd61914582ac1" category="list-text">選擇 *Review* 將跳到 *Latency* 標籤。</block>
+  <block id="aa7b6cabe2e36a5e27d3d99844a44339" category="list-text">只有啟用延遲監控後才能查看延遲資訊。如果您尚未設定延遲臨界值，請選取 *Configure*。如需延遲監控的詳細資訊，請參閱 <block ref="bb13c4bd03249e499d4f9abd1d69f517" category="inline-link-macro-rx"></block>。</block>
+  <block id="3b8f7696879f77dfc8c74aa8df8db24b" category="section-title">容量</block>
+  <block id="f02585edde3d0df45e667938c9f9c164" category="paragraph">容量部分顯示與容量問題相關的 EMS 訊息數量，以及受影響的檔案系統數量。</block>
+  <block id="bd1e8c7a27a72f97ddaa92f86aa565e7" category="paragraph">監控的 EMS 事件包括但不限於：</block>
+  <block id="7a355c326f0f143c0dc055414dcf8229" category="list-text">Aggregate 幾乎已滿</block>
+  <block id="f3c860e4ef8400c218a15ed61dd42546" category="list-text">Aggregate 已滿</block>
+  <block id="321bbe542a1089f417518f27c17fe0dc" category="list-text">磁碟區幾乎已滿</block>
+  <block id="1ac9b16670aa5c738e6debd0bf4416e4" category="list-text">Volume 已滿</block>
+  <block id="6ef40cb18ef5154ca8612093cf211fda" category="list-text">Snapshot 保留空間幾乎已滿</block>
+  <block id="877c416737fd6f8db75c4518f15343f9" category="list-text">快照預留已滿</block>
+  <block id="596b10dc3c83c43203ecb5e35057ea82" category="list-text">目錄大小已滿</block>
+  <block id="e24220c51997ac513c075fb8f291d4be" category="list-text">Flex 群組已滿</block>
+  <block id="8e556aa1506dff11340a95a83ac47877" category="list-text">Inode 已滿</block>
+  <block id="319a7785bfcc6f7c0a470154dca5433d" category="inline-link-macro">容量事件</block>
+  <block id="00607b7ab91b89088225f156c398c6d2" category="paragraph">如需受監控 EMS 事件的完整清單，請參閱 <block ref="a40747a48e3f0f6173aa7b11e42e30dd" category="inline-link-macro-rx"></block>。</block>
+  <block id="6084cc2ec06c72c60a2d7fceeec8943b" category="paragraph">選擇 *Capacity* 將導覽至 Storage workloads 中的容量分析畫面。</block>
+  <block id="812b62dbc874f456acb070f5f8ecf49c" category="section-title">可用性與保護</block>
+  <block id="7178ded9998809a39281562e8b34dc30" category="paragraph">「可用性和保護」部分顯示與可用性和資料保護相關的 EMS 訊息數量，以及受影響的檔案系統數量。</block>
+  <block id="d03926204e5f51c77414928489a670fa" category="paragraph">監控的事件包括 FlexCache 及 SnapMirror 相關的 EMS 事件。</block>
+  <block id="d2029ab099c48ad138099bf1b3364b44" category="paragraph">選擇 *Availability &amp; protection* 將導航至 Storage workloads 中的可用性和保護分析畫面。</block>
+  <block id="b7185c6b9e81995f26cf9003aba3cfc2" category="section-title">安全性與其他</block>
+  <block id="5a1234bb8ed500ed554fddec1650cc0a" category="paragraph">「安全及其他」部分顯示未歸類於「容量」或「可用性與保護」下的事件的 EMS 訊息數量，以及受影響的檔案系統數量。監控的事件包括反勒索軟體保護、NFS 身份驗證失敗等。</block>
+  <block id="6b76ab95e7f59cec483e612f646cb2e5" category="paragraph">選擇 *Security &amp; other* 將導覽至 Storage workloads 中的事件分析畫面。</block>
+  <block id="92343cbd448d1ecb633a73e2ddb96510" category="section-title">叢集表</block>
+  <block id="68ab62af5b7913c16c481130c3a8e2dd" category="paragraph">叢集表格提供與您設定的 AWS 認證相關聯的每個 FSx for ONTAP 叢集的詳細檢視，並依作用中區域和 AWS 帳戶選擇進行篩選。資料是從 CloudWatch 指標收集而來。此表格支援搜尋、欄篩選、分頁、欄自訂和 CSV 匯出。</block>
+  <block id="4755ce9c858d32c6af3b801fa19a40b4" category="section-title">搜尋和篩選</block>
+  <block id="4bcd1d96fe911e1ac9b37e82f78cc769" category="list-text">使用搜尋功能，依名稱、檔案系統 ID、區域或其他屬性尋找特定叢集。</block>
+  <block id="e5e3ff7f849d4d03e6ff43e57a789165" category="list-text">選擇任何欄標題，即可依該欄排序表格。</block>
+  <block id="352e4bc46981c9686b3bd1568c7d705f" category="list-text">使用每欄篩選控制項來縮小表格中的結果範圍。</block>
+  <block id="217e5e8d4058183335421ccd86655c77" category="list-text">表格已分頁。使用表格底部的分頁控制項可在頁面之間導覽。</block>
+  <block id="18b0abd492ab2ed8ac9078da6578f402" category="paragraph">表格包含以下欄位。表格中已標示預設顯示的欄位。您可以使用欄位選擇器新增或刪除非預設欄位。對於吞吐量欄位，將滑鼠停留在欄位標題上可查看有關 30 天計算週期和使用量公式的詳細資訊。</block>
+  <block id="1976d7f704de389d9fe064e08ea35b2d" category="cell">欄</block>
+  <block id="7a1920d61156abc05a60135aefe8bc67" category="cell">預設</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">說明</block>
+  <block id="0dbae4d42c7a0db53e2eb32adee12892" category="cell">叢集名稱</block>
+  <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">是的</block>
+  <block id="27a2da03c785e4ae8de44005556848e8" category="cell">FSx for ONTAP 叢集的名稱。</block>
+  <block id="2f5c46598c117915ff6665e837053c48" category="cell">叢集部署所在的 AWS 區域。</block>
+  <block id="c6368ae044df0f7bb26ed60afda5c591" category="cell">AWS 帳戶</block>
+  <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="cell">否</block>
+  <block id="4d9a5388cbff5333a2968c5fa1c2707a" category="cell">與叢集相關聯的 AWS 帳戶。</block>
+  <block id="095d10b9f6777785797802c8ca746ee0" category="cell">SSD 已使用容量</block>
+  <block id="eead3feff7b1213a1888713b3d2b3976" category="cell">目前正在使用的 SSD 儲存空間。</block>
+  <block id="6b0648176af2efb95d7effcd7ebb5a66" category="cell">SSD 總容量</block>
+  <block id="afa89a00c2dc24c931105181dc7ba06b" category="cell">已配置的 SSD 儲存總容量。</block>
+  <block id="88fac2bb2501da2b0d944bf3a7ed20f0" category="cell">SSD 使用情況</block>
+  <block id="fc3c4977fba2be9fc69caea3645262b7" category="cell">使用中的 SSD 容量百分比。使用此指標可在叢集接近容量限制之前識別叢集，避免影響工作負載效能。</block>
+  <block id="9eea1c08013c37f1499f428378764a08" category="cell">容量池</block>
+  <block id="dc093374b3f668a88f8fe8d522c6f16b" category="cell">容量池中的儲存量。</block>
+  <block id="3d4994519cf6e2970803e591a2eaaf72" category="cell">平均吞吐量</block>
+  <block id="a5cf02ab22257df1664afe3dd50c0f18" category="cell">過去 30 天的平均處理量。</block>
+  <block id="359a6d480ec90fbfa3fa104b28e13aea" category="cell">P95 吞吐量</block>
+  <block id="7f7ab55b0c71206c54b4b92761f4d6e2" category="cell">過去 30 天的第 95 個百分位吞吐量。</block>
+  <block id="69ec0d5602f891450043c2ed4181002f" category="cell">P99 吞吐量</block>
+  <block id="d3f9a359872a0093998d5b421bdadea5" category="cell">過去 30 天內吞吐量的第 99 個百分位數。</block>
+  <block id="0951d56354445874ba52c0488c8e5f7f" category="cell">最大吞吐量</block>
+  <block id="6a9ea1ae0d93e0e1c8a36bc13451be84" category="cell">過去 30 天內記錄到的最大處理量。</block>
+  <block id="0f78d65c33992f1a4f8677b5014b0c85" category="cell">吞吐量使用情形 (P99)</block>
+  <block id="77d534a8cb3a891109b9c42a21fc6860" category="cell">P99 吞吐量相對於已佈建吞吐量 SKU 的比值。使用此功能可識別吞吐量持續接近或達到已佈建上限的叢集。</block>
+  <block id="cf054ac2917a36fa09a0dc23d2e7e8b9" category="cell">處理量 SKU</block>
+  <block id="3fd4abe38eb81deff736bf25705a77a9" category="cell">已配置的吞吐量層級。將其與吞吐量使用情況進行比較，以評估目前 SKU 的容量是否合適。</block>
+  <block id="be39bb193d872e11bb21388add6eca23" category="section-title">自訂欄</block>
+  <block id="a8398be8d41d0ae61fe7c99f4c84c715" category="paragraph">若要在叢集表格中新增或移除欄位：</block>
+  <block id="37fea8a26e09123c44b09e72fdfb6658" category="list-text">選擇右側表格上方的欄選擇器圖示。</block>
+  <block id="16e1af4a4ebe89d8625170b9771719fa" category="list-text">選取或取消選取要顯示或隱藏的欄。</block>
+  <block id="e611170230a6e8353ed957ebfb35e9ed" category="section-title">將表格匯出為 CSV</block>
+  <block id="ec23945650f6dd8a065ef9052e1e1fa7" category="paragraph">您可以將目前顯示的表格資料匯出到 CSV 檔案，以便進行進一步分析或報告。</block>
+  <block id="344ccd95594db0b6bfcbc00e804c50d9" category="list-text">套用您希望在匯出中反映的任何篩選條件或欄自訂設定。</block>
+  <block id="801ab24683a4a8c433c6eb40c48bcd9d" category="inline-image-macro">下載</block>
+  <block id="e75fdb0ef1b83c160c1f3ca4bff622c5" category="list-text">選擇叢集表上方的 <block ref="d2e5c9ca6fcd7f605e1d5f7b4f6a6a99" category="inline-image-macro-rx" type="image"></block> 按鈕。</block>
+  <block id="94fddf2754b119bd3ea2e006084f6a2d" category="paragraph">下載的 CSV 檔案包含表格中目前可見的所有列，但僅包含目前顯示的欄。</block>
+  <block id="2c5e7dde0b5d8fe45e7e905c674f4c31" category="section-title">2026 年 3 月 1 日</block>
+  <block id="4fdbac3671b30e3a2d6d3233ee4023d0" category="sidebar">EDA 儲存概述</block>
+  <block id="ea637c5687abbd47d05bd10d63c621ce" category="sidebar">管理 EDA 儲存操作</block>
+  <block id="159811235c973c8931bfb09d9271a253" category="sidebar">監控 FSx 磁碟區延遲</block>
+  <block id="d0efe11222ff735f348a5bd5e26ce56d" category="sidebar">專案使用分析</block>
+  <block id="c5fc13d61eed82ccc80e74a9ac0ecd18" category="sidebar">分析專案儲存使用情況</block>
 </blocks>

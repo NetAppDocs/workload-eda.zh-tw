@@ -11,14 +11,18 @@ indexpage:
       url: "/learn-eda.html"
     - title: 快速啟動
       url: "/quick-start-eda.html"
-  - title: 使用專案儀表板
+  - title: EDA 儲存概述
     links:
-    - title: 使用儀表板
-      url: "/task-configure-dashboard.html"
-  - title: 監控磁碟區延遲
+    - title: 管理 EDA 儲存操作
+      url: "/task-use-overview-dashboard.html"
+  - title: FSx 延遲分析
     links:
-    - title: 監控磁碟區延遲
+    - title: 監控 FSx 磁碟區延遲
       url: "/task-monitor-latency.html"
+  - title: 專案使用分析
+    links:
+    - title: 分析專案儲存使用情況
+      url: "/task-configure-dashboard.html"
   - title: 使用 Perforce 集成
     links:
     - title: 了解 Perforce 集成
