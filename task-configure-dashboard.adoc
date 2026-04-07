@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-configure-dashboard.html 
 keywords: configure, dashboard, AWS tags, CloudWatch, FSx for ONTAP, Workload Factory, EDA, electronic design automation, volume details, top volumes, capacity utilization, throughput utilization, IOPS utilization 
-summary: 透過新增標籤來配置 EDA 專案儀表板，以便收集指標。自訂單選或多選篩選器，以滿足您的業務需求。 
+summary: 透過新增標籤來設定 EDA Project 儀表板，以便收集指標。自訂單選或多選篩選器，以滿足您的業務需求。 
 ---
-= 使用專案儀表板
+= 使用 Project 儀表板
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -46,7 +46,7 @@ AWS 標籤是 AWS 資源的元資料。它們可以幫助您以不同的方式�
 === 配置自訂過濾器
 
 
-NOTE: 只有第一個存取專案儀表板的管理員使用者才能設定、新增或刪除自訂篩選器。所有其他使用者（包括後續管理員）都只有篩選器的唯讀存取權限。
+NOTE: 只有第一個存取 Project 儀表板的管理員使用者才能設定、新增或刪除自訂篩選條件。所有其他使用者（包括後續的管理員）都只能以唯讀方式存取篩選條件。
 
 自訂篩選器可讓您根據組織的運作方式整理儀表板資料。透過將篩選器與專案結構、團隊或成本中心相匹配，您可以快速存取所需的特定資料，而無需瀏覽無關資訊。這使得容量規劃、成本追蹤和效能監控更有效率。
 
