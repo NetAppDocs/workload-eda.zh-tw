@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: quick-start-eda.html 
 keywords: requirements, permissions, eda, builders, quick start, electronic design automation 
-summary: 資料庫有三種不同的模式，每種模式的要求都不同。 
+summary: 透過設定環境、啟用監控儀表板和設定延遲分析，即可開始使用 Workload Factory for EDA。 
 ---
-= EDA 快速入門
+= Workload Factory for EDA 快速入門
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-開始創建EDA專案。管理員和團隊負責人可以使用 EDA 來管理開發團隊的專案和工作區。
+透過設定環境、啟用監控儀表板和設定延遲分析來開始使用 Workload Factory for EDA，從而最佳化 FSx for ONTAP 的效能，以滿足 EDA 工作負載的需求。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 登入 Workload Factory
 [role="quick-margin-para"]
@@ -51,12 +51,12 @@ link:task-use-overview-dashboard.html["了解如何啟用 Overview 儀表板"^]�
 [role="quick-margin-para"]
 link:task-configure-dashboard.html["瞭解如何設定 Project 儀表板"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"] 配置 FSx 延遲分析
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]設定 FSx for ONTAP 延遲分析
 [role="quick-margin-para"]
-設定延遲閾值，以便在效能問題影響模擬執行時間之前主動識別並解決這些問題。設定警告和嚴重警示、運用自動化基本分析，並可選擇透過設定 Amazon Bedrock 模型 ARN 來啟用 AI 代理分析，以處理複雜情境。
+設定延遲臨界值，以便在效能問題影響模擬執行時間之前主動識別並解決這些問題。設定警告和嚴重警示、設定電子郵件或 SNS 通知以接收即時警示、運用自動化基本分析，並可選擇透過設定 Amazon Bedrock 模型 ARN 來啟用 AI 代理分析以處理複雜情境。
 
 [role="quick-margin-para"]
-link:task-monitor-latency.html["了解如何設定延遲監控"^].
+link:task-monitor-latency.html["了解如何設定延遲監控"^]。偵測到事件後，您可以使用互動式圖表link:task-analyze-latency-trends.html["分析延遲趨勢"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["七"] 與其他服務整合
 [role="quick-margin-para"]

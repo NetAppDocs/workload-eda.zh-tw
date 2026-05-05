@@ -15,9 +15,9 @@ indexpage:
     links:
     - title: 管理 EDA 儲存操作
       url: "/task-use-overview-dashboard.html"
-  - title: FSx 延遲分析
+  - title: FSx for ONTAP 延遲分析
     links:
-    - title: 監控 FSx 磁碟區延遲
+    - title: 監控 FSx for ONTAP 磁碟區延遲
       url: "/task-monitor-latency.html"
   - title: 專案使用分析
     links:
