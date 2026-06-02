@@ -1,0 +1,116 @@
+---
+sidebar: sidebar 
+permalink: learn-latency-monitoring.html 
+keywords: latency analysis, CloudWatch alarms, volume latency, read latency, write latency, critical events, warning events, latency thresholds, IOPS thresholds, latency monitoring, FSx for ONTAP, root cause analysis, QoS delay center, automated analysis 
+summary: 了解 Workload Factory for EDA 中的延遲監控如何協助您使用自動化基本分析和可選的 AI 代理分析來偵測和分析 FSx for ONTAP 磁碟區的效能問題。 
+---
+= 了解 Workload Factory for EDA 中的延遲監控
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory for EDA 中的延遲監控功能可協助您主動識別並解決 FSx for ONTAP 磁碟區中的效能瓶頸。該系統使用 CloudWatch 指標監控讀寫延遲，並提供自動分析，幫助您了解效能問題的根本原因。
+
+
+
+== 延遲監控的運作方式
+
+延遲分析會收集與您的 AWS 憑證關聯的所有 FSx for ONTAP 磁碟區的讀寫操作 CloudWatch 指標。系統會持續評估這些指標，並將其與可配置的閾值進行比較，以便及早發現效能問題。
+
+當偵測到延遲事件時，Workload Factory 會自動使用 ONTAP QoS 延遲中心指標執行基本分析，以識別主要的延遲因素。對於涉及資料或叢集元件的更複雜場景，您可以選擇執行 AI 代理程式分析，以取得詳細的根本原因解釋、受影響的用戶端清單以及具體的修復步驟。
+
+
+
+=== 警示產生
+
+當配置時間範圍內所有資料點的延遲閾值和 IOPS 閾值均被突破時，系統會發出警報。這種雙重條件方法可透過確保在實際負載下延遲持續升高，從而減少誤報。
+
+您可以為以下各項設定個別的臨界值：
+
+* 讀取作業
+* 寫入操作
+* 警告嚴重性
+* 嚴重嚴重性
+
+
+所有偵測到的事件都會出現在延遲事件表中，如果您已設定通知，則會收到包含受影響磁碟區詳細資訊的電子郵件或 Amazon SNS 通知。
+
+
+
+== 了解警示
+
+了解警示的觸發方式有助於您設定適當的臨界值並解讀結果。
+
+
+
+=== 收集的指標
+
+系統會針對每個磁碟區收集以下 CloudWatch 指標：
+
+* *讀取延遲閾值*：計算公式為 1000 * m2/(m1+0.000001)，其中 m1 = DataReadOperations 且 m2 = DataReadOperationTime
+* *寫入延遲閾值*：計算公式為 1000 * m2/(m1+0.000001)，其中 m1 = DataWriteOperations 且 m2 = DataWriteOperationTime
+
+
+
+
+=== 警示觸發條件
+
+當滿足以下所有條件時，就會觸發警示：
+
+* 操作類型 (讀取或寫入) 的延遲閾值已超過。
+* 該操作類型的 IOPS 閾值已超過。
+* 在設定的時間範圍內，所有資料點都符合這兩個條件。
+
+
+例如，使用預設警告閾值，只有當 10 分鐘內所有資料點的讀取延遲超過 6 毫秒且讀取 IOPS 超過 100 ops/sec 時，才會觸發讀取警報。
+
+
+
+=== 事件嚴重性
+
+* *警告事件*：表示延遲升高，可能需要注意
+* *關鍵事件*：表示存在嚴重的延遲，需要立即調查
+
+
+
+
+== 延遲分析
+
+Workload Factory 提供兩層分析，協助您疑難排解延遲問題。
+
+
+
+=== 基本分析
+
+當偵測到延遲事件時，Workload Factory 會自動使用 ONTAP QoS 延遲中心指標執行基本分析，以確定導致延遲的元件（例如 FlexCache、容量池、QoS 限制、磁碟、資料、叢集或其他子系統）。此分析無需人工調查即可快速識別延遲來源。
+
+當您已將連結關聯到 FSx for ONTAP 檔案系統時，即可對所有延遲事件進行基本分析。如果沒有連結，仍然可以偵測到事件，但分析提供的資訊有限。
+
+
+NOTE: 由於資料擷取方法不同，ONTAP QoS 分析所得的延遲值與 CloudWatch 資料之間可能存在細微差異。基礎分析使用 ONTAP 資料進行根本原因識別。
+
+
+
+=== AI 代理分析
+
+雖然基礎分析可以識別延遲來源，但涉及資料或叢集組件的複雜場景通常需要更深入的調查。AI 代理分析能夠識別基礎分析無法偵測到的問題，例如資料量過大、配置不佳或橫向擴展需求等，從而提供更深層的故障排除。
+
+執行 AI 代理分析時，系統會提供：
+
+* *潛在根本原因*：詳細說明導致延遲問題的原因
+* *受影響的用戶端*：受延遲影響的 EC2 執行個體名稱清單
+* *潛在的補救步驟*：解決問題的兩個或多個特定動作
+
+
+AI 代理分析需要已在 Workload Factory 設定中配置的 Amazon Bedrock 模型 ARN。如果未設定 Bedrock，您仍然可以使用延遲監控和自動化基本分析。
+
+
+
+== 相關資訊
+
+* link:task-configure-latency-monitoring.html["設定延遲監控"]
+* link:task-analyze-latency-issues.html["分析延遲問題"]
+* link:task-analyze-latency-trends.html["分析延遲趨勢"]
+

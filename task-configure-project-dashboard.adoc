@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: task-configure-project-dashboard.html 
+keywords: configure, dashboard, AWS tags, CloudWatch, FSx for ONTAP, Workload Factory, EDA, custom filters, project tags, team tags 
+summary: 為 Projects 儀表板配置自訂篩選器，以便按業務結構（例如專案、團隊或應用程式）組織指標。 
+---
+= 在 Workload Factory 中設定 EDA 的 Projects 儀表板
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以為「專案」儀表板配置自訂篩選器，以便根據您的業務結構（例如專案、團隊或成本中心）組織指標。這有助於您準確追蹤成本、識別哪些資源消耗最多容量，並就資源分配和預算規劃做出明智的決策。透過讓篩選器與組織的運作方式相匹配，您可以快速存取相關資料，並提高容量規劃、成本追蹤和效能監控的效率。
+
+
+
+== 開始之前
+
+若要有效使用自訂篩選器，請根據您的業務需求，在 FSx for ONTAP 磁碟區上設定 AWS 標籤，例如代表專案、團隊或業務部門的標籤。
+
+
+
+== 配置自訂過濾器
+
+
+NOTE: 只有第一個存取 Projects 儀表板的管理員使用者才能設定、新增或刪除自訂篩選器。所有其他使用者（包括後續管理員）都只有篩選器的唯讀存取權。
+
+.關於此任務
+您可以根據 AWS 標籤配置最多五個自訂篩選器。每個自訂篩選器需要三個元件：篩選器標籤名稱、AWS 標籤鍵名稱和選擇類型（單選或多選）。
+
+如果您未配置任何自訂篩選器，則預設篩選器（檔案系統、磁碟區類型和時間範圍）仍然可用，因此您仍然可以查看儀表板並與之互動。
+
+.步驟
+. 使用以下任一方式登入 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主機體驗"^]。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *EDA*。
+. 選擇 *Projects*。
++
+如果您尚未設定儀表板，系統會自動提示您進行設定。
+
+. 選擇 *+ Add filters*。
+. 對於您要建立的每個自訂篩選器，請新增詳細資訊：
++
+** 篩選標籤名稱（儀表板中的顯示名稱）
+** AWS 標籤金鑰名稱（資源上使用的實際標籤金鑰）
+** 選擇類型（單選或多選）
++
+
+NOTE: 篩選器會依照您設定的順序顯示在儀表板上。建議您先整理最常用的篩選器，以便快速存取。
+
+
+
+. 選擇*應用*。
++
+您可以在套用變更之前選擇自訂篩選器旁邊的垃圾桶圖示來刪除該篩選器。
+
+. 套用任何標籤或篩選器後，若要檢視變更，請選取儀表板上的重新整理圖示。
+. 若要稍後編輯儀表板配置，請選擇「配置」。
+
+
+.結果
+套用這些標籤後、Workload Factory 便開始收集並顯示相關的 CloudWatch 指標。您的儀表板將變成一個動態工具、用於根據您的組織需求來組織、追蹤成本和篩選資源。
+
+
+
+== 相關資訊
+
+* link:learn-project-dashboard.html["了解專案儀表板"]
+* link:task-use-project-dashboard.html["使用 Projects 儀表板"]
+

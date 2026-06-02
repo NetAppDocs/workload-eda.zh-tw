@@ -1,0 +1,8 @@
+---
+permalink: task-configure-dashboard.html 
+redirect: learn-project-dashboard.html 
+---
+= 
+:allow-uri-read: 
+
+

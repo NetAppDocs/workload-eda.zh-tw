@@ -13,16 +13,28 @@ indexpage:
       url: "/quick-start-eda.html"
   - title: EDA 儲存概述
     links:
-    - title: 管理 EDA 儲存操作
+    - title: 了解概覽儀表板
+      url: "/learn-overview-dashboard.html"
+    - title: 啟動 Overview 儀表板
+      url: "/task-activate-overview-dashboard.html"
+    - title: 使用概覽儀表板
       url: "/task-use-overview-dashboard.html"
   - title: FSx for ONTAP 延遲分析
     links:
-    - title: 監控 FSx for ONTAP 磁碟區延遲
-      url: "/task-monitor-latency.html"
+    - title: 了解延遲監控
+      url: "/learn-latency-monitoring.html"
+    - title: 設定延遲監控
+      url: "/task-configure-latency-monitoring.html"
+    - title: 分析延遲問題
+      url: "/task-analyze-latency-issues.html"
   - title: 專案使用分析
     links:
-    - title: 分析專案儲存使用情況
-      url: "/task-configure-dashboard.html"
+    - title: 了解專案儀表板
+      url: "/learn-project-dashboard.html"
+    - title: 設定專案儀表板
+      url: "/task-configure-project-dashboard.html"
+    - title: 使用 Projects 儀表板
+      url: "/task-use-project-dashboard.html"
   - title: 使用 Perforce 集成
     links:
     - title: 了解 Perforce 集成

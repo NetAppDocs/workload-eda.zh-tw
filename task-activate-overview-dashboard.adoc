@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: task-activate-overview-dashboard.html 
+keywords: activate dashboard, CloudWatch metrics, AWS credentials, view permissions, FSx for ONTAP, cluster overview, enable dashboard 
+summary: 啟動概覽儀表板，開始收集 FSx for ONTAP 檔案系統的 CloudWatch 指標。 
+---
+= 在 Workload Factory for EDA 中啟動 Overview 儀表板
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+啟動概覽儀表板即可開始收集 CloudWatch 指標，以監控您的 FSx for ONTAP 檔案系統。啟動後，此儀表板可提供叢集運作狀況、容量和處理量的集中監控。
+
+
+
+== 開始之前
+
+在啟動儀表板之前，請確保您符合下列要求。
+
+
+
+=== 具有檢視權限的 AWS 憑證
+
+您必須在 Workload Factory 中設定 AWS 認證資料、並至少具備 General Storage 的讀取（檢視）權限。不支援 _Basic_ 認證資料。
+
+如果您尚未設定具有檢視權限的認證資料，則開啟「概覽」標籤時，您將被重新導向至 AWS 認證資料設定頁面。
+
+如果您尚未配置 AWS 憑證，請參閱 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["新增 AWS 憑證"^]。
+
+
+
+== 啟動儀表板
+
+Workload Factory 確認具有檢視權限的憑證後，您必須啟動儀表板才能開始收集 FSx for ONTAP 檔案系統的 CloudWatch 指標。
+
+
+NOTE: 您同意後，指標收集可能需要一些時間。控制面板會在初始收集過程中通知您。
+
+.步驟
+. 使用以下任一方式登入 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主機體驗"^]。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示"]，然後選擇 *EDA*。
+. 選擇 *Overview* 標籤。
+. 如果未偵測到具有檢視權限的憑證，請選擇 *Add credentials*，然後依照提示配置具有檢視權限的 AWS 憑證。之後返回 *Overview* 選項卡。
+. 請查看同意提示，其中描述了將為您的 FSx for ONTAP 檔案系統收集的 CloudWatch 指標。
+. 選擇 *Activate* 以啟動儀表板並開始收集指標。
+
+
+.結果
+Workload Factory 開始收集與您設定的 AWS 認證相關聯的所有 FSx for ONTAP 檔案系統的 CloudWatch 指標。當指標可用時，儀表板會填入資料。如果收集仍在進行中，則會顯示通知。
+
+
+
+== 後續步驟
+
+啟動儀表板後，您可以：
+
+* link:task-use-overview-dashboard.html["使用概覽儀表板"] 監控叢集健全狀況和容量
+* 設定 SSD 容量管理模式（Automate、Recommend 或 None）
+* 設定篩選條件以專注於特定區域或 AWS 帳戶
+
+
+
+
+== 相關資訊
+
+* link:learn-overview-dashboard.html["了解概覽儀表板"]
+* link:task-use-overview-dashboard.html["使用概覽儀表板"]
+

@@ -17,7 +17,7 @@ summary: 使用互動式延遲圖表分析一段時間內的磁碟區延遲趨�
 
 == 開始之前
 
-您必須擁有 link:task-monitor-latency.html["已設定的延遲監控"] 並至少偵測到一次延遲事件。
+您必須擁有 link:task-configure-latency-monitoring.html["已設定的延遲監控"] 並至少偵測到一次延遲事件。
 
 
 
