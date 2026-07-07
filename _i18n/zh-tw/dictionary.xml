@@ -875,7 +875,6 @@
   <block id="c8cc2ccf33cdc30737f78ff90de2445d" category="paragraph">延遲分析會收集連接到您的 AWS 帳戶的所有 FSx for ONTAP 磁碟區的讀寫活動 CloudWatch 指標。它會持續根據定義的限制檢查這些指標，以便及早偵測效能問題。</block>
   <block id="590fb1ff71e09ae10025da434d4a576d" category="paragraph">如果延遲上升，Workload Factory 會自動檢查 ONTAP QoS 延遲指標，以識別導致速度下降的主要原因。對於涉及資料或叢集元件的更複雜問題，您可以執行選用的 AI 分析，該分析會提供可能的根本原因、識別受影響的用戶端，並建議解決問題的步驟。</block>
   <block id="f5c07c8cce2b621540390923f8c67ffc" category="paragraph">只有在整個選取時間範圍內同時符合以下條件時，才會觸發警示：延遲持續高於其閾值，且 IOPS 持續高於其閾值。同時要求兩個條件均成立，可確保高延遲發生於系統處理實際工作負載期間，從而減少誤報。</block>
-  <block id="7719c0ad2aed2107222044fb60d905ae" category="paragraph">所有偵測到的事件都會顯示在延遲事件表中。如果已設定通知，您還會收到一封電子郵件或 Amazon SNS 訊息，其中包含有關受影響磁碟區的詳細資訊。</block>
   <block id="dc61eabb4b4720779ffd0ea863639346" category="paragraph">當發生延遲事件時，Workload Factory 會自動執行基本分析來找出原因。它使用 ONTAP QoS 延遲中心指標來確定哪個元件導致速度下降，例如 FlexCache、容量集區、QoS 限制、磁碟、資料、叢集或其他子系統。這樣可以快速識別延遲來源，無需人工調查。</block>
   <block id="8eb98f7a0459d22ab367426190a3fb48" category="admonition">只有當連結與 FSx for ONTAP 檔案系統關聯時，才能查看元件細分。如果沒有連結，仍然可以查看延遲、IOPS 和處理量的圖表。</block>
   <block id="eb40849137a407e18ca35f8df5165003" category="admonition">由於 ONTAP QoS 分析與 CloudWatch 採用不同的資料收集方式，因此其延遲值可能略有差異。基本分析使用 ONTAP 資料來識別根本原因。</block>
@@ -992,7 +991,6 @@
   <block id="59cbd9a4d580062062bfc4ff383f14c2" category="paragraph">設定讀寫操作的警告限值和臨界值。系統會持續檢查這些限值，並在達到限值時發出警報。</block>
   <block id="11fda7252f626757b0488cd577f27860" category="admonition">將嚴重事件閾值設定得高於警告閾值。否則，您將無法儲存組態。</block>
   <block id="5a1211a74ff4c3bb3c0672678c971e1f" category="paragraph">Workload Factory 會收集與您的 AWS 憑證關聯的所有 FSx for ONTAP 磁碟區的延遲指標。它至少每 20 分鐘收集一次這些指標。超出您設定閾值的磁碟區會出現在延遲事件表中。</block>
-  <block id="14bf5360fe55779f5e2e14b0c58169e4" category="paragraph">設定電子郵件或 Amazon SNS 通知，以便在偵測到高延遲時收到警示。每次磁碟區超過您設定的臨界值時，您都會收到通知，讓您能立即得知是否存在效能問題。</block>
   <block id="d1b1c2aa5d228f69be0ebddab772256e" category="admonition">如果受影響的磁碟區超過 10 個，電子郵件將顯示前 10 個磁碟區，並顯示受影響的其他磁碟區數量。您可以在 Workload Factory 主控台中檢視所有受影響的磁碟區。</block>
   <block id="95ae0d98cc5a0df87238eb0392c461da" category="paragraph">設定完成後，您可以隨時變更閾值。</block>
   <block id="f40c1de6b7f8b45f157d4a9ef124471c" category="admonition">將臨界閾值設定得高於警告閾值。如果將臨界閾值設定得低於警告閾值，系統將顯示錯誤。</block>
@@ -1051,4 +1049,16 @@
   <block id="06557d42c1d11c10994b04fb503bc5ea" category="list-text">記錄正常效能水準，以便日後更容易發現異常行為。</block>
   <block id="910779fa193225b42eb7f118f9e0fbf8" category="list-text">利用從資料中了解到的資訊，在工作負載受到影響之前調整資源、調整磁碟區大小或提高效能。</block>
   <block id="52c4cfa377c69894b03ee8c538f7d3c7" category="section-title">2026年7月5日</block>
+  <block id="7e2652d4b25a337c594774fc14c2ab17" category="section-title">設定延遲通知頻率</block>
+  <block id="39b4011c4c170e1b29e7d8710812c644" category="paragraph">現在您可以選擇接收延遲違規電子郵件通知的頻率：</block>
+  <block id="9b4c72b587622d268ed8a5a315219fb5" category="list-text">*每天提醒我（建議）*：當任何 FSx for ONTAP 檔案系統出現新問題時，您將收到通知。</block>
+  <block id="b1960d91c54aac51310626fca3cc3b48" category="paragraph">如果一天內同一檔案系統上發生多個延遲問題，您只會收到一封電子郵件。</block>
+  <block id="a6f20e83b8038d1aeb40bd01b25f763e" category="paragraph">Workload Factory 在向檔案系統發出延遲警報後，會等待 24 小時，再向該檔案系統發出另一個警報。</block>
+  <block id="e2a4178b795c9afb4497b6549895fe0f" category="list-text">*Notify on any latency breach (every 20 minutes)*：偵測到違規情況時，最多每 20 分鐘收到一次通知。</block>
+  <block id="943fb48a5bde64c680308a09af0a0832" category="paragraph">預設啟用每日通知，以減少電子郵件數量，同時仍能提醒您注意延遲問題。您可以在設定延遲監控或編輯閾值設定時變更通知偏好設定。</block>
+  <block id="496e68c00adfe40e8730acfccde74f6b" category="paragraph"><block ref="9cf52e304b2518ca53073fc069c5a89c" category="inline-link-rx"></block>.</block>
+  <block id="c078c522f0c0f69cbe3ee348a3929074" category="paragraph">所有偵測到的事件都會顯示在延遲事件表中。如果已設定通知，您也會收到一封電子郵件或 Amazon SNS 訊息，其中包含受影響磁碟區的詳細資訊。您可以控制接收通知的頻率——可以是每個檔案系統每天一次，也可以是每 20 分鐘一次。</block>
+  <block id="eeaf9b0486df56b5ef23ab55b9b5c590" category="paragraph">設定電子郵件或 Amazon SNS 通知，以便在偵測到高延遲時收到警報。您可以透過以下兩種選項控制通知頻率：</block>
+  <block id="f0ac07f7c61e9a1057c26af44dc07e0f" category="list-text">*每日提醒（建議）*：當任何檔案系統發生新的安全漏洞時，您將收到通知。發送一次檔案系統安全漏洞通知後，請等待 24 小時再發送相同檔案系統的安全漏洞通知。</block>
+  <block id="787290df504f1549bf1bea416b297658" category="list-text">*Notify on any latency breach (every 20 minutes)*：偵測到違規情況時，最多每 20 分鐘收到一次通知。</block>
 </blocks>
