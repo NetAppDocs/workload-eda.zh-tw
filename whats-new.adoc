@@ -15,6 +15,31 @@ summary: 了解 Workload Factory for EDA 的最新功能。
 
 
 
+== 2026年7月5日
+
+
+
+=== 利用 IOPS 和吞吐量圖表增強延遲分析
+
+延遲分析面板現在在「隨時間變化」標籤中顯示同步效能圖表：
+
+* *延遲圖*：顯示延遲隨時間的變化情況，並帶有閾值線，當超過限制時會發出警示。
+* *IOPS 圖表*：顯示每秒作業數，並附有閾值線和過去超出限制的指示器。
+* *吞吐量圖*：顯示資料傳輸速率（DataReadBytes 或 DataWriteBytes）。
+
+
+所有圖表均使用相同時間線，並根據事件是讀取還是寫入自動顯示正確的指標。
+
+新增的篩選器可讓您在「全部」、「讀取」、「寫入」或「元資料」操作之間切換，以便進行更詳細的分析。
+
+這些圖表可協助您了解延遲、IOPS 和處理量之間的關係，讓您更容易找出效能問題的原因並決定如何解決這些問題。
+
+效能圖表目前僅在提供 AWS 憑證後可用。FSx for ONTAP 連結僅在基本分析和 AI 分析中的元件細分時才需要。
+
+https://docs.netapp.com/us-en/workload-eda/task-analyze-latency-trends.html["學習如何使用多個圖表分析延遲趨勢"^].
+
+
+
 == 2026 年 5 月 31 日
 
 
@@ -125,18 +150,18 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html#capa
 
 === 自動化 AI 延遲分析
 
-延遲分析現在包括 AI 代理分析。
+延遲分析現在包括 AI 分析。
 
-對於涉及資料或叢集延遲的複雜案例、您可以叫用 AI 代理程式分析以接收：
+對於涉及資料或叢集延遲的複雜場景，您可以呼叫 AI 分析來取得以下資訊：
 
 * 詳細的根本原因識別
 * 受影響的 EC2 用戶端清單
 * 具體補救步驟
 
 
-AI 代理分析需要 Amazon Bedrock 模型 ARN 配置，並可按需提供，適用於基礎分析建議進行更深入調查的場景。AI 代理可以識別諸如 bully 磁碟區、掛載點配置不佳、FlexGroup 需要重新平衡以及橫向擴展需求等問題。
+AI 分析需要 Amazon Bedrock 模型 ARN 配置，並可按需提供，適用於基礎分析建議進行更深入調查的場景。AI 代理可以識別諸如佔用資源過多的磁碟區、掛載點配置不佳、FlexGroup 需要重新平衡以及橫向擴展等問題。
 
-https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html#run-ai-agent-analysis["深入瞭解 AI 代理程式分析"^]。
+https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html#run-ai-agent-analysis["深入瞭解 AI 分析"^].
 
 
 
@@ -182,7 +207,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overvie
 
 
 
-=== 增強型儀表板篩選功能，支援自訂標籤
+=== EDA 工作負載中具有可自訂標籤的增強型儀表板篩選功能
 
 現在，您可以在 EDA 控制面板上根據您的 AWS 標籤配置多達五個自訂篩選器。每個自訂篩選器都包含標籤名稱、AWS 標籤鍵和選擇類型（單選或多選）。
 
@@ -248,7 +273,7 @@ BlueXP已重新命名並重新設計，以更好地反映其在管理資料基�
 
 
 
-=== 克隆支持
+=== Workload Factory for Builders 中的複製支援
 
 現在您可以在BlueXP Workload Factory for Builders 中克隆項目。複製項目時，Builders 會根據快照建立一個新項目，其配置與原始項目相同。克隆功能可用於快速建立類似項目或用於測試目的。您可以按照 Builders 中的說明掛載新的項目克隆。
 
@@ -260,7 +285,7 @@ https://docs.netapp.com/us-en/workload-builders/version-projects.html["管理Blu
 
 
 
-=== 更新了權限術語
+=== Workload Factory for EDA 中更新了權限術語
 
 Workload Factory 使用者介面和文件現在使用「只讀」來指涉讀取權限，使用「讀取/寫入」來指稱自動化權限。
 

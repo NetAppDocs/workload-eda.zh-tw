@@ -11,7 +11,7 @@ summary: 啟動概覽儀表板，開始收集 FSx for ONTAP 檔案系統的 Clou
 
 
 [role="lead"]
-啟動概覽儀表板即可開始收集 CloudWatch 指標，以監控您的 FSx for ONTAP 檔案系統。啟動後，此儀表板可提供叢集運作狀況、容量和處理量的集中監控。
+啟動概覽儀表板，即可開始收集 FSx for ONTAP 檔案系統的 CloudWatch 指標。此儀表板可讓您在一個位置查看叢集運作狀況、容量和吞吐量。
 
 
 
@@ -33,10 +33,10 @@ summary: 啟動概覽儀表板，開始收集 FSx for ONTAP 檔案系統的 Clou
 
 == 啟動儀表板
 
-Workload Factory 確認具有檢視權限的憑證後，您必須啟動儀表板才能開始收集 FSx for ONTAP 檔案系統的 CloudWatch 指標。
+Workload Factory 驗證憑證並確認其具有檢視權限後，即可啟動儀表板，開始收集 CloudWatch 指標，以供您的 FSx for ONTAP 檔案系統使用。
 
 
-NOTE: 您同意後，指標收集可能需要一些時間。控制面板會在初始收集過程中通知您。
+NOTE: 您同意後，收集指標可能需要一些時間。控制面板會在首次收集過程中通知您。
 
 .步驟
 . 使用以下任一方式登入 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主機體驗"^]。
@@ -48,7 +48,7 @@ NOTE: 您同意後，指標收集可能需要一些時間。控制面板會在�
 
 
 .結果
-Workload Factory 開始收集與您設定的 AWS 認證相關聯的所有 FSx for ONTAP 檔案系統的 CloudWatch 指標。當指標可用時，儀表板會填入資料。如果收集仍在進行中，則會顯示通知。
+Workload Factory 開始收集與您的 AWS 憑證關聯的所有 FSx for ONTAP 檔案系統的 CloudWatch 指標。指標資料可用時，控制面板會更新。資料收集仍在進行時，會顯示通知。
 
 
 
