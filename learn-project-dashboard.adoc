@@ -15,6 +15,7 @@ summary: 了解 Workload Factory for EDA 中的「專案」儀表板如何協助
 
 
 
+[[how-the-projects-dashboard-works]]
 == Projects 儀表板的運作方式
 
 「專案」儀表板顯示與您的 AWS 憑證關聯的所有 FSx for ONTAP 磁碟區的 CloudWatch 指標。您可以使用 AWS 標籤建立最多五個篩選器，按專案、團隊、應用程式或其他類別組織和檢視資料。
@@ -32,6 +33,7 @@ summary: 了解 Workload Factory for EDA 中的「專案」儀表板如何協助
 
 
 
+[[cloudwatch-metrics-collected]]
 === CloudWatch 收集的指標
 
 儀表板收集並顯示以下 CloudWatch 指標：
@@ -44,6 +46,7 @@ summary: 了解 Workload Factory for EDA 中的「專案」儀表板如何協助
 
 
 
+[[custom-filters]]
 == 自訂篩選器
 
 自訂篩選器可協助您根據組織運作方式整理儀表板資料。您可以按專案、團隊或成本中心設定篩選器，以便快速找到所需資料，而無需篩選無關資訊。這有助於您更輕鬆地規劃產能、追蹤成本和監控績效。
@@ -59,6 +62,7 @@ summary: 了解 Workload Factory for EDA 中的「專案」儀表板如何協助
 
 
 
+[[aws-tags]]
 === AWS 標籤
 
 AWS 標籤是 AWS 資源的元資料。它們可以幫助您以不同的方式對 AWS 資源進行分類，例如按專案、應用程式或業務部門。
@@ -69,12 +73,14 @@ AWS 標籤是 AWS 資源的元資料。它們可以幫助您以不同的方式�
 
 
 
+[[volume-details]]
 == Volume 詳細資料
 
 儀表板提供檢視模式，協助您以不同的詳細程度分析儲存指標。
 
 
 
+[[total-view]]
 === 總檢視
 
 「總計」視圖（預設）顯示符合您所選篩選條件的所有磁碟區的綜合指標。它可讓您快速了解整體儲存效能，包括總容量、IOPS 和吞吐量。
@@ -88,6 +94,7 @@ AWS 標籤是 AWS 資源的元資料。它們可以幫助您以不同的方式�
 
 
 
+[[volume-view]]
 === 磁碟區檢視
 
 Volume 檢視顯示各個磁碟區隨時間推移的效能表現。它會顯示每個指標排名前 10 的磁碟區。這有助於您了解哪些磁碟區佔用資源最多，以及它們在所選時間段內的運作情況。
@@ -133,6 +140,7 @@ NOTE: 儀錶板僅顯示每個指標的前 10 個磁碟區。如果您有超過 
 
 
 
+[[related-information]]
 == 相關資訊
 
 * link:task-configure-project-dashboard.html["設定專案儀表板"]

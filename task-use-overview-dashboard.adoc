@@ -15,12 +15,14 @@ summary: 使用概覽儀表板監控叢集運作狀況、查看容量建議、�
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 您必須先link:task-activate-overview-dashboard.html["已啟動 Overview 儀表板"]才能使用它來監控檔案系統。
 
 
 
+[[filter-the-dashboard]]
 == 篩選儀表板
 
 使用儀表板頂部的篩選器可以查看特定的檔案系統。這些篩選器適用於延遲、使用率、ONTAP 事件部分以及叢集表。
@@ -41,6 +43,7 @@ summary: 使用概覽儀表板監控叢集運作狀況、查看容量建議、�
 
 
 
+[[view-cluster-health-status]]
 == 檢視叢集健全狀況狀態
 
 在儀錶板頂部，您可以看到所選檔案系統的運作狀況和活動摘要。只有當至少有一個 FSx for ONTAP 連結連接到您的檔案系統時，才會顯示此摘要。
@@ -72,6 +75,7 @@ ONTAP 事件檢視卡按類別（容量、可用性和保護以及安全性和�
 
 
 
+[[view-and-apply-capacity-recommendations]]
 == 檢視並套用容量建議
 
 Workload Factory 會自動為每個 FSx for ONTAP 檔案系統提供容量建議。您可以透過篩選「叢集」表來尋找具有建議的檔案系統。
@@ -98,6 +102,7 @@ Workload Factory 會自動為每個 FSx for ONTAP 檔案系統提供容量建議
 
 
 
+[[change-ssd-management-mode]]
 == 變更 SSD 管理模式
 
 對於每個檔案系統，選擇如何管理 SSD 容量：接收手動建議或允許自動擴充。
@@ -134,6 +139,7 @@ SSD 管理模式包括：
 
 
 
+[[bulk-edit-ssd-management-parameters]]
 == 批次編輯 SSD 管理參數
 
 一次變更多個檔案系統的 SSD 容量設定，讓相同的設定套用至您的所有叢集。
@@ -166,6 +172,7 @@ TIP: 您可以選取個別檔案系統，或使用標題核取方塊來選取所
 
 
 
+[[analyze-capacity-trends-and-decision-points]]
 == 分析容量趨勢與決策點
 
 使用 SSD 使用情況圖表查看儲存使用情況隨時間的變化，並找出規律。
@@ -195,6 +202,7 @@ TIP: 您可以選取個別檔案系統，或使用標題核取方塊來選取所
 
 
 
+[[use-the-clusters-table]]
 == 使用叢集表
 
 叢集表詳細列出每個 FSx for ONTAP 檔案系統的效能和使用情況指標。
@@ -215,6 +223,7 @@ TIP: 您可以選取個別檔案系統，或使用標題核取方塊來選取所
 
 
 
+[[best-practices]]
 == 最佳實務
 
 使用 Overview 儀表板時，請參考以下建議：
@@ -230,6 +239,7 @@ TIP: 您可以選取個別檔案系統，或使用標題核取方塊來選取所
 
 
 
+[[related-information]]
 == 相關資訊
 
 * link:learn-overview-dashboard.html["了解概覽儀表板"]

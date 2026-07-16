@@ -15,12 +15,14 @@ summary: 為 Projects 儀表板配置自訂篩選器，以便按業務結構（�
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 若要使用自訂篩選器，請根據您的需求在 FSx for ONTAP 磁碟區中新增 AWS 標籤，例如專案、團隊或業務部門的標籤。
 
 
 
+[[configure-custom-filters]]
 == 配置自訂過濾器
 
 
@@ -63,6 +65,7 @@ NOTE: 篩選器會依照您設定的順序顯示在儀表板上。將您最常�
 
 
 
+[[related-information]]
 == 相關資訊
 
 * link:learn-project-dashboard.html["了解專案儀表板"]

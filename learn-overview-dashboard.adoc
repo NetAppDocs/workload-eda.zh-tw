@@ -15,6 +15,7 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 
 
 
+[[overview]]
 == 概況
 
 概覽儀表板會收集與您設定的 AWS 認證相關聯之所有 FSx for ONTAP 檔案系統的 CloudWatch 指標。
@@ -36,10 +37,12 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 
 
 
+[[dashboard-components]]
 == 儀表板元件
 
 
 
+[[cluster-health-status]]
 === 叢集健全狀況
 
 叢集運作狀況概覽會快速顯示您所選檔案系統的活動。只有當至少有一個 FSx for ONTAP 連結連接到您的檔案系統時，才會顯示此概覽。
@@ -53,6 +56,7 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 
 
 
+[[clusters-table]]
 === 叢集表
 
 叢集表提供了每個 FSx for ONTAP 檔案系統的詳細視圖，並依您目前所在的區域和 AWS 帳戶進行篩選。資料來源於 CloudWatch 指標。
@@ -68,10 +72,12 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 
 
 
+[[ssd-capacity-management]]
 == SSD 容量管理
 
 
 
+[[management-modes]]
 === 管理模式
 
 *自動化*:: Workload Factory 會在 SSD 使用量達到設定限制時自動增加更多 SSD 空間。它會自動處理此操作，無需手動操作。這對於偏好自動化管理的環境來說非常適用。
@@ -81,6 +87,7 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 
 
 
+[[capacity-recommendations]]
 === 容量建議
 
 當 Workload Factory 處於 Automate 或 Recommend 模式時，它會自動檢查每個 FSx for ONTAP 檔案系統，並執行容量建議演算法。系統每 24 小時掃描一次，以確定是否需要調整 SSD 容量。
@@ -96,6 +103,7 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 
 
 
+[[ssd-management-parameters]]
 === SSD 管理參數
 
 參數控制容量管理系統如何分析和處理您的 SSD 使用情況：
@@ -109,6 +117,7 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 
 
 
+[[understanding-capacity-decision-points]]
 === 了解容量決策點
 
 SSD 使用圖會標記系統何時提出容量建議或執行自動操作。這些標記顯示容量管理演算法隨時間推移的運作方式。
@@ -128,6 +137,7 @@ SSD 使用圖會標記系統何時提出容量建議或執行自動操作。這�
 
 
 
+[[related-information]]
 == 相關資訊
 
 * link:task-activate-overview-dashboard.html["啟動 Overview 儀表板"]

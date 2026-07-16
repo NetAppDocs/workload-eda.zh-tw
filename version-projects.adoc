@@ -15,6 +15,7 @@ summary: 使用快照和克隆來管理 EDA 專案的版本。
 
 
 
+[[create-a-snapshot-of-a-project]]
 == 建立專案快照
 
 您可以按照以下步驟建立專案快照。
@@ -31,6 +32,7 @@ summary: 使用快照和克隆來管理 EDA 專案的版本。
 
 
 
+[[create-a-clone-of-a-project]]
 == 建立專案克隆
 
 請依照下列步驟從快照複製 EDA 專案。建立克隆時，會建立一個新的可編輯磁碟區來包含該克隆。

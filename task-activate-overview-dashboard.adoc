@@ -15,12 +15,14 @@ summary: 啟動概覽儀表板，開始收集 FSx for ONTAP 檔案系統的 Clou
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 在啟動儀表板之前，請確保您符合下列要求。
 
 
 
+[[aws-credentials-with-view-permissions]]
 === 具有檢視權限的 AWS 憑證
 
 您必須在 Workload Factory 中設定 AWS 認證資料、並至少具備 General Storage 的讀取（檢視）權限。不支援 _Basic_ 認證資料。
@@ -31,6 +33,7 @@ summary: 啟動概覽儀表板，開始收集 FSx for ONTAP 檔案系統的 Clou
 
 
 
+[[activate-the-dashboard]]
 == 啟動儀表板
 
 Workload Factory 驗證憑證並確認其具有檢視權限後，即可啟動儀表板，開始收集 CloudWatch 指標，以供您的 FSx for ONTAP 檔案系統使用。
@@ -52,6 +55,7 @@ Workload Factory 開始收集與您的 AWS 憑證關聯的所有 FSx for ONTAP �
 
 
 
+[[next-steps]]
 == 後續步驟
 
 啟動儀表板後，您可以：
@@ -63,6 +67,7 @@ Workload Factory 開始收集與您的 AWS 憑證關聯的所有 FSx for ONTAP �
 
 
 
+[[related-information]]
 == 相關資訊
 
 * link:learn-overview-dashboard.html["了解概覽儀表板"]

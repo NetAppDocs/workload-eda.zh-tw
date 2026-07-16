@@ -4,6 +4,7 @@
 
 
 
+[[enhanced-dashboard-filtering-with-customizable-tags-in-eda-workloads]]
 === EDA 工作負載中具有可自訂標籤的增強型儀表板篩選功能
 
 現在，您可以在 EDA 控制面板上根據您的 AWS 標籤配置多達五個自訂篩選器。每個自訂篩選器都包含標籤名稱、AWS 標籤鍵和選擇類型（單選或多選）。
@@ -16,6 +17,7 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-dashboard.html["深入
 
 
 
+[[volume-details-view-for-granular-performance-analysis]]
 === 磁碟區詳細資料檢視，用於精細效能分析
 
 儀錶板現在提供兩種檢視模式：總體檢視和磁碟區檢視。總體檢視顯示所有磁碟區的彙總指標，而磁碟區檢視則顯示前 10 個磁碟區隨時間變化的個別效能。
@@ -26,6 +28,7 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-dashboard.html#view-vo
 
 
 
+[[latency-analysis-for-proactive-performance-monitoring]]
 === 用於主動效能監控的延遲分析
 
 延遲分析功能可協助您監控 FSx for ONTAP 檔案系統的磁碟區讀取和寫入延遲。您可以配置自訂的警告和嚴重事件閾值，以便在效能瓶頸影響 EDA 工作負載之前主動識別它們。

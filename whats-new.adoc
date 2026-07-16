@@ -15,31 +15,30 @@ summary: 了解 Workload Factory for EDA 的最新功能。
 
 
 
+[[5-july-2026]]
 == 2026年7月5日
 
 
 
-=== 利用 IOPS 和吞吐量圖表增強延遲分析
+[[enhanced-latency-analysis-with-synchronized-latency-iops-and-throughput-charts]]
+=== 增強延遲分析，同步顯示延遲、IOPS 和處理量圖表
 
-延遲分析面板現在在「隨時間變化」標籤中顯示同步效能圖表：
+延遲分析面板現在包含一個「詳細延遲分析」頁面，其中包含同步的效能圖表：
 
 * *延遲圖*：顯示延遲隨時間的變化情況，並帶有閾值線，當超過限制時會發出警示。
 * *IOPS 圖表*：顯示每秒作業數，並附有閾值線和過去超出限制的指示器。
-* *吞吐量圖*：顯示資料傳輸速率（DataReadBytes 或 DataWriteBytes）。
+* *處理量圖*：顯示資料傳輸速率（DataReadBytes 或 DataWriteBytes）。在篩選器中選取 Metadata 時，處理量圖不會顯示任何資料。
 
 
 所有圖表均使用相同時間線，並根據事件是讀取還是寫入自動顯示正確的指標。
 
-新增的篩選器可讓您在「全部」、「讀取」、「寫入」或「元資料」操作之間切換，以便進行更詳細的分析。
-
-這些圖表可協助您了解延遲、IOPS 和處理量之間的關係，讓您更容易找出效能問題的原因並決定如何解決這些問題。
-
-效能圖表目前僅在提供 AWS 憑證後可用。FSx for ONTAP 連結僅在基本分析和 AI 分析中的元件細分時才需要。
+您可以調整檢視，並將延遲峰值與 IOPS 和處理量的變化關聯起來。違規標記和懸停細節可協助您查看何時超過臨界值，並審查偵測到的違規行為的關鍵計量。
 
 https://docs.netapp.com/us-en/workload-eda/task-analyze-latency-trends.html["學習如何使用多個圖表分析延遲趨勢"^].
 
 
 
+[[set-latency-notification-frequency]]
 === 設定延遲通知頻率
 
 現在您可以選擇接收延遲違規電子郵件通知的頻率：
@@ -60,10 +59,12 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-latency-monitoring.htm
 
 
 
+[[31-may-2026]]
 == 2026 年 5 月 31 日
 
 
 
+[[ssd-capacity-increase-management-modes-and-automation]]
 === SSD 容量增加管理模式和自動化
 
 Workload Factory 現在提供 SSD 容量增加管理模式，以符合您的營運偏好：
@@ -79,6 +80,7 @@ link:https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html
 
 
 
+[[bulk-edit-ssd-capacity-increase-management-parameters]]
 === 批次編輯 SSD 容量增加管理參數
 
 現在，您可以從概覽儀表板跨多個檔案系統調整 SSD 容量增加管理參數。在「叢集」表中選擇一個或多個叢集，然後批量編輯臨界值（10-90%）、回溯（1-200 小時）和預估（1-200 小時）的值。
@@ -89,6 +91,7 @@ link:https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html
 
 
 
+[[capacity-decision-points-visualization]]
 === 容量決策點視覺化
 
 SSD 使用情況圖表現在會顯示決策點，指示何時產生容量建議或採取自動化動作。
@@ -103,6 +106,7 @@ link:https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html
 
 
 
+[[link-configured-status-in-clusters-table]]
 === 叢集表格中的連結已設定狀態
 
 概覽儀表板上的「叢集」表現在包含一個「關聯連結」列，該列顯示是否已為每個檔案系統配置 FSx for ONTAP 連結。連線狀態每天都會進行驗證，幫助您識別需要設定連結或可能有連線問題的檔案系統。
@@ -111,16 +115,19 @@ link:https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html
 
 
 
+[[support-for-aws-govcloud-us-in-netapp-workload-factory]]
 === 在 NetApp Workload Factory 中支援 AWS GovCloud（US）
 
 NetApp Workload Factory 支援 AWS GovCloud （US） 帳戶。使用 GovCloud 帳戶，您可以在 AWS GovCloud （US） 區域中部署和管理儲存工作負載。
 
 
 
+[[3-may-2026]]
 == 2026 年 5 月 3 日
 
 
 
+[[email-and-sns-notifications-for-latency-events]]
 === 延遲事件的電子郵件和 SNS 通知
 
 現在，當 FSx for ONTAP 磁碟區上偵測到延遲事件時，您可以接收自動通知。在 Workload Factory 設定中設定電子郵件或 Amazon SNS 通知，以便在磁碟區的延遲超過您設定的閾值時接收即時警報。
@@ -131,6 +138,7 @@ https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html#configure-l
 
 
 
+[[latency-trend-visualization-with-interactive-graphs]]
 === 使用互動式圖表將延遲趨勢視覺化
 
 延遲分析面板現在包含分頁式介面，可進行全面的延遲分析：
@@ -147,10 +155,12 @@ https://docs.netapp.com/us-en/workload-eda/task-analyze-latency-trends.html["瞭
 
 
 
+[[6-april-2026]]
 == 2026 年 4 月 6 日
 
 
 
+[[eda-capacity-recommendations]]
 === EDA 容量建議
 
 Workload Factory 現在可以自動分析 EDA 清單中每個 FSx for ONTAP 叢集的 SSD 容量，並在需要調整時產生容量建議。該演算法每 24 小時對每個叢集執行一次。
@@ -168,6 +178,7 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html#capa
 
 
 
+[[automated-ai-latency-analysis]]
 === 自動化 AI 延遲分析
 
 延遲分析現在包括 AI 分析。
@@ -185,10 +196,12 @@ https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html#run-ai-agen
 
 
 
+[[1-march-2026]]
 == 2026 年 3 月 1 日
 
 
 
+[[overview-dashboard-for-eda-storage-management]]
 === EDA 儲存管理概覽儀表板
 
 身為管理數十個 FSx for ONTAP 檔案系統的 IT 管理員、您可以使用 Overview 儀表板來回答有關叢集健全狀況、使用率和磁碟區放置的常見操作問題。
@@ -205,6 +218,7 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html["深
 
 
 
+[[automated-latency-analysis]]
 === 自動延遲分析
 
 延遲分析現已包含自動化基礎分析功能。當偵測到延遲事件時，系統會自動分析 ONTAP QoS 延遲中心指標，以識別延遲問題的來源。
@@ -213,6 +227,7 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html["深
 
 
 
+[[new-ask-me-bookmark-available-in-workload-factory]]
 === Workload Factory 中新增了「問我」書籤
 
 我們在 Workload Factory 控制台的每個畫面上都新增了 Ask Me 書籤。這項改進讓您在需要協助時更輕鬆快速地存取 Ask Me。Ask Me 是我們的 AI 助手，您可以詢問有關自身工作負載環境的問題，直接從您的環境中獲取個人化見解，並查看先前的對話記錄。
@@ -223,10 +238,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overvie
 
 
 
+[[1-february-2026]]
 == 2026 年 2 月 1 日
 
 
 
+[[enhanced-dashboard-filtering-with-customizable-tags-in-eda-workloads]]
 === EDA 工作負載中具有可自訂標籤的增強型儀表板篩選功能
 
 現在，您可以在 EDA 控制面板上根據您的 AWS 標籤配置多達五個自訂篩選器。每個自訂篩選器都包含標籤名稱、AWS 標籤鍵和選擇類型（單選或多選）。
@@ -239,6 +256,7 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-dashboard.html["深入
 
 
 
+[[volume-details-view-for-granular-performance-analysis]]
 === 磁碟區詳細資料檢視，用於精細效能分析
 
 儀錶板現在提供兩種檢視模式：總體檢視和磁碟區檢視。總體檢視顯示所有磁碟區的彙總指標，而磁碟區檢視則顯示前 10 個磁碟區隨時間變化的個別效能。
@@ -249,6 +267,7 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-dashboard.html#view-vo
 
 
 
+[[latency-analysis-for-proactive-performance-monitoring]]
 === 用於主動效能監控的延遲分析
 
 延遲分析功能可協助您監控 FSx for ONTAP 檔案系統的磁碟區讀取和寫入延遲。您可以配置自訂的警告和嚴重事件閾值，以便在效能瓶頸影響 EDA 工作負載之前主動識別它們。
@@ -261,10 +280,12 @@ https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html["深入瞭�
 
 
 
+[[4-january-2026]]
 == 2026 年 1 月 4 日
 
 
 
+[[netapp-workload-factory-for-builders-now-netapp-workload-factory-for-eda]]
 === NetApp Workload Factory for Builders 現已更名為NetApp Workload Factory for EDA
 
 面向建築業的 Workload Factory 現已更名為 EDA 的 Workload Factory。更名體現了對電子設計自動化 (EDA) 工作負載的關注。
@@ -273,26 +294,31 @@ Workload Factory for EDA 可協助您在多個檔案系統中最佳化 FSx for O
 
 
 
+[[ask-me-ai-assistant-home-page-integration]]
 === 問我關於人工智慧助理首頁整合的問題
 
 Workload Factory 控制台主頁嵌入了 Ask me AI 助手，讓您可以詢問有關您自己的儲存環境的問題，直接從您的環境中獲取個人化見解，並參考先前的對話。您可以與「問我」進行交互，以了解您的工作負載、解決問題並了解更多關於工作負載工廠的資訊——所有這些都無需離開控制台。
 
 
 
+[[5-october-2025]]
 == 2025年10月5日
 
 
 
+[[bluexp-workload-factory-now-netapp-workload-factory]]
 === BlueXP workload factory現為NetApp Workload Factory
 
 BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。因此， BlueXP workload factory已重新命名為NetApp Workload Factory。
 
 
 
+[[16-june-2025]]
 == 2025年6月16日
 
 
 
+[[clone-support-in-workload-factory-for-builders]]
 === Workload Factory for Builders 中的複製支援
 
 現在您可以在BlueXP Workload Factory for Builders 中克隆項目。複製項目時，Builders 會根據快照建立一個新項目，其配置與原始項目相同。克隆功能可用於快速建立類似項目或用於測試目的。您可以按照 Builders 中的說明掛載新的項目克隆。
@@ -301,20 +327,24 @@ https://docs.netapp.com/us-en/workload-builders/version-projects.html["管理Blu
 
 
 
+[[4-may-2025]]
 == 2025年5月4日
 
 
 
+[[updated-permissions-terminology-in-workload-factory-for-eda]]
 === Workload Factory for EDA 中更新了權限術語
 
 Workload Factory 使用者介面和文件現在使用「只讀」來指涉讀取權限，使用「讀取/寫入」來指稱自動化權限。
 
 
 
+[[1-december-2024]]
 == 2024年12月1日
 
 
 
+[[builders-workload-initial-release]]
 === 建構器工作負載初始版本
 
 BlueXP Workload Factory for Builders 簡化了軟體版本的使用和訪問，無需自訂工具或腳本。它使您能夠以即時克隆的形式使用軟體版本，並與 Perforce Helix Core 集成，作為您開發流程的便捷工作空間，從而節省時間和資源。

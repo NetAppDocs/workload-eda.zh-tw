@@ -15,6 +15,7 @@ NetApp以多種方式為 Workload Factory 及其雲端服務提供支援。我�
 
 
 
+[[get-support-for-fsx-for-ontap]]
 == 取得對ONTAP的 FSx 支持
 
 有關 FSx for ONTAP、其基礎架構或使用該服務的任何解決方案的技術支持，請參閱該產品的 Workload Factory 文件中的「取得幫助」部分。
@@ -25,6 +26,7 @@ link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fs
 
 
 
+[[use-self-support-options]]
 == 使用自助選項
 
 這些選項每週 7 天、每天 24 小時免費提供：
@@ -45,6 +47,7 @@ link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fs
 
 
 
+[[create-a-case-with-netapp-support]]
 == 向NetApp支援建立案例
 
 除了上述自助支援選項之外，您還可以在啟動支援後與NetApp支援專家合作解決任何問題。
@@ -99,6 +102,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 
 
+[[manage-your-support-cases-preview]]
 == 管理您的支援案例（預覽）
 
 您可以直接從NetApp Console檢視和管理正在進行且已解決的支援案例。您可以管理與您的 NSS 帳戶和公司相關的案例。

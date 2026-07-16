@@ -15,6 +15,7 @@ summary: 已知限制標識了該產品的此版本不支援或無法與其正�
 
 
 
+[[operator-permissions-required]]
 == 需要操作員權限
 
 NetApp Workload Factory for EDA 需要操作員權限才能正常運作。

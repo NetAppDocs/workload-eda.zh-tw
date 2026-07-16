@@ -410,7 +410,6 @@
   <block id="d4f2d389a3d4d575b8158ca4417bf9a5" category="list-text">在設定的時間範圍內，所有資料點都符合這兩個條件。</block>
   <block id="6efa4b954c442dd4f15a0f58f1b0bd86" category="paragraph">例如，使用預設警告閾值，只有當 10 分鐘內所有資料點的讀取延遲超過 6 毫秒且讀取 IOPS 超過 100 ops/sec 時，才會觸發讀取警報。</block>
   <block id="e0b18d5b04f677d427e5a029d591d7a9" category="section-title">事件嚴重性</block>
-  <block id="a0136d636bd452e02818b34b1fb9eb98" category="section-title">檢視延遲事件</block>
   <block id="7776f517a75d578f349901d6f0886405" category="list-text">事件會在 72 小時後自動刪除。</block>
   <block id="01bd639bef6ec9a56687ee7ffd9f246c" category="section-title">管理延遲組態</block>
   <block id="6fe6ef1cbd27d3257ff9500aab5f9ab9" category="list-text">在 *Latency* 頁面中，選擇 *Edit*。</block>
@@ -533,14 +532,10 @@
   <block id="656ff150d41fa1c0fc581a7d9317539b" category="list-text">您至少需要檔案系統中具有下列組態的一個磁碟區：</block>
   <block id="203f7d7dafc1c11f2f80c2510b54a471" category="list-text">檔案系統必須設定連結 <block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>。</block>
   <block id="5aef21820caef7c0f864852459c0e5f6" category="doc">註冊以取得 Workload Factory for EDA 的支援</block>
-  <block id="41de4d3965fbdf03451b2ecaee5868c7" category="summary">使用互動式延遲圖表分析一段時間內的磁碟區延遲趨勢、識別模式，並追蹤補救措施的效果。</block>
   <block id="7710e3af23bbd50fdc1e743685f0d33f" category="doc">分析 Workload Factory 中 EDA 的延遲趨勢</block>
   <block id="a84cf3e93039b68c477a75d0719fe3b4" category="inline-link-macro">已設定的延遲監控</block>
   <block id="1e050c450cfafbc3c2fda5ecebd63af7" category="paragraph">其中包括：</block>
-  <block id="fec795816c8e9333dd5705b026e4ec1f" category="list-text">在 *Latency* 標籤中，從事件表中選取延遲事件。</block>
   <block id="0200e9f9651c0f9055af3ded58c679fe" category="paragraph">延遲分析面板隨即開啟。</block>
-  <block id="8ea49b1b8804030fecb789ed69b3cfe9" category="list-text">選取 *Over time* 標籤。</block>
-  <block id="ab9d5820afcd30d44b00f88542fb3ed7" category="list-text">檢閱違規次數摘要：</block>
   <block id="e97d67b4026b09dfe5111a6baff734ef" category="list-text">使用圖表深入分析來：</block>
   <block id="21468bcc44334c21cf2648bb0c3286b5" category="section-title">圖表解讀</block>
   <block id="1068f745b93ee031c494800d88399506" category="list-text">通知組態（選用）</block>
@@ -548,14 +543,9 @@
   <block id="e83c229f37cf36a4d502c243dffb6c3d" category="list-text">最多顯示 200 個事件。隨著新事件的新增，較舊的事件將被移除。</block>
   <block id="391d5001f0e7f63a7def2cbcdfbf9795" category="list-text">若要檢視延遲事件的詳細資訊，請在 *Severity* 欄中選取該事件。這將開啟該事件的延遲分析面板。</block>
   <block id="256e5511799cf87e5ea3d5686def55a5" category="list-text">若要對表格進行排序，請選取任何欄標題。根據預設，重大事件會先依時間排序顯示，接著是依時間排序的警告事件。</block>
-  <block id="8f366b4a3c1ee9db68d65977ad160a9e" category="list-text">若要分析一段時間內的延遲趨勢，請選擇事件以開啟延遲分析面板。使用 *Over time* 標籤查看互動式延遲圖表。詳情請參閱 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>。</block>
   <block id="5bf8d268567f0e7ee71b32158e4a1593" category="section-title">分析延遲事件</block>
-  <block id="1bd47873c66482991cb879180d2867cc" category="paragraph">在 *Severity* 欄位中選擇延遲事件，即可開啟該事件的延遲分析面板。此面板包含多個選項卡，可提供延遲事件的不同視圖：</block>
-  <block id="748595841e3c3b1b5183a7d6077dffdd" category="list-text">*隨時間變化*：顯示包含歷史資料的互動式延遲圖表</block>
   <block id="46a6c0f7d8d51bac15ceada497addbb0" category="paragraph">在 Workload Factory 設定中設定 Amazon Bedrock 模型 ARN，請參閱 <block ref="6c761e19260aabd782369cde93c2b1c4" category="inline-link-macro-rx"></block>。</block>
   <block id="2f4239783073f0a94706e2317e78bba8" category="list-text">在 *Severity* 欄位中，選擇一個延遲事件，開啟該事件的分析面板。</block>
-  <block id="354b602de39fd16c2e8213c6420af87b" category="paragraph">如果檔案系統未關聯任何連結，系統會提示您將連結關聯到受影響的檔案系統。選擇提示即可跳到該檔案系統的連結設定頁面。</block>
-  <block id="6b11475664ca5049823829bb74e3334d" category="list-text">請檢閱 *Overview* 標籤以瞭解基本分析結果並識別延遲來源。</block>
   <block id="42ca2768ba0de807a5ef846dc69d0aad" category="section-title">設定延遲通知</block>
   <block id="b113e6e3f414df97faffdf304f96cdea" category="inline-link-macro">設定通知設定</block>
   <block id="fc5cf4b9e620903fdc3e72c98ed92e50" category="paragraph">延遲通知是按檔案系統發送的。當檔案系統中的一個或多個磁碟區違反延遲臨界值時，您會收到一則列出所有受影響磁碟區的通知。</block>
@@ -722,10 +712,6 @@
   <block id="91b5f8f96066d41fb5057458a69d5f81" category="list-text"><block ref="91b5f8f96066d41fb5057458a69d5f81" category="inline-link-macro-rx"></block></block>
   <block id="7c7708c4a86b73bb59e5e08ced5293bf" category="doc">分析 Workload Factory for EDA 中的延遲問題</block>
   <block id="ed960c97b9cba50c54da4a4beb0cddea" category="paragraph">您必須先擁有 <block ref="1a49b94c8c033bb71bcc3614a6b897ae" category="inline-link-macro-rx"></block> 才能檢視和分析延遲事件。</block>
-  <block id="c7091d0edc98eba35097c5fee111cbeb" category="list-text">檢閱延遲事件表中每個事件的資訊。</block>
-  <block id="1d75c8bd88c404ae20531903bd0c61be" category="section-title">總覽索引標籤</block>
-  <block id="90106254d1f94b759470c5feef52980a" category="section-title">隨時間推移標籤</block>
-  <block id="eb0d7435aac1126c7c337315ad2941fa" category="list-text">（選用）選取 *Over time* 標籤，以檢視受影響磁碟區的延遲趨勢。</block>
   <block id="d5f97a1cb8e0382743f28559f0c6ace7" category="list-text">潛在根本原因說明</block>
   <block id="0a3d11a9c21fb1f2a4dc021dc4a83aad" category="list-text">建議的補救步驟</block>
   <block id="f6da12ee5ed910433c51d88e2e61a406" category="paragraph">分析延遲問題時，請考慮以下建議：</block>
@@ -852,15 +838,9 @@
   <block id="a0230375de0fd0d81b6dde04b5ea448b" category="paragraph">AI 分析需要 Amazon Bedrock 模型 ARN 配置，並可按需提供，適用於基礎分析建議進行更深入調查的場景。AI 代理可以識別諸如佔用資源過多的磁碟區、掛載點配置不佳、FlexGroup 需要重新平衡以及橫向擴展等問題。</block>
   <block id="61c60c2985e3bfc0c300130645b7c18e" category="inline-link">深入瞭解 AI 分析</block>
   <block id="e697fcda37139bd9c16c39e2444c7292" category="paragraph"><block ref="736e577fb94d54c1db651e1a12d438ba" category="inline-link-rx"></block>.</block>
-  <block id="33e0c31d77f9c8cc22645a3c4d8f1c27" category="doc">利用 IOPS 和吞吐量圖表增強延遲分析</block>
-  <block id="820660d0f2f623290b9d6bf61dc7b971" category="paragraph">延遲分析面板現在在「隨時間變化」標籤中顯示同步效能圖表：</block>
   <block id="07139d61108a6478189b71bcdc7f39b8" category="list-text">*延遲圖*：顯示延遲隨時間的變化情況，並帶有閾值線，當超過限制時會發出警示。</block>
   <block id="390641ad0fb5c4dcbd3e1ea9a432933d" category="list-text">*IOPS 圖表*：顯示每秒作業數，並附有閾值線和過去超出限制的指示器。</block>
-  <block id="167a301ac11e90acd4e01899787518a1" category="list-text">*吞吐量圖*：顯示資料傳輸速率（DataReadBytes 或 DataWriteBytes）。</block>
   <block id="38f51c8db276cb26c3c7af52f545996e" category="paragraph">所有圖表均使用相同時間線，並根據事件是讀取還是寫入自動顯示正確的指標。</block>
-  <block id="40f862a8ef42e494a25d0887d6827d75" category="paragraph">新增的篩選器可讓您在「全部」、「讀取」、「寫入」或「元資料」操作之間切換，以便進行更詳細的分析。</block>
-  <block id="b8f78f4759a5bd3c20308a67276707aa" category="paragraph">這些圖表可協助您了解延遲、IOPS 和處理量之間的關係，讓您更容易找出效能問題的原因並決定如何解決這些問題。</block>
-  <block id="41b8190fd8c34e03bd93c4234b033876" category="paragraph">效能圖表目前僅在提供 AWS 憑證後可用。FSx for ONTAP 連結僅在基本分析和 AI 分析中的元件細分時才需要。</block>
   <block id="8dd5201c5cc5a3396ebbb0eed3c4385d" category="inline-link">學習如何使用多個圖表分析延遲趨勢</block>
   <block id="96f2a9474e94ea84ba4915ee29411c85" category="paragraph"><block ref="6741c3b9db1b1d3c4d7831b9652aaaca" category="inline-link-rx"></block>.</block>
   <block id="3cb8dabed434a6eb71085c376220f787" category="paragraph">Workload Factory for EDA 可協助您在多個檔案系統中管理 Amazon FSx for ONTAP。它透過自動調整儲存設定、尋找延遲問題以及提供 EDA 專案洞察，來提高效能並降低成本。</block>
@@ -930,54 +910,25 @@
   <block id="56ec2175657135172133d058c441dd94" category="paragraph">Workload Factory 驗證憑證並確認其具有檢視權限後，即可啟動儀表板，開始收集 CloudWatch 指標，以供您的 FSx for ONTAP 檔案系統使用。</block>
   <block id="d13a18ba5d5fe55df783d45bf87a6b38" category="admonition">您同意後，收集指標可能需要一些時間。控制面板會在首次收集過程中通知您。</block>
   <block id="7b76cd809591b8cb2b82a5d96bf92502" category="paragraph">Workload Factory 開始收集與您的 AWS 憑證關聯的所有 FSx for ONTAP 檔案系統的 CloudWatch 指標。指標資料可用時，控制面板會更新。資料收集仍在進行時，會顯示通知。</block>
-  <block id="7166341e6629a086fb60bd72086a1b38" category="summary">檢視並分析延遲事件，以尋找 FSx for ONTAP 磁碟區的效能問題。使用自動基本分析和可選的 AI 分析來識別根本原因並提供建議的修復方案。</block>
   <block id="8a362591ef9c6b566a626a00a92fbba2" category="paragraph">查看偵測到的延遲，並使用自動化工具尋找原因並修復 FSx for ONTAP 磁碟區中的效能緩慢問題。</block>
-  <block id="f711be5333bd85de02b523276cc8cb8c" category="paragraph">延遲事件表集中顯示了過去 72 小時內的所有警告和嚴重事件。</block>
   <block id="84a69f3e383f767a2d335d822b6e989c" category="list-text">每個磁碟區僅顯示最近一次資料外洩事件。同一磁碟區之前的外洩事件不會顯示。</block>
   <block id="3378724912de6e334800d398b5316fcf" category="list-text">即使沒有檔案系統連結，事件也會顯示。若要檢視基本分析詳細資料或執行 AI 分析，則需要連結。</block>
   <block id="132c7aceca8c73d5c769da788336b55b" category="paragraph">基本分析功能可以幫助您快速找到導致速度變慢的原因，而無需手動調查。</block>
-  <block id="7468d6830cb23bfdfd8742183eb2b05f" category="list-text">*概述*：顯示基本結果，以確定哪個元件導致延遲。</block>
-  <block id="b4d17021d2fd4f6f0b2d385551078ec1" category="paragraph">*概覽*索引標籤顯示自動分析結果。如果檔案已連結到檔案系統，則會顯示元件明細，並指出導致延遲的元件。如果不存在連結，系統會提示您新增連結。</block>
-  <block id="9b7634cd203249c15963dfbf6e385742" category="paragraph">如果已設定 Amazon Bedrock 模型 ARN，則「概覽」標籤可讓您對資料和叢集場景執行 AI 分析。如果未設定 Bedrock，則該標籤會顯示指向該檔案系統的「儲存工作負載」設定頁面的連結，您可以在該頁面設定 Bedrock 存取。</block>
-  <block id="91189500d01b54cfc4e5b51a57725e2d" category="paragraph">**Over time** 索引標籤會顯示受影響磁碟區之 CloudWatch 計量指標的互動式圖表。這些圖表會顯示一段時間內的延遲、IOPS 和吞吐量。它們會根據觸發事件的警示，顯示讀取或寫入計量指標。您可以選擇不同的時間範圍（1H、3H、12H、24H、72H），並使用篩選器來檢視「全部」、「讀取」、「寫入」或「中介資料」作業。</block>
   <block id="0a59976bcdf12b05f8003b9abf1bba03" category="paragraph">有關使用圖表的詳細說明，請參閱<block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>。</block>
-  <block id="99515c8f20938128355a8ab92321b752" category="list-text">請查看 *Overview* 索引標籤。如果已連接連結，請開啟元件分解圖，查看延遲原因。如果未連接任何連結，請選擇提示以連接一個連結，以便分析各個元件。</block>
-  <block id="64bdd7457fca2682d76127c1f3a1af51" category="list-text">如果延遲需要更深入的調查，例如可能的資料或叢集問題，請執行 AI 分析。</block>
-  <block id="baabc288be01830359f768fb417acd0d" category="section-title">執行 AI 分析</block>
-  <block id="fef5556b92f893491a43dafa9f8d0a61" category="paragraph">AI 分析可提供更深入的調查，以確定具體的根本原因和潛在的補救步驟。</block>
-  <block id="de70637161ed14985a52197093b2fe0d" category="paragraph">執行 AI 分析時，系統會自動重新整理基本分析資料，並將其用作 AI 分析的輸入。</block>
-  <block id="c32a556228c48c9a5f8dd1095155182d" category="list-text">如果延遲來源被確定為資料或叢集，請選擇 *Analyze* 以執行 AI 分析。</block>
   <block id="988f6f9e1ca459bc23b17e74878baf18" category="list-text">查看結果，包括：</block>
   <block id="2ee13e9159673165c37cf0d7f447b211" category="list-text">請按照建議的步驟解決延遲問題。</block>
   <block id="5aa3b359f497fc0a5eeeb342451eeec1" category="list-text">更改完成後，請檢查延遲事件表以確認問題已解決。</block>
-  <block id="064b74fea1cdacebab7e0dc88641bf4e" category="list-text">*監控趨勢*：定期檢查延遲事件表，以發現可能指向組態問題的模式或重複出現的問題。</block>
   <block id="ef622497150b9c041987a9ecb7e5e9be" category="list-text">*策略性地運用 AI 分析*：如果基礎分析顯示需要進行 AI 分析，則可在審查資料時使用 AI 分析。AI 分析可揭示複雜效能問題的更深層見解，這些問題需要詳細的疑難排解。</block>
   <block id="2378536f0c8de1c9b95a1bfc39f271fa" category="list-text">*審查被駁回的事件*：定期審查事件被駁回的原因，以確定是否需要調整閾值或改進系統。</block>
-  <block id="89cfa7714878d3bae6764f2493deccb7" category="paragraph">偵測到延遲事件後，使用互動式圖表查看延遲和磁碟區隨時間的變化。這有助於您發現規律，了解問題是經常發生還是僅發生一次，並根據資料確定解決方法。</block>
-  <block id="42012da84b9ebf577ec707f6bd6c6459" category="paragraph">您必須擁有 <block ref="1a49b94c8c033bb71bcc3614a6b897ae" category="inline-link-macro-rx"></block> 且偵測到至少一個延遲事件。如果您擁有 AWS 憑證，即可檢視效能圖表。若要查看元件分析，您需要連結。</block>
-  <block id="0b3449f810c0efda03af580ff808d4d1" category="paragraph">「隨時間變化」標籤提供效能圖表，幫助您分析磁碟區行為：延遲、IOPS 和吞吐量。</block>
-  <block id="3bed9e81863506f9cf725b0d8ea890e8" category="paragraph">圖表顯示受影響磁碟區的 CloudWatch 指標。所有圖表均使用相同的時間軸。它們會根據觸發事件的警示自動顯示讀取或寫入指標。</block>
   <block id="d33de6c2755f8403fea3ab90b1c8fd32" category="paragraph">您可以變更時間範圍以查看不同時間段的效能。您也可以在「全部」、「讀取」、「寫入」或「元資料」操作之間切換。</block>
   <block id="5965da30ffd84e83309cf4cb698be165" category="paragraph">視覺化內容包括：</block>
-  <block id="160c7282ff96708bb896c257f7fde418" category="list-text">*延遲圖*：顯示從 CloudWatch 一段時間內收集的實際延遲值（以毫秒為單位），並帶有閾值線和突破指示器。</block>
-  <block id="f989e3bca766b7decfbd45bccb9baf8f" category="list-text">*IOPS 圖表*：顯示來自 CloudWatch 一段時間內的實際延遲（以毫秒為單位）。閾值線標記設定的限制，標記點顯示何時超過這些限制。此外，還顯示每秒作業數，並附有閾值線和過去超出限制的標記。讀取活動顯示 DataReadOperations，寫入活動顯示 DataWriteOperations。</block>
-  <block id="be50cc918f8276f9e1a58d2857fff12b" category="list-text">*吞吐量圖*：顯示資料傳輸速率。對於讀取事件，會顯示 DataReadBytes。對於寫入事件，會顯示 DataWriteBytes。如果在篩選器中選取了 **Metadata**，則吞吐量圖不會顯示任何資料。</block>
-  <block id="da1c38787270bedae00107784704c362" category="list-text">*閾值線*：虛線水平線顯示您在延遲和 IOPS 圖表上設定的警告和嚴重限制。</block>
-  <block id="a3decc514e892c846fe437f752de100a" category="list-text">*違規指標*：顯示何時超過閾值以及在此期間超過次數的視覺標記。</block>
-  <block id="3d85dd323704153f28b89ce906a1cc51" category="list-text">*違規詳情*：對於每次違規，請查看中位數延遲、超過限制的百分比、QoS 延遲中心資料以及偵測到違規的時間。</block>
-  <block id="da344642138017df11eaa3f2306d9cbd" category="list-text">查看預設視圖，其中顯示過去 3 小時內延遲、IOPS 和處理量的效能圖表。</block>
-  <block id="e3a42503f88780c31b7d5c8afab7f115" category="list-text">您也可以使用「類型」篩選器在「全部」、「讀取」、「寫入」或「元資料」操作之間切換。預設值與事件類型相符（讀取事件為「讀取」，寫入事件為「寫入」）。</block>
   <block id="6497a3f9ceaf99e91fb4279ce8d0aee9" category="list-text">更改時間範圍，查看其他時間段並尋找規律。</block>
   <block id="9019c3891a9f30f5e875e282b8fb3143" category="list-text">查看延遲、IOPS 和吞吐量的趨勢線。IOPS 和延遲圖表包含閾值線，以便進行比較。</block>
-  <block id="566ae949dac7bd207465924a73708ce2" category="list-text">查看圖表中的違規指標。當選定時間段內多次超過閾值時，這些標記就會出現。</block>
-  <block id="f94cc1eb094d62cc0163a4436e57f706" category="list-text">若要查看更多詳細資訊，請將滑鼠懸停在違規指標上或選取該指標。</block>
-  <block id="4ee7082f850ae24e840c1ee9af3f56af" category="paragraph">此圖表顯示所選時間內警告或嚴重違規事件的總數。</block>
   <block id="da5f6ce733580dc0efac053cdb3c02a2" category="list-text">查看延遲問題是只發生一次還是反覆發生</block>
   <block id="33c0325e8a2128563ba4d249b71eac80" category="list-text">確定一天中延遲較高的時段</block>
   <block id="c30c0bc3ebb09ae2a400e94d60d3b6ef" category="list-text">判斷延遲高峰是短暫的還是持續時間較長的</block>
   <block id="160b08b76619548dc226e1be0f2bee50" category="list-text">將延遲事件與工作負載模式或系統變化進行比較</block>
   <block id="9674b9c64afd7c46e3c2a992f0619360" category="paragraph">您可以查看磁碟區延遲隨時間的變化。這有助於您決定是否立即採取措施、變更警示限制或檢查系統問題。</block>
-  <block id="b937c3f4ce20c3c70aa8101614121add" category="admonition">延遲圖表使用 CloudWatch 指標。這些指標可能與 ONTAP QoS 延遲中心資料略有不同，因為它們的收集方式不同。兩者同時顯示是為了提供更全面的視圖。</block>
   <block id="1e010f64da8e49bc405d8e11ea8b14fa" category="paragraph">在審查回應時間變化時，請參考以下提示：</block>
   <block id="d648bc371ecfca3ec80a88cdb4944d2e" category="list-text">*使用多個時間範圍*：查看不同時間範圍的圖表，以區分短暫的尖峰和持續的速度下降。首先查看 24 小時視圖以了解整體情況。然後縮小至較短的時間段以檢視特定事件，或切換至 72 小時視圖以找出每日規律。</block>
   <block id="db6b56a4c58df637e045df981f066cff" category="list-text">*直觀比較閾值*：使用圖表上的閾值線檢查您的警告和嚴重設定是否符合您的工作負載。如果延遲經常接近閾值但未超過閾值，則閾值可能過高。如果您看到許多短暫的峰值超過閾值但不影響作業，則閾值可能過於敏感。</block>
@@ -1061,4 +1012,43 @@
   <block id="eeaf9b0486df56b5ef23ab55b9b5c590" category="paragraph">設定電子郵件或 Amazon SNS 通知，以便在偵測到高延遲時收到警報。您可以透過以下兩種選項控制通知頻率：</block>
   <block id="f0ac07f7c61e9a1057c26af44dc07e0f" category="list-text">*每日提醒（建議）*：當任何檔案系統發生新的安全漏洞時，您將收到通知。發送一次檔案系統安全漏洞通知後，請等待 24 小時再發送相同檔案系統的安全漏洞通知。</block>
   <block id="787290df504f1549bf1bea416b297658" category="list-text">*Notify on any latency breach (every 20 minutes)*：偵測到違規情況時，最多每 20 分鐘收到一次通知。</block>
+  <block id="efb6a1d0d54500167c0d1ae30ab8ac5b" category="doc">增強延遲分析，同步顯示延遲、IOPS 和處理量圖表</block>
+  <block id="a868b37aeda2e8d7f0a8e48f498112fc" category="paragraph">延遲分析面板現在包含一個「詳細延遲分析」頁面，其中包含同步的效能圖表：</block>
+  <block id="a4abbd682ae58689df4450b4a65c90a2" category="list-text">*處理量圖*：顯示資料傳輸速率（DataReadBytes 或 DataWriteBytes）。在篩選器中選取 Metadata 時，處理量圖不會顯示任何資料。</block>
+  <block id="7e9591a005bdef4cdf16dfd575186f3b" category="paragraph">您可以調整檢視，並將延遲峰值與 IOPS 和處理量的變化關聯起來。違規標記和懸停細節可協助您查看何時超過臨界值，並審查偵測到的違規行為的關鍵計量。</block>
+  <block id="94865ed9933801afc860536ada02e496" category="summary">檢視並分析延遲事件，以尋找 FSx for ONTAP Volume 的效能問題。使用基本分析和可選的 AI 分析來確定根本原因並提供建議的修復方案。</block>
+  <block id="939c818555e5fa65655d447cc97817ae" category="section-title">檢視延遲高於臨界值的 Volume</block>
+  <block id="bbc7d21521d2a10f49812344ac8d5c6a" category="paragraph">「延遲超過臨界值的 Volume」表顯示過去 72 小時內延遲超過警告或關鍵延遲臨界值的 Volume。</block>
+  <block id="f06921222f3510361d45443110e72880" category="list-text">審查表格中每個事件的資訊。</block>
+  <block id="3cd32cbc73706e6bc220ece19622d604" category="list-text">延遲分析面板可快速檢視違規情況，包括延遲圖表以及時間範圍和類型控制選項。選取 *檢視完整分析* 可開啟詳細的延遲分析頁面，其中包含基本分析、AI 分析（可選）和其他圖表。詳情請參閱 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>。</block>
+  <block id="0665519f24690502dfcb8f5913d6b056" category="paragraph">在 *Severity* 欄位中選取延遲事件，即可開啟該事件的延遲分析面板。此面板包含多個索引標籤，可提供延遲事件的不同檢視。</block>
+  <block id="c1316b241fd76c7d425cf326dd63f142" category="paragraph">如果已設定 Amazon Bedrock 模型 ARN，則可以對資料和叢集場景執行 AI 分析。如果未設定 Bedrock，則會提供該檔案系統的 Storage Workloads 組態頁面連結，您可以在該頁面設定 Bedrock 存取。</block>
+  <block id="0f76eb72044a145a7b1eb778e6653a96" category="list-text">*基本*：顯示自動分析結果。如果已連結到檔案系統，則會顯示組件分解訊息，並指出導致延遲的組件。如果未連結到檔案系統，系統會提示您新增連結。畫面會顯示受影響 Volume 的 CloudWatch 計量互動式延遲圖。根據觸發事件的警示，該圖會顯示讀取或寫入計量。您可以選擇不同的時間範圍，並使用篩選器檢視全部、讀取、寫入或元資料操作。</block>
+  <block id="56dacd4284bdced92c0b004472a11758" category="list-text">*AI 分析*：顯示更深入的調查，以確定具體的根本原因和潛在的補救步驟。</block>
+  <block id="633009349fd0d4ddd69254b14ddb614b" category="list-text">*詳細延遲分析*：顯示受影響 Volume 的 CloudWatch 計量互動式圖表。圖表顯示延遲、IOPS 和處理量隨時間的變化。根據觸發事件的警示類型，圖表會顯示讀取或寫入計量。您可以選擇不同的時間範圍，並使用篩選器檢視全部、讀取、寫入或元資料操作。</block>
+  <block id="b40f6683a1eb1ae3afa3737db2b06397" category="list-text">審查 *Basic* 索引標籤。如果已連接連結，請開啟組件分解圖，查看延遲來源。如果未連接任何連結，請選擇提示以連結一個連結，以便分析各個組件。</block>
+  <block id="48b3037533aefc21a7c0b33e38b9d2cf" category="list-text">在「AI 分析」標籤中，選擇「分析」以檢視更深入的調查結果，例如可能的資料或叢集問題。這有助於確定具體的根本原因和潛在的補救步驟。</block>
+  <block id="92ffa2df9924192cd277aff197d336a5" category="list-text">選擇 *View full analysis* 以檢視 AI 分析的完整結果，包括效能圖表，這些圖表顯示所選時間段內來自 CloudWatch 計量的 Volume 延遲、IOPS 和處理量。</block>
+  <block id="ac750ed2f2d8556a0303fc989b1e0872" category="list-text">*監控趨勢*：定期檢查延遲高於臨界值的 Volumes 表，以發現可能指向組態問題的模式或重複出現的問題。</block>
+  <block id="22da945b536d75359bd27d704612a787" category="summary">使用互動式圖表分析一段時間內的 Volume 延遲趨勢、識別模式，並追蹤補救措施的效果。</block>
+  <block id="2ec452c69d214026151e8a42a419d0b1" category="paragraph">偵測到延遲違規後，請使用圖表查看 Volume 延遲、IOPS 和處理量隨時間的變化。這有助於您發現規律並驗證修復措施是否提升了效能。</block>
+  <block id="64eb0d7530cb4d0bc81780c9ebbdcbbe" category="paragraph">您需要 <block ref="1a49b94c8c033bb71bcc3614a6b897ae" category="inline-link-macro-rx"></block> 且至少偵測到一次安全漏洞。若要檢視圖表，請確保 AWS 憑證可用。若要檢視 QoS 延遲元件細分，請確保檔案系統已連結。</block>
+  <block id="3ae7414ab463567f2bf8aae54aa9a900" category="paragraph">*詳細延遲分析*頁面提供效能圖表，協助您分析一段時間內的 Volume 行為：延遲、IOPS 和處理量。</block>
+  <block id="f1964d68df733303823396964d8fcf09" category="paragraph">圖表顯示受影響 Volume 的 CloudWatch 計量。所有圖表均使用相同時間軸。它們會根據觸發事件的警示自動顯示計量。</block>
+  <block id="4f8d18811eb9e0fcc2462824cfaa9dc6" category="list-text">*延遲圖*：顯示 Volume 延遲（毫秒）隨時間的變化，並標有警告和關鍵臨界值線以及違規標記。</block>
+  <block id="f9e375a478de51cc0f949a103b83233c" category="list-text">*IOPS 圖表*：顯示 IOPS 隨時間的變化，以及臨界值和突破標記（如果已設定）。</block>
+  <block id="2fba9b89e516e96986ba8d8c890731f0" category="list-text">*處理量圖表*：顯示所選時間範圍內的處理量變化。如果在篩選器中選擇了 **Metadata**，則處理量圖表不顯示任何資料。</block>
+  <block id="361ebfed5e970a1f8984f2d4be533e89" category="list-text">*臨界值線*：虛線水平線表示警告臨界值和關鍵臨界值。</block>
+  <block id="0e9a1ca569cda77d4ab662d48c4cc282" category="list-text">*違規標記*：視覺標記指示偵測到的違規行為。將滑鼠懸停在標記上可檢視嚴重程度、偵測時間、CloudWatch 中位數延遲（毫秒）以及 QoS 延遲組件細分。</block>
+  <block id="b943afa5c9b504ceb5e0faa4fc8420e0" category="list-text">在「延遲」標籤中，選取「嚴重性」欄中的事件。</block>
+  <block id="ca8c8ecf75417882696d3eaa0e18b608" category="list-text">審查所選*時間範圍*和*類型*的延遲圖表和違規摘要。</block>
+  <block id="4168f8b34d36b7302988879a17b6b48c" category="list-text">選擇 *View full analysis* 以開啟 *Detailed latency analysis*。</block>
+  <block id="359c854db96140d04018b5d3a94b7ee3" category="list-text">在*延遲圖表*中，使用*時間範圍*（例如，72 小時）和*類型*（讀取/寫入/元資料）來調整圖表。</block>
+  <block id="9e915523ef64d335bfe245f9df7039e4" category="list-text">審查以下圖表：</block>
+  <block id="5530d01f84d1c09f67656f3875630b03" category="list-text">*延遲*（毫秒）及警告/關鍵臨界值線</block>
+  <block id="168ef7d9e6c2c6a31f8e37e19d08f2e2" category="list-text">*IOPS*（含臨界值線，如已設定）</block>
+  <block id="9d8f83e9c0257a120404b2f01f6f84d9" category="list-text">在同一時間範圍內的*處理量*</block>
+  <block id="6b0164f0c47ac1625dba2aff92f54ca0" category="list-text">使用峰值標記和違規摘要（例如，「在此時間範圍內偵測到 1 個關鍵違規」）將延遲增加與 IOPS 和處理量變化相關聯。</block>
+  <block id="e40e1e13d45e3125fff8c83420101578" category="list-text">將滑鼠懸停在違規標記上，即可檢視違規詳情（嚴重性、偵測到的時間、CW 中位數延遲和 QoS 延遲元件）。</block>
+  <block id="d55195576b5cc1af51f0d8ba78078a8c" category="admonition">圖表使用 CloudWatch 計量。這些計量可能與 QoS 報告的延遲元件略有不同，因為它們的收集方式不同。</block>
 </blocks>

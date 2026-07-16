@@ -4,6 +4,7 @@
 
 
 
+[[overview-dashboard-for-eda-storage-management]]
 === EDA 儲存管理概覽儀表板
 
 身為管理數十個 FSx for ONTAP 檔案系統的 IT 管理員、您可以使用 Overview 儀表板來回答有關叢集健全狀況、使用率和磁碟區放置的常見操作問題。
@@ -20,6 +21,7 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html["深
 
 
 
+[[automated-latency-analysis]]
 === 自動延遲分析
 
 延遲分析現已包含自動化基礎分析功能。當偵測到延遲事件時，系統會自動分析 ONTAP QoS 延遲中心指標，以識別延遲問題的來源。
@@ -28,6 +30,7 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html["深
 
 
 
+[[new-ask-me-bookmark-available-in-workload-factory]]
 === Workload Factory 中新增了「問我」書籤
 
 我們在 Workload Factory 控制台的每個畫面上都新增了 Ask Me 書籤。這項改進讓您在需要協助時更輕鬆快速地存取 Ask Me。Ask Me 是我們的 AI 助手，您可以詢問有關自身工作負載環境的問題，直接從您的環境中獲取個人化見解，並查看先前的對話記錄。

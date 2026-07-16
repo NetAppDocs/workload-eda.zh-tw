@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-analyze-latency-issues.html 
-keywords: latency analysis, analyze latency, latency events, root cause analysis, QoS delay center, AI analysis, latency troubleshooting, volume latency, basic analysis, affected clients, remediation steps 
-summary: 檢視並分析延遲事件，以尋找 FSx for ONTAP 磁碟區的效能問題。使用自動基本分析和可選的 AI 分析來識別根本原因並提供建議的修復方案。 
+keywords: latency analysis, analyze latency, latency events, root cause analysis, QoS delay center, AI analysis, latency troubleshooting, volume latency, basic analysis, affected clients, remediation steps, iops, throughput 
+summary: 檢視並分析延遲事件，以尋找 FSx for ONTAP Volume 的效能問題。使用基本分析和可選的 AI 分析來確定根本原因並提供建議的修復方案。 
 ---
 = 分析 Workload Factory for EDA 中的延遲問題
 :allow-uri-read: 
@@ -15,15 +15,17 @@ summary: 檢視並分析延遲事件，以尋找 FSx for ONTAP 磁碟區的效�
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 您必須先擁有 link:task-configure-latency-monitoring.html["已設定的延遲監控"] 才能檢視和分析延遲事件。
 
 
 
-== 檢視延遲事件
+[[view-volumes-with-latency-above-threshold]]
+== 檢視延遲高於臨界值的 Volume
 
-延遲事件表集中顯示了過去 72 小時內的所有警告和嚴重事件。
+「延遲超過臨界值的 Volume」表顯示過去 72 小時內延遲超過警告或關鍵延遲臨界值的 Volume。
 
 .關於此任務
 * 每個磁碟區僅顯示最近一次資料外洩事件。同一磁碟區之前的外洩事件不會顯示。
@@ -36,95 +38,71 @@ summary: 檢視並分析延遲事件，以尋找 FSx for ONTAP 磁碟區的效�
 . 使用以下任一方式登入 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主機體驗"^]。
 . 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示"]，然後選擇 *EDA*。
 . 選取 *Latency* 標籤。
-. 檢閱延遲事件表中每個事件的資訊。
+. 審查表格中每個事件的資訊。
 . 若要檢視延遲事件的詳細資訊，請在 *Severity* 欄中選取該事件。這將開啟該事件的延遲分析面板。
 . 若要對表格進行排序，請選取任何欄標題。根據預設，重大事件會先依時間排序顯示，接著是依時間排序的警告事件。
 . 若要關閉一個或多個事件，請在每個事件旁邊選取 image:icon-action.png["動作功能表圖示"] *Dismiss* 。
 . 若要新增欄至表格，請選擇 image:column-icon.png["欄圖示"]，選擇欄，然後選擇 *套用*。
-. 若要分析一段時間內的延遲趨勢，請選擇事件以開啟延遲分析面板。使用 *Over time* 標籤查看互動式延遲圖表。詳情請參閱 link:task-analyze-latency-trends.html["分析延遲趨勢"]。
+. 延遲分析面板可快速檢視違規情況，包括延遲圖表以及時間範圍和類型控制選項。選取 *檢視完整分析* 可開啟詳細的延遲分析頁面，其中包含基本分析、AI 分析（可選）和其他圖表。詳情請參閱 link:task-analyze-latency-trends.html["分析延遲趨勢"]。
 
 
 
 
+[[analyze-a-latency-event]]
 == 分析延遲事件
+
+.開始之前
+在 Workload Factory 設定中設定 Amazon Bedrock 模型 ARN，請參閱 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/requirements-knowledge-base.html#basic-genai-requirements["基本 GenAI 需求"^]。
 
 基本分析功能可以幫助您快速找到導致速度變慢的原因，而無需手動調查。
 
 
 
+[[latency-analysis-panel]]
 === 延遲分析面板
 
-在 *Severity* 欄位中選擇延遲事件，即可開啟該事件的延遲分析面板。此面板包含多個選項卡，可提供延遲事件的不同視圖：
+在 *Severity* 欄位中選取延遲事件，即可開啟該事件的延遲分析面板。此面板包含多個索引標籤，可提供延遲事件的不同檢視。
 
-* *概述*：顯示基本結果，以確定哪個元件導致延遲。
-* *隨時間變化*：顯示包含歷史資料的互動式延遲圖表
+如果已設定 Amazon Bedrock 模型 ARN，則可以對資料和叢集場景執行 AI 分析。如果未設定 Bedrock，則會提供該檔案系統的 Storage Workloads 組態頁面連結，您可以在該頁面設定 Bedrock 存取。
 
+* *基本*：顯示自動分析結果。如果已連結到檔案系統，則會顯示組件分解訊息，並指出導致延遲的組件。如果未連結到檔案系統，系統會提示您新增連結。畫面會顯示受影響 Volume 的 CloudWatch 計量互動式延遲圖。根據觸發事件的警示，該圖會顯示讀取或寫入計量。您可以選擇不同的時間範圍，並使用篩選器檢視全部、讀取、寫入或元資料操作。
+* *AI 分析*：顯示更深入的調查，以確定具體的根本原因和潛在的補救步驟。
+* *詳細延遲分析*：顯示受影響 Volume 的 CloudWatch 計量互動式圖表。圖表顯示延遲、IOPS 和處理量隨時間的變化。根據觸發事件的警示類型，圖表會顯示讀取或寫入計量。您可以選擇不同的時間範圍，並使用篩選器檢視全部、讀取、寫入或元資料操作。
 
-
-
-==== 總覽索引標籤
-
-*概覽*索引標籤顯示自動分析結果。如果檔案已連結到檔案系統，則會顯示元件明細，並指出導致延遲的元件。如果不存在連結，系統會提示您新增連結。
-
-如果已設定 Amazon Bedrock 模型 ARN，則「概覽」標籤可讓您對資料和叢集場景執行 AI 分析。如果未設定 Bedrock，則該標籤會顯示指向該檔案系統的「儲存工作負載」設定頁面的連結，您可以在該頁面設定 Bedrock 存取。
-
-
-
-==== 隨時間推移標籤
-
-**Over time** 索引標籤會顯示受影響磁碟區之 CloudWatch 計量指標的互動式圖表。這些圖表會顯示一段時間內的延遲、IOPS 和吞吐量。它們會根據觸發事件的警示，顯示讀取或寫入計量指標。您可以選擇不同的時間範圍（1H、3H、12H、24H、72H），並使用篩選器來檢視「全部」、「讀取」、「寫入」或「中介資料」作業。
 
 有關使用圖表的詳細說明，請參閱link:task-analyze-latency-trends.html["分析延遲趨勢"]。
 
 
 
+[[steps]]
 === 步驟
 
 . 在 *Latency* 標籤中，找到要分析的事件。
 . 在 *Severity* 欄位中，選擇一個延遲事件，開啟該事件的分析面板。
-. 請查看 *Overview* 索引標籤。如果已連接連結，請開啟元件分解圖，查看延遲原因。如果未連接任何連結，請選擇提示以連接一個連結，以便分析各個元件。
-. （選用）選取 *Over time* 標籤，以檢視受影響磁碟區的延遲趨勢。
-. 如果延遲需要更深入的調查，例如可能的資料或叢集問題，請執行 AI 分析。
-
-
-
-
-== 執行 AI 分析
-
-AI 分析可提供更深入的調查，以確定具體的根本原因和潛在的補救步驟。
-
-.開始之前
-在 Workload Factory 設定中設定 Amazon Bedrock 模型 ARN，請參閱 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/requirements-knowledge-base.html#basic-genai-requirements["基本 GenAI 需求"^]。
-
-.關於此任務
-執行 AI 分析時，系統會自動重新整理基本分析資料，並將其用作 AI 分析的輸入。
-
-.步驟
-. 在 *Latency* 標籤中，找到要分析的事件。
-. 在 *Severity* 欄位中，選擇一個延遲事件，開啟該事件的分析面板。
+. 審查 *Basic* 索引標籤。如果已連接連結，請開啟組件分解圖，查看延遲來源。如果未連接任何連結，請選擇提示以連結一個連結，以便分析各個組件。
+. 在「AI 分析」標籤中，選擇「分析」以檢視更深入的調查結果，例如可能的資料或叢集問題。這有助於確定具體的根本原因和潛在的補救步驟。
 +
-如果檔案系統未關聯任何連結，系統會提示您將連結關聯到受影響的檔案系統。選擇提示即可跳到該檔案系統的連結設定頁面。
+查看結果，包括：
 
-. 請檢閱 *Overview* 標籤以瞭解基本分析結果並識別延遲來源。
-. 如果延遲來源被確定為資料或叢集，請選擇 *Analyze* 以執行 AI 分析。
-. 查看結果，包括：
 +
 ** 潛在根本原因說明
 ** 受影響的 EC2 用戶端清單
 ** 建議的補救步驟
 
 
+. 選擇 *View full analysis* 以檢視 AI 分析的完整結果，包括效能圖表，這些圖表顯示所選時間段內來自 CloudWatch 計量的 Volume 延遲、IOPS 和處理量。
 . 請按照建議的步驟解決延遲問題。
 . 更改完成後，請檢查延遲事件表以確認問題已解決。
 
 
 
 
+[[best-practices]]
 == 最佳實務
 
 分析延遲問題時，請考慮以下建議：
 
-* *監控趨勢*：定期檢查延遲事件表，以發現可能指向組態問題的模式或重複出現的問題。
+* *監控趨勢*：定期檢查延遲高於臨界值的 Volumes 表，以發現可能指向組態問題的模式或重複出現的問題。
 * *策略性地運用 AI 分析*：如果基礎分析顯示需要進行 AI 分析，則可在審查資料時使用 AI 分析。AI 分析可揭示複雜效能問題的更深層見解，這些問題需要詳細的疑難排解。
 * *審查被駁回的事件*：定期審查事件被駁回的原因，以確定是否需要調整閾值或改進系統。
 
@@ -133,6 +111,7 @@ AI 分析可提供更深入的調查，以確定具體的根本原因和潛在�
 
 
 
+[[related-information]]
 == 相關資訊
 
 * link:learn-latency-monitoring.html["了解延遲監控"]

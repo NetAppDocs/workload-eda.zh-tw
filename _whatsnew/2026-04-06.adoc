@@ -4,6 +4,7 @@
 
 
 
+[[eda-capacity-recommendations]]
 === EDA 容量建議
 
 Workload Factory 現在可以自動分析 EDA 清單中每個 FSx for ONTAP 叢集的 SSD 容量，並在需要調整時產生容量建議。該演算法每 24 小時對每個叢集執行一次。
@@ -21,6 +22,7 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html#capa
 
 
 
+[[automated-ai-latency-analysis]]
 === 自動化 AI 延遲分析
 
 延遲分析現在包括 AI 分析。
