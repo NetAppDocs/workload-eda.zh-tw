@@ -27,6 +27,8 @@ sidebar:
       url: "/learn-eda.html"
     - title: 快速啟動
       url: "/quick-start-eda.html"
+    - title: 要求
+      url: "/requirements-eda.html"
   - title: EDA 儲存概述
     entries:
     - title: 了解概覽儀表板
@@ -57,8 +59,6 @@ sidebar:
     entries:
     - title: 了解 Perforce 集成
       url: "/learn-eda-workloads.html"
-    - title: 要求
-      url: "/requirements-eda.html"
     - title: 專案管理
       url: "/manage-projects.html"
     - title: 管理專案版本

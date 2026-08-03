@@ -383,7 +383,6 @@
   <block id="3589dd4e8f5f2cbdba29810271d0f1d9" category="paragraph"><block ref="6f22f53277ef02f84f5ed64bde49085d" category="inline-link-rx"></block>。</block>
   <block id="7e565772caac09d981d6b3641bb20148" category="inline-link-macro">了解延遲監控</block>
   <block id="9918911ccf4f48662bd23b3fa6ea97a8" category="inline-link-macro">監控磁碟區延遲</block>
-  <block id="27e0e44d189c553eb00dc006b35029f5" category="list-text">選擇 *+ Add filters*。</block>
   <block id="58812a046615ae0cede06aa76e867511" category="paragraph">您可以在套用變更之前選擇自訂篩選器旁邊的垃圾桶圖示來刪除該篩選器。</block>
   <block id="ec4fc4cb1b37373b785aaee6062cfec7" category="section-title">檢視磁碟區詳細資料</block>
   <block id="ee855ba807a55874eb4b38814389078f" category="section-title">總檢視</block>
@@ -410,7 +409,6 @@
   <block id="d4f2d389a3d4d575b8158ca4417bf9a5" category="list-text">在設定的時間範圍內，所有資料點都符合這兩個條件。</block>
   <block id="6efa4b954c442dd4f15a0f58f1b0bd86" category="paragraph">例如，使用預設警告閾值，只有當 10 分鐘內所有資料點的讀取延遲超過 6 毫秒且讀取 IOPS 超過 100 ops/sec 時，才會觸發讀取警報。</block>
   <block id="e0b18d5b04f677d427e5a029d591d7a9" category="section-title">事件嚴重性</block>
-  <block id="7776f517a75d578f349901d6f0886405" category="list-text">事件會在 72 小時後自動刪除。</block>
   <block id="01bd639bef6ec9a56687ee7ffd9f246c" category="section-title">管理延遲組態</block>
   <block id="6fe6ef1cbd27d3257ff9500aab5f9ab9" category="list-text">在 *Latency* 頁面中，選擇 *Edit*。</block>
   <block id="d53bdccd3ec334ddfd63d2269906352a" category="list-text">根據需要修改任何臨界值。</block>
@@ -438,7 +436,6 @@
   <block id="c4909262f33027f9d6430abfd14a7941" category="list-text">您必須將具有讀取 / 寫入權限的 AWS 憑證新增至 Workload Factory 。延遲監控功能需要存取與您的 AWS 憑證關聯的所有 FSx for ONTAP 磁碟區的 CloudWatch 指標。</block>
   <block id="d65de0ffa05b31f0beebf22d3e28dbde" category="list-text">連結至 FSx for ONTAP</block>
   <block id="8997880c88dd70fe80799ee97bb7ac0c" category="inline-link-macro">建立連結</block>
-  <block id="e631d9996b49ecdb5d4d4146db562c6d" category="paragraph">有關建立和關聯連結的說明，請參閱 <block ref="27f80dd01569e18971f783f257cc7294" category="inline-link-macro-rx"></block>。</block>
   <block id="bf7cc54e388f0b806386888989c37589" category="list-text">具有檢視權限的 AWS 憑證</block>
   <block id="2daabc6822724771970f17e8ae6a4cee" category="list-text">選擇 *Overview* 標籤。</block>
   <block id="a2fbf7fa6f022aa585757c4d6cf5cfbe" category="list-text">如果未偵測到具有檢視權限的憑證，請選擇 *Add credentials*，然後依照提示配置具有檢視權限的 AWS 憑證。之後返回 *Overview* 選項卡。</block>
@@ -471,9 +468,6 @@
   <block id="208586cd32a8a0d00042653ba4659b8e" category="paragraph">啟用概覽儀表板，以監控 FSx for ONTAP 叢集的運作狀況、容量和吞吐量。接受同意提示，允許 Workload Factory 開始收集 CloudWatch 指標。</block>
   <block id="92b8944386b41a864c3b42d0a5f178da" category="paragraph">目前不支援 _Basic_ 模式和 _Read-only_ 模式權限。</block>
   <block id="14148bac5b7c3663c54f10f09a5bd49a" category="paragraph">延遲監控不支援 _Basic_ 模式和 _Read-only_ 模式權限。</block>
-  <block id="289fde61867c520c9e1b763ec58e4782" category="list-text">Amazon Bedrock 模型 ARN （選用）</block>
-  <block id="a6390dd71ac213c8926f4e003361b1c7" category="inline-link-macro">基本 GenAI 需求</block>
-  <block id="544f338acee9a38350cfd4ac8846e75e" category="paragraph">如需更多詳細資料、請參閱 <block ref="6c761e19260aabd782369cde93c2b1c4" category="inline-link-macro-rx"></block>。</block>
   <block id="cb9b360ea843c63638883c1cd17f136a" category="list-text">*警告事件*：表示延遲升高，可能需要注意</block>
   <block id="a76142b21bf8fd3e217700ad47520a99" category="list-text">*關鍵事件*：表示存在嚴重的延遲，需要立即調查</block>
   <block id="85af8e40cac423345858be0210476d20" category="list-text">選取 *Latency* 標籤。</block>
@@ -486,16 +480,10 @@
   <block id="102e5bfcdb00d2737ee47f8cfa62267e" category="list-text">*受影響的用戶端*：受延遲影響的 EC2 執行個體名稱清單</block>
   <block id="97a2c1af5741eeecb9eaa5c7c36521b7" category="list-text">*潛在的補救步驟*：解決問題的兩個或多個特定動作</block>
   <block id="e38b13dd2c91516a7427e9ddddaee80a" category="list-text">在 *Latency* 標籤中，找到要分析的事件。</block>
-  <block id="c3feff18acbe4e3addd9196da0c369bc" category="list-text">您必須在 Workload Factory 中設定 AWS 認證資料、並至少具備 General Storage 的讀取（檢視）權限。不支援 _Basic_ 認證資料。</block>
   <block id="927108002b8d97b63eeefcd5cc76ff99" category="paragraph">如果您尚未設定具有檢視權限的認證資料，則開啟「概覽」標籤時，您將被重新導向至 AWS 認證資料設定頁面。</block>
   <block id="148a662b6f742683655df7c4b27aab64" category="list-text">啟動儀表板</block>
   <block id="5626a4ecac9741d9b0e61d578ebf1561" category="paragraph">更新篩選條件後，所有資訊都會重新整理，只顯示符合的檔案系統。</block>
-  <block id="adf40a5c785aaeef6afc57401dfa0da4" category="section-title">容量建議</block>
-  <block id="9cc0347665febc5bdecbb8b62b56caef" category="section-title">檢視並套用容量建議</block>
-  <block id="95f6a08d0f924200d8aedf875fe0d26f" category="list-text">檢閱 SSD 建議和容量圖表。</block>
   <block id="a91263358447ff86f00508073a54103c" category="paragraph">該建議解釋了建議的變更及其背後的原因。例如：_我們建議您根據檔案系統的 SSD 使用模式增加 SSD 容量。_</block>
-  <block id="9a5f604071695fc8c90fa884731bdf90" category="paragraph">此圖表顯示目前的 SSD 使用量以及歷史趨勢，並向您展示容量建議演算法如何隨時間調整容量。</block>
-  <block id="75982876f75909a704866c60073481a4" category="list-text">在圖表右上角、選取時間範圍以變更顯示的期間。預設為一週。</block>
   <block id="6f600db4b9fe06680f2ac280db49796a" category="section-title">2026 年 4 月 6 日</block>
   <block id="97c13014b9e16335b445d04850fb955f" category="doc">延遲事件的電子郵件和 SNS 通知</block>
   <block id="c31a2fa4340e87df74fd4add6857d037" category="paragraph">現在，當 FSx for ONTAP 磁碟區上偵測到延遲事件時，您可以接收自動通知。在 Workload Factory 設定中設定電子郵件或 Amazon SNS 通知，以便在磁碟區的延遲超過您設定的閾值時接收即時警報。</block>
@@ -522,7 +510,6 @@
   <block id="1ecd985fc0693d958ad07611d2deb457" category="list-text">*憑證*：選擇要使用的 Amazon AWS 憑證。EDA 使用這些憑證來發現可用於此專案的 FSx for ONTAP 檔案系統，並建立專案的複製和快照。</block>
   <block id="060b67e800a6d9a85b502dd348d56951" category="list-text">*區域*：選擇此 FSx for ONTAP 檔案系統所在的區域。</block>
   <block id="e79582136788303ae03dfadcec648921" category="list-text">*FSx for ONTAP 檔案系統*：選擇要與此專案一起使用的 FSx for ONTAP 檔案系統。</block>
-  <block id="f84de4f2f9588a1f1267bf2c1f67bba6" category="paragraph">您只能選擇已設定連結的檔案系統<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>。</block>
   <block id="d336a06e84d74c4a2d8a59e458f6a7c1" category="summary">透過設定環境、啟用監控儀表板和設定延遲分析，即可開始使用 Workload Factory for EDA。</block>
   <block id="2edaf9b54abbf5ae956607d1cce3419f" category="doc">Workload Factory for EDA 快速入門</block>
   <block id="0595b103e9174c24b7fffa0491687cc5" category="paragraph">透過設定環境、啟用監控儀表板和設定延遲分析來開始使用 Workload Factory for EDA，從而最佳化 FSx for ONTAP 的效能，以滿足 EDA 工作負載的需求。</block>
@@ -530,7 +517,6 @@
   <block id="e92f1fd565b0115330969e68f1df5c93" category="inline-link-macro">分析延遲趨勢</block>
   <block id="b888e1d990c199d358b31e27c7359f42" category="doc">EDA 需求的 Workload Factory</block>
   <block id="656ff150d41fa1c0fc581a7d9317539b" category="list-text">您至少需要檔案系統中具有下列組態的一個磁碟區：</block>
-  <block id="203f7d7dafc1c11f2f80c2510b54a471" category="list-text">檔案系統必須設定連結 <block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>。</block>
   <block id="5aef21820caef7c0f864852459c0e5f6" category="doc">註冊以取得 Workload Factory for EDA 的支援</block>
   <block id="7710e3af23bbd50fdc1e743685f0d33f" category="doc">分析 Workload Factory 中 EDA 的延遲趨勢</block>
   <block id="a84cf3e93039b68c477a75d0719fe3b4" category="inline-link-macro">已設定的延遲監控</block>
@@ -544,7 +530,6 @@
   <block id="391d5001f0e7f63a7def2cbcdfbf9795" category="list-text">若要檢視延遲事件的詳細資訊，請在 *Severity* 欄中選取該事件。這將開啟該事件的延遲分析面板。</block>
   <block id="256e5511799cf87e5ea3d5686def55a5" category="list-text">若要對表格進行排序，請選取任何欄標題。根據預設，重大事件會先依時間排序顯示，接著是依時間排序的警告事件。</block>
   <block id="5bf8d268567f0e7ee71b32158e4a1593" category="section-title">分析延遲事件</block>
-  <block id="46a6c0f7d8d51bac15ceada497addbb0" category="paragraph">在 Workload Factory 設定中設定 Amazon Bedrock 模型 ARN，請參閱 <block ref="6c761e19260aabd782369cde93c2b1c4" category="inline-link-macro-rx"></block>。</block>
   <block id="2f4239783073f0a94706e2317e78bba8" category="list-text">在 *Severity* 欄位中，選擇一個延遲事件，開啟該事件的分析面板。</block>
   <block id="42ca2768ba0de807a5ef846dc69d0aad" category="section-title">設定延遲通知</block>
   <block id="b113e6e3f414df97faffdf304f96cdea" category="inline-link-macro">設定通知設定</block>
@@ -616,8 +601,6 @@
   <block id="97c702b452a6c71f4f36f5402b29d8fd" category="section-title">儀表板元件</block>
   <block id="c273f90bb18e2d345cad42a75c13525e" category="paragraph">健康狀態包括下列領域：</block>
   <block id="eea2274bcc20c5ab5c322a30dcee6258" category="list-text">*延遲*</block>
-  <block id="e0b6d15d08b6ac1bf0c9ca66512009b1" category="list-text">*SSD 容量管理*</block>
-  <block id="fae1127ef684baae2da0861b0a98b91c" category="list-text">顯示 SSD 使用率超過 80% 的檔案系統數量以及具有主動容量建議的檔案系統數量。這有助於您快速識別可能需要容量關注的檔案系統。</block>
   <block id="0e2625311ccf9f45cca827ce6c0e4bca" category="list-text">*ONTAP 事件*</block>
   <block id="d7977f08ca83e47fe2459a0029ea1287" category="list-text">顯示偵測到的 EMS 事件數量，按容量、可用性與保護以及安全性與其他類別進行分類。</block>
   <block id="79b87402abbc633ab610924741eb4961" category="paragraph">叢集表提供了每個 FSx for ONTAP 檔案系統的詳細視圖，並依您目前所在的區域和 AWS 帳戶進行篩選。資料來源於 CloudWatch 指標。</block>
@@ -635,7 +618,6 @@
   <block id="797016fdf74902992680096f55a3d63c" category="list-text">*臨界值* （10-90%）</block>
   <block id="7eb5fa704b3019bd0f6cd3883bbcf786" category="list-text">*Lookback*（1-200 小時）</block>
   <block id="9a4103f7e6d7d850b63cbe6a386c5186" category="list-text">用於分析歷史 SSD 使用模式的時間段。更長的回溯期可為容量決策提供更多歷史背景資訊。僅在 Automate 模式下可用。</block>
-  <block id="8d3fdec3e987ae5a2aa90e14c81ac557" category="list-text">*提前* （1-200 小時）</block>
   <block id="00e09bedfec925ddc5d5fb54c9e8dd7b" category="list-text">用於預測未來容量需求的時段。預測時段越長，對未來容量成長的規劃就越長遠。僅在自動模式下可用。</block>
   <block id="fa0b4e3f4266abe4ec93e3058cfcd2aa" category="section-title">了解容量決策點</block>
   <block id="c27f88e562f3ed3c4000570673348297" category="list-text">*建議決策點*</block>
@@ -706,7 +688,6 @@
   <block id="cce78dc6ebbec7385a01f2146d6d01c8" category="section-title">後續步驟</block>
   <block id="b7b10c1304f383232f064dc193d3492b" category="paragraph">啟動儀表板後，您可以：</block>
   <block id="84dbb7b1eccc71ff5f71a7198ff13b68" category="list-text"><block ref="2cfa6ed38cd9b96055529b98595c7f05" category="inline-link-macro-rx"></block> 監控叢集健全狀況和容量</block>
-  <block id="fdc13b7c9d56bd2522e96ae8d5d9ee87" category="list-text">設定 SSD 容量管理模式（Automate、Recommend 或 None）</block>
   <block id="f872ab9156293273da8e58555b68ca2e" category="list-text">設定篩選條件以專注於特定區域或 AWS 帳戶</block>
   <block id="526ad94042b150fca39290f6bef86a67" category="inline-link-macro">了解概覽儀表板</block>
   <block id="91b5f8f96066d41fb5057458a69d5f81" category="list-text"><block ref="91b5f8f96066d41fb5057458a69d5f81" category="inline-link-macro-rx"></block></block>
@@ -726,7 +707,6 @@
   <block id="763302f8ff688c0c89f9b68730bab872" category="list-text">每個的 IOPS 臨界值</block>
   <block id="8c7f651901d697c87ca383001e86c18c" category="list-text">評估時間範圍</block>
   <block id="4bb380b53ae6059a8ca9f7c119e77bff" category="list-text">選取 *Apply* 以儲存您的組態。</block>
-  <block id="8fdf6d96070c398324fc1f3cd8bb44f5" category="paragraph">若要啟用通知，請參閱 <block ref="760d5a248a4ffda4abc117648b19c119" category="inline-link-macro-rx"></block>。</block>
   <block id="07ba6f406b4506df814952c513441ef3" category="paragraph">設定延遲監控時，請考慮以下建議：</block>
   <block id="408435491d63d2438d80b5935f332ff0" category="summary">為 Projects 儀表板配置自訂篩選器，以便按業務結構（例如專案、團隊或應用程式）組織指標。</block>
   <block id="5d29144fbe1ed49d08e42f38228178d9" category="doc">在 Workload Factory 中設定 EDA 的 Projects 儀表板</block>
@@ -738,7 +718,6 @@
   <block id="00b3890321528a91a32d0f48642d4b03" category="list-text">套用任何標籤或篩選器後，若要檢視變更，請選取儀表板上的重新整理圖示。</block>
   <block id="57ba2727dd56ad729929975ac4544628" category="inline-link-macro">了解專案儀表板</block>
   <block id="393c0c1ecdbc9253df9e2224ce340393" category="list-text"><block ref="393c0c1ecdbc9253df9e2224ce340393" category="inline-link-macro-rx"></block></block>
-  <block id="830b8c7d4b87c3891c9850421339be6d" category="summary">使用概覽儀表板監控叢集運作狀況、查看容量建議、管理 SSD 容量設定，並分析 FSx for ONTAP 檔案系統的效能趨勢。</block>
   <block id="79181b2c6ed46060150e77e4602bc886" category="doc">使用 Workload Factory 中的 Overview 儀表板進行 EDA</block>
   <block id="f4d32e19fbe53c2c3a060145a3cb089e" category="inline-link-macro">已啟動 Overview 儀表板</block>
   <block id="b989d81a69fe7883dca4d1012f53d338" category="paragraph">您必須先<block ref="38c0848a99095f730ae7166b7cd5884e" category="inline-link-macro-rx"></block>才能使用它來監控檔案系統。</block>
@@ -749,7 +728,6 @@
   <block id="fb3123e7d905f809c3bdf82e3ceca6af" category="section-title">檢視叢集健全狀況狀態</block>
   <block id="7da261fafbc98c685b2c0c780ccdbcf1" category="paragraph">叢集健全狀況包括下列關鍵領域：</block>
   <block id="ac97fe213f96cc9db6b4ee38d70f798b" category="list-text">*延遲*：偵測到的延遲事件數量</block>
-  <block id="250cb0358f46fe26f5f0eaa93ff565d5" category="list-text">*SSD 容量模式*：SSD 使用率狀態和具有主動容量建議的檔案系統</block>
   <block id="a51f6183fddbec434723cff9a6cb22f0" category="list-text">*ONTAP 事件*：依類別劃分的 EMS 事件數量（容量、可用性與保護、安全性及其他）</block>
   <block id="c569953f651916e8d6fb2a2e26996486" category="list-text">檢閱儀表板頂端的叢集健全狀況狀態。</block>
   <block id="45cd3072594a40004f1648f957b11b4f" category="list-text">檢視延遲事件：</block>
@@ -759,38 +737,19 @@
   <block id="fc28c48860928b711f31c63cbbeac8d0" category="list-text">若要檢視 FSx for ONTAP 檔案系統的 ONTAP 事件、請選取 *Review* 。</block>
   <block id="b89294c44923d00aeca4413b78b17341" category="inline-link-macro">ONTAP CLI 說明文件</block>
   <block id="1c9d8ee06541dbbb5c46a2f2dcb0188e" category="paragraph">ONTAP 事件檢視卡按類別（容量、可用性和保護以及安全性和其他）顯示 EMS 事件的數量。有關監控的 EMS 事件的完整列表，請參閱<block ref="95232132a00f2412cfd89d25359e73da" category="inline-link-macro-rx"></block>。</block>
-  <block id="d33ac222baabd8a5273563fe2a419ee3" category="list-text">在 *Clusters* 表格中，依 *Last SSD increase timestamp* 或 *Last SSD increase description* 欄進行篩選。</block>
-  <block id="a218720ad1764a3566691dfa57178ccf" category="paragraph">具有容量建議的檔案系統會顯示在表格頂端。</block>
-  <block id="ec249c58f3b3eb7688626779c92fc2ea" category="list-text">在表格中選取檔案系統名稱以開啟它並檢視建議。</block>
   <block id="76a0ca3e805dbf2778413ce26855f65b" category="paragraph">圖表也會顯示建議決策點和自動化決策點（如果啟用了自動化模式）。將滑鼠懸停在任何決策點上，即可查看該時刻的容量建議或自動化操作的詳細資訊。</block>
   <block id="37b5b20fd94de2275a255ae79e7ac8f0" category="list-text">若要套用建議，請遵循建議訊息中提供的指引。</block>
   <block id="95138c66b91ee03084dfba9068536d5e" category="section-title">變更 SSD 管理模式</block>
-  <block id="75bea9328c43d21648ead08a87bf10a7" category="paragraph">SSD 管理模式包括：</block>
-  <block id="0691cfb7cd3c9ba639721e8f1009e52f" category="list-text">*自動化*：根據預先定義的臨界值自動增加 SSD 容量</block>
-  <block id="c0b8684a43b1fa6e9f8f11645a25c575" category="list-text">*無*：無容量建議或自動化動作</block>
-  <block id="1265c45931617f8276c61e909a9ca008" category="paragraph">如果選擇 Automate 模式，您可以設定 Threshold、Lookback 和 Ahead 參數，這些參數控制容量管理系統如何分析您的 SSD 使用情況並做出自動化決策。如果選擇 Recommend 模式，則只能設定 Threshold 參數。</block>
-  <block id="aabee2ded4098c6bf74ef47a9d869f14" category="list-text">*臨界值*（10-90%）：觸發容量建議或自動化動作的 SSD 使用率百分比</block>
-  <block id="e2ac4d7ef432e15e5c103e31a0b2f9cf" category="list-text">*回溯期* （1-200 小時）：用於分析歷史 SSD 使用模式的時間段</block>
-  <block id="773c50099421b3183829965f31e9419f" category="list-text">*提前* （1-200 小時）：用於預測未來容量需求的時間段</block>
   <block id="6d8ccfb06da581a2d86feacefa3b4869" category="inline-image-macro">動作功能表圖示</block>
   <block id="c9eecdb0eb0ca75174ea4d40e628f365" category="list-text">在 Clusters 表格中找到檔案系統名稱。在其旁邊，開啟 <block ref="db26b5e8c520e1d883813594c799d7f7" category="inline-image-macro-rx" type="image"></block> 並選取 *Change SSD capacity management*。</block>
   <block id="b689124bbd04a08329d8f616990fa06d" category="list-text">選擇您偏好的模式：</block>
-  <block id="627b9e640f1785bd7be5aff9d8741dbb" category="list-text">*None*：停用容量管理</block>
-  <block id="496444b8d58f48ae9fb24aa5598a769e" category="list-text">*建議*：設定建議分析的 Threshold 參數</block>
-  <block id="e997410074a60221c4db923d26db9751" category="list-text">*自動化*：設定臨界值、回溯和預估參數，以實現自動容量擴充</block>
-  <block id="3dea2cb2632e143a32d4bed1ffd3f529" category="section-title">批次編輯 SSD 管理參數</block>
-  <block id="52a98bdb03909a35ffb977120e61a393" category="paragraph">當您選擇多個檔案系統進行批次編輯時：</block>
   <block id="cc009bfb1b3b40af528a54a164d8b953" category="list-text">從 *Overview* 標籤中，選取表格中要編輯的檔案系統。</block>
   <block id="8cd7391e66f29fd726ffdf9a59961f54" category="admonition">您可以選取個別檔案系統，或使用標題核取方塊來選取所有可見的檔案系統。</block>
-  <block id="b1d2239c82d829e54a9ea5651662da17" category="list-text">在表格上方選擇 *Change SSD capacity management* 。</block>
   <block id="b97c770bb654f2ef0b93eb759a99c159" category="list-text">選擇您偏好的模式。</block>
-  <block id="c3c051399d43b90a41f5b4085ef45788" category="list-text">在編輯對話方塊中，根據需要調整 Threshold、Lookback 和 Ahead 參數。</block>
   <block id="43c2e4748a7a87eb44a6cb86329b0750" category="paragraph">每個參數欄位都包含一個工具提示，描述其用途和有效範圍。對話方塊會根據您的選擇顯示目前值或預設值。</block>
   <block id="3f254e874f94d9cc6daffdbea2c76012" category="list-text">選擇 *Apply* 以將變更套用到所有選定的檔案系統。</block>
-  <block id="87163b97740368f6147eaa72bca1608a" category="paragraph">所有選定檔案系統的參數都會更新。處於「推薦」或「自動」模式的檔案系統會立即使用新參數進行容量分析和決策。</block>
   <block id="84a7874f129070a914f70dd3d70a6716" category="section-title">分析容量趨勢與決策點</block>
   <block id="4dbca2bab9fb0222adee0d079e0d2127" category="paragraph">圖表上的決策點表示：</block>
-  <block id="0db031b7f1f975d91c716c7b47a4eaf3" category="list-text">*建議決策點*：容量建議演算法識別出需要額外的 SSD 容量。如果 SSD 容量未增加，則這些決策點可能每 30 分鐘出現一次。</block>
   <block id="322cceacdd52c951c88a1d93df7f0dd8" category="list-text">從 *Overview* 標籤中，選取表格中的檔案系統名稱。</block>
   <block id="c7967065af6ac7703ee14f60f2812ccb" category="list-text">檢閱顯示歷史容量趨勢的 SSD 使用圖表。</block>
   <block id="6f6089a81e1a8064861733b4969654d6" category="list-text">選擇不同的時間範圍，以檢視不同期間的容量行為。</block>
@@ -805,7 +764,6 @@
   <block id="5d9b4714a7a0165dd3acdabe8fbfec83" category="paragraph">將滑鼠游標暫留在吞吐量欄標題上可查看計算詳細資料。</block>
   <block id="c5fbe288f3a29e2574124940a06509ca" category="list-text">若要自訂欄，請選擇欄設定圖示，然後選擇要顯示的欄。</block>
   <block id="35b3a35f3ecc34588b8e96f244fd4a40" category="list-text">若要匯出資料，請選擇匯出圖示以下載 CSV 檔案。</block>
-  <block id="97edac0f494f26b7cf4c816f6bb1ae11" category="list-text">若要執行批次操作，請使用核取方塊選取多個檔案系統，然後選取 *Edit parameters* 。</block>
   <block id="b2aeb761bc232400fd3df8f389115970" category="paragraph">使用 Overview 儀表板時，請參考以下建議：</block>
   <block id="1fa1c236c7c4e85b71969a980c4956d3" category="summary">使用 Projects 儀表板監控儲存使用情況，按專案或團隊篩選資料，並分析磁碟區效能以最佳化資源分配。</block>
   <block id="dcc687e70127f35861ac1fa0778b7f6a" category="doc">使用 Workload Factory 中的 Projects 儀表板進行 EDA</block>
@@ -861,23 +819,16 @@
   <block id="6373f94eea8c31352a32986b39528f84" category="section-title">AI 分析</block>
   <block id="a0e9b8268d276ba4360cd030f4a16beb" category="paragraph">雖然基礎分析可以識別延遲的根源，但涉及資料或叢集組件的更複雜情況通常需要更深入的調查。AI 分析能夠提供這種更深入的疑難排解，找出諸如磁碟區過載、配置不當或需要增加容量等問題——這些問題是基礎分析可能遺漏的。</block>
   <block id="f7cc2329f80f5595e6165f0ae01f89d8" category="paragraph">執行 AI 分析時，系統會提供：</block>
-  <block id="a85c10dc3c62556ae33979822723a252" category="paragraph">AI 分析需要在 Workload Factory 設定中設定 Amazon Bedrock 模型 ARN。如果未設定 Bedrock，您仍然可以使用延遲監控和基本自動化分析功能。</block>
-  <block id="aa9409c6c0f733782e6dda3ceddb0522" category="paragraph">概覽儀表板為 IT 管理員提供了一個集中監控多個 FSx for ONTAP 檔案系統上的 EDA 工作負載的位置。您可以使用它快速檢查系統運作狀況和使用情況，選擇新磁碟區或作業的放置位置，尋找可能需要移動的磁碟區或 SVM，以及了解何時需要增加容量或吞吐量。</block>
-  <block id="3da44da687acce7cdcda37885a84f5a5" category="list-text">*叢集健康狀態*：頂端摘要會醒目顯示檔案系統中的延遲事件、SSD 使用情況、容量建議和 ONTAP EMS 事件。</block>
   <block id="bc367175fa556d183c5708d2d174cdca" category="list-text">*叢集表格*：一個可搜尋的表格，顯示每個叢集的使用情況和效能。您可以篩選和排序資料、翻頁以及將其匯出為 CSV 檔案。</block>
   <block id="fa9972ab652846712fa1e09ccaac9fc8" category="paragraph">叢集運作狀況概覽會快速顯示您所選檔案系統的活動。只有當至少有一個 FSx for ONTAP 連結連接到您的檔案系統時，才會顯示此概覽。</block>
   <block id="09a06e4cd6e2161d4864df4d4863dfe8" category="list-text">顯示在所選檔案系統中發現的延遲事件數量。此資訊僅在啟用延遲監控時顯示。</block>
   <block id="eebb5c4c640c8d5aae10e93f05ea6459" category="list-text">Workload Factory 會在 SSD 使用量達到設定限制時自動增加更多 SSD 空間。它會自動處理此操作，無需手動操作。這對於偏好自動化管理的環境來說非常適用。</block>
   <block id="95be91e904bdbc9b99df160d0e2cb98f" category="list-text">Workload Factory 會分析您如何使用 SSD，並建議何時增加容量。您可以查看這些建議並決定是否採納。這樣，您既可以完全掌控容量變更，又能從自動化分析中受益。</block>
-  <block id="9aed0efec1adbd817d3bf632ef55c78c" category="list-text">系統不會提供容量建議或執行自動操作。如果您想自行管理容量，請使用此選項。</block>
-  <block id="81ebcda90587ec5bdc2f579d8e2ced58" category="paragraph">當 Workload Factory 處於 Automate 或 Recommend 模式時，它會自動檢查每個 FSx for ONTAP 檔案系統，並執行容量建議演算法。系統每 24 小時掃描一次，以確定是否需要調整 SSD 容量。</block>
   <block id="c3a8bcc1273489aff39484b64fd9efe7" category="list-text">您將根據 Workload Factory 的通知設定立即收到通知。</block>
-  <block id="6e95ed505105923898fa6b95ad157d5b" category="list-text">透過使用「上次 SSD 增加時間戳記」或「上次 SSD 增加描述」欄篩選叢集表，識別具有建議的檔案系統。</block>
   <block id="a3eb814e72de4d40c0767efe37beafe1" category="list-text">介面顯示目前具有有效建議的檔案系統總數。</block>
   <block id="f7f59f0b5632d026e80fe90b1eec8f63" category="list-text">觸發容量建議或自動化操作的 SSD 使用率百分比。例如，閾值設為 80% 表示當 SSD 使用率達到 80% 時，系統將執行相應的建議或操作。此設定在「建議」模式和「自動化」模式下均可使用。</block>
   <block id="d5a40446a028d90d5bf46fe40624722d" category="paragraph">您可以為每個檔案系統單獨設定這些參數，也可以使用批次編輯將相同的設定套用至多個檔案系統。</block>
   <block id="1b07a2acaea0fa364496ba3afb977975" category="paragraph">SSD 使用圖會標記系統何時提出容量建議或執行自動操作。這些標記顯示容量管理演算法隨時間推移的運作方式。</block>
-  <block id="bcdcc983b6c844f18e3b8d80d5e41c82" category="list-text">當系統偵測到需要更多 SSD 容量時，就會出現此提示。如果容量尚未增加，這些提示點可能每 30 分鐘出現一次。圖表會盡可能顯示每個決策點。如果選定的時間範圍過於密集，則會將這些點合併在一起。</block>
   <block id="47daf1022723b90d90f96e2d735e2267" category="list-text">當自動化系統嘗試增加 SSD 容量時，就會出現這些提示。它們會顯示操作成功或失敗的情況。</block>
   <block id="5d75c0e68111b8bb5d2e043a495c6e39" category="paragraph">使用 SSD 使用歷史圖表可以：</block>
   <block id="9515f88eb47a770a2eae21e430e5b3ff" category="list-text">查看您需要多久更改一次儲存容量</block>
@@ -904,8 +855,6 @@
   <block id="456a947e9547d010c7b158d878d435bb" category="paragraph">當多個指標中出現相同的磁碟區時，儀表板會在圖例中使用相同的顏色，以便您輕鬆追蹤不同指標中的這些磁碟區。</block>
   <block id="04bf2aa98e8d18ad472023065bc02b58" category="paragraph">將滑鼠懸停在圖表上即可查看特定時間點的精確數值。這有助於您將效能變化與事件或時間段關聯起來。詳細的資料可以幫助您找到效能問題、確認最佳化是否有效，並向他人解釋資源使用情況。</block>
   <block id="2c9c01f739bda3b88955518e1a8bd5f6" category="doc">Workload Factory for EDA 的法律聲明</block>
-  <block id="ecef6dbbde04af3b41133a448afc36be" category="paragraph">設定延遲閾值，以便在效能問題影響模擬執行時間之前主動識別並解決這些問題。設定警告和嚴重警示，設定電子郵件或 SNS 通知以接收即時警示，利用自動化基本分析，還可透過設定 Amazon Bedrock 模型 ARN 來啟用 AI 分析（針對複雜情境）。</block>
-  <block id="9524723f7ae06bcfcde3bd095351914f" category="admonition">使用延遲監控功能也需要 AWS 憑證，該功能會收集 CloudWatch 指標以進行磁碟區效能分析。若要接收延遲事件通知，請在 Workload Factory 設定中設定通知偏好設定。若要啟用針對複雜延遲場景的選用 AI 分析，您還必須提供 Amazon Bedrock 模型 ARN。<block ref="9a573596af789d1f770a6210c953bdc7" category="inline-link-macro-rx"></block>.</block>
   <block id="c6fcda3d315da3ee7fd5818580b95ce2" category="paragraph">啟動概覽儀表板，即可開始收集 FSx for ONTAP 檔案系統的 CloudWatch 指標。此儀表板可讓您在一個位置查看叢集運作狀況、容量和吞吐量。</block>
   <block id="56ec2175657135172133d058c441dd94" category="paragraph">Workload Factory 驗證憑證並確認其具有檢視權限後，即可啟動儀表板，開始收集 CloudWatch 指標，以供您的 FSx for ONTAP 檔案系統使用。</block>
   <block id="d13a18ba5d5fe55df783d45bf87a6b38" category="admonition">您同意後，收集指標可能需要一些時間。控制面板會在首次收集過程中通知您。</block>
@@ -938,10 +887,8 @@
   <block id="62a34debf77a6128a6965a2a38f02a39" category="paragraph">設定讀寫延遲的警告和嚴重限值，以追蹤 FSx for ONTAP 磁碟區的效能。您也可以啟用電子郵件或 Amazon SNS 警報，以便在出現延遲問題時收到即時通知。</block>
   <block id="300b116cb80775fee186061f2db9383b" category="paragraph">您的 AWS 環境中至少需要一個 FSx for ONTAP 檔案系統及其磁碟區。</block>
   <block id="c5b5706a9b0819cf12786c1caa809bef" category="paragraph">若要在基本分析中檢視元件細分，您必須將連結與 FSx for ONTAP 檔案系統建立關聯。若沒有連結，您仍然可以檢視延遲、IOPS 和吞吐量圖表。如果尚未關聯任何連結，請在 EDA 中選取 *Associate link*，選擇是建立新連結還是關聯現有連結，然後選取 *Continue* 以自動前往 Storage workloads 中的連結建立頁面。</block>
-  <block id="66b8b53d32c8c50e6fcd0dadc2aa901f" category="paragraph">（可選）若要使用 AI 分析，請在 Workload Factory 設定中提供 Amazon Bedrock 模型 ARN。即使不提供 ARN，您仍然可以使用延遲監控和基本分析功能。</block>
   <block id="59cbd9a4d580062062bfc4ff383f14c2" category="paragraph">設定讀寫操作的警告限值和臨界值。系統會持續檢查這些限值，並在達到限值時發出警報。</block>
   <block id="11fda7252f626757b0488cd577f27860" category="admonition">將嚴重事件閾值設定得高於警告閾值。否則，您將無法儲存組態。</block>
-  <block id="5a1211a74ff4c3bb3c0672678c971e1f" category="paragraph">Workload Factory 會收集與您的 AWS 憑證關聯的所有 FSx for ONTAP 磁碟區的延遲指標。它至少每 20 分鐘收集一次這些指標。超出您設定閾值的磁碟區會出現在延遲事件表中。</block>
   <block id="d1b1c2aa5d228f69be0ebddab772256e" category="admonition">如果受影響的磁碟區超過 10 個，電子郵件將顯示前 10 個磁碟區，並顯示受影響的其他磁碟區數量。您可以在 Workload Factory 主控台中檢視所有受影響的磁碟區。</block>
   <block id="95ae0d98cc5a0df87238eb0392c461da" category="paragraph">設定完成後，您可以隨時變更閾值。</block>
   <block id="f40c1de6b7f8b45f157d4a9ef124471c" category="admonition">將臨界閾值設定得高於警告閾值。如果將臨界閾值設定得低於警告閾值，系統將顯示錯誤。</block>
@@ -957,27 +904,16 @@
   <block id="13ca4d38a549dd80154f6c31ff972f26" category="paragraph">如果您不設定任何自訂篩選器，預設篩選器（檔案系統、磁碟區類型和時間範圍）仍然可用，因此您可以繼續檢視和使用儀表板。</block>
   <block id="87f0c9dedf72ec5858b069afcb6474bf" category="admonition">篩選器會依照您設定的順序顯示在儀表板上。將您最常用的篩選器放在頂部，以便更輕鬆地存取它們。</block>
   <block id="018b86ea23a301b6964d68c015f28735" category="paragraph">套用這些標籤後，Workload Factory 便會開始收集並顯示相關 CloudWatch 指標。然後，您的儀表板將協助您組織資源、追蹤成本，並根據您的需求篩選項目。</block>
-  <block id="46220b67a512908bf4486784f983f3cb" category="paragraph">使用概覽儀表板檢查 FSx for ONTAP 檔案系統的運作狀況和容量。您可以篩選資料、查看容量建議、調整 SSD 容量設定並查看效能趨勢，從而協助您決定磁碟區的放置位置以及何時擴充容量。</block>
   <block id="3add6a53fd27e48c56df398ecbb78292" category="paragraph">使用儀表板頂部的篩選器可以查看特定的檔案系統。這些篩選器適用於延遲、使用率、ONTAP 事件部分以及叢集表。</block>
   <block id="9a30a7ccabea3f518b310e693e0fc96d" category="paragraph">在儀錶板頂部，您可以看到所選檔案系統的運作狀況和活動摘要。只有當至少有一個 FSx for ONTAP 連結連接到您的檔案系統時，才會顯示此摘要。</block>
-  <block id="ae3614d3cd65ac5c752d924e02a1fa78" category="paragraph">Workload Factory 會自動為每個 FSx for ONTAP 檔案系統提供容量建議。您可以透過篩選「叢集」表來尋找具有建議的檔案系統。</block>
   <block id="5b9d5469c481b2fd86bb70731779a54a" category="paragraph">對於每個檔案系統，選擇如何管理 SSD 容量：接收手動建議或允許自動擴充。</block>
-  <block id="1c08c9ffdcf47e8352d0dcea15aa6e82" category="list-text">*建議*：取得容量建議，然後手動審核並套用</block>
   <block id="75be33f2f4cc39082bea6e44e8406df7" category="paragraph">檔案系統會立即切換到新模式。如果您選擇「建議」或「自動」，系統將使用設定的參數來分析儲存容量並做出決策。</block>
-  <block id="d5bb16d68714d3db13fbab892226cb41" category="paragraph">一次變更多個檔案系統的 SSD 容量設定，讓相同的設定套用至您的所有叢集。</block>
-  <block id="60515a553e6eb79b08bb8285ab90f14e" category="list-text">如果所有選定的檔案系統都使用相同的設定，則這些設定將顯示為編輯對話方塊中的預設值。</block>
-  <block id="167cf84f26c8db07780538e5c9c2a1a6" category="list-text">如果選定的檔案系統處於「無」模式，則對話方塊中會填入預設值。</block>
-  <block id="31bbbab643d141284e55ffdabc79d809" category="list-text">如果所選檔案系統的參數值不同，則對話方塊中會填入預設值。</block>
   <block id="65bd457971cf8d44b2a0e065d040b668" category="paragraph">使用 SSD 使用情況圖表查看儲存使用情況隨時間的變化，並找出規律。</block>
   <block id="adcae559988943cef6bf4b9ce78904b2" category="list-text">*自動化決策點*：自動化系統嘗試增加 SSD 容量。這些點顯示操作成功或失敗的情況。</block>
   <block id="27e86a81d2f78cd7f4181479163bbbeb" category="paragraph">叢集表詳細列出每個 FSx for ONTAP 檔案系統的效能和使用情況指標。</block>
   <block id="27a39463cff24c056326230d2490c6d4" category="list-text">*定期監控*：經常查看儀表板，以便在趨勢演變成問題之前發現它們。</block>
-  <block id="849da6653ce7bf79c189bb41b1834198" category="list-text">**設定明確的閾值**：選擇適合您的工作負載和容量計畫的 SSD 管理閾值。</block>
   <block id="5f387dd12e491b49648cab4ae9d1263e" category="list-text">**使用篩選器**：套用區域和帳戶篩選器，以便專注於您想要查看的基礎架構部分。</block>
-  <block id="5e810eea3af8d4d51d6899ff557b31d2" category="list-text">**快速查看建議**：按**上次 SSD 增加時間戳**或說明篩選叢集表，尋找包含容量建議的檔案系統。檢查並執行這些建議，以避免空間不足。</block>
-  <block id="9c4d4827772eaa05e6c2cafcf423f1ae" category="list-text">**選擇合適的模式**：如果您希望自行審批容量變更，請使用 **Recommend** 模式。如果您希望系統自動管理容量，請使用 **Automation** 模式。</block>
   <block id="7780e54da604364e93f91b1ab2a73f3e" category="list-text">**注意決策點**：查看容量圖上的決策點，了解系統如何做出決策，並確認設定是否符合您的需求。</block>
-  <block id="bbfdb9c9eb2013e51184ee47b811d284" category="list-text">**批次編輯**：管理多個檔案系統時，使用批次編輯來保持容量設定的一致性。</block>
   <block id="0828a499bedded78f0e58a1aaac8fc54" category="paragraph">使用「專案」儀表板追蹤 FSx for ONTAP 檔案系統和磁碟區的儲存使用情況。按專案、團隊或應用程式篩選資料。查看整體效能和每個磁碟區的效能，以協助規劃容量並更有效地運用資源。</block>
   <block id="6feca8836221824749b3de5d47b2f6c3" category="paragraph">篩選功能可讓您專注於特定的儲存資源群組。這有助於您發現趨勢、尋找問題並為利害關係人建立報告。透過結合使用多個篩選器，您可以回答諸如「ASIC 專案團隊使用了多少儲存空間？」或「US-West 地區哪些磁碟區的 IOPS 最高？」之類的針對性問題。</block>
   <block id="ab9c9a87abc6a80362a1e681ade6ed57" category="paragraph">同時查看整體磁碟區效能和個別磁碟區的效能，有助於您規劃容量並提升效能。「總體」視圖顯示整體趨勢。「磁碟區」視圖則可協助您找到可能需要關注、調整或增加資源的特定磁碟區。</block>
@@ -1018,16 +954,13 @@
   <block id="7e9591a005bdef4cdf16dfd575186f3b" category="paragraph">您可以調整檢視，並將延遲峰值與 IOPS 和處理量的變化關聯起來。違規標記和懸停細節可協助您查看何時超過臨界值，並審查偵測到的違規行為的關鍵計量。</block>
   <block id="94865ed9933801afc860536ada02e496" category="summary">檢視並分析延遲事件，以尋找 FSx for ONTAP Volume 的效能問題。使用基本分析和可選的 AI 分析來確定根本原因並提供建議的修復方案。</block>
   <block id="939c818555e5fa65655d447cc97817ae" category="section-title">檢視延遲高於臨界值的 Volume</block>
-  <block id="bbc7d21521d2a10f49812344ac8d5c6a" category="paragraph">「延遲超過臨界值的 Volume」表顯示過去 72 小時內延遲超過警告或關鍵延遲臨界值的 Volume。</block>
   <block id="f06921222f3510361d45443110e72880" category="list-text">審查表格中每個事件的資訊。</block>
   <block id="3cd32cbc73706e6bc220ece19622d604" category="list-text">延遲分析面板可快速檢視違規情況，包括延遲圖表以及時間範圍和類型控制選項。選取 *檢視完整分析* 可開啟詳細的延遲分析頁面，其中包含基本分析、AI 分析（可選）和其他圖表。詳情請參閱 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>。</block>
   <block id="0665519f24690502dfcb8f5913d6b056" category="paragraph">在 *Severity* 欄位中選取延遲事件，即可開啟該事件的延遲分析面板。此面板包含多個索引標籤，可提供延遲事件的不同檢視。</block>
-  <block id="c1316b241fd76c7d425cf326dd63f142" category="paragraph">如果已設定 Amazon Bedrock 模型 ARN，則可以對資料和叢集場景執行 AI 分析。如果未設定 Bedrock，則會提供該檔案系統的 Storage Workloads 組態頁面連結，您可以在該頁面設定 Bedrock 存取。</block>
   <block id="0f76eb72044a145a7b1eb778e6653a96" category="list-text">*基本*：顯示自動分析結果。如果已連結到檔案系統，則會顯示組件分解訊息，並指出導致延遲的組件。如果未連結到檔案系統，系統會提示您新增連結。畫面會顯示受影響 Volume 的 CloudWatch 計量互動式延遲圖。根據觸發事件的警示，該圖會顯示讀取或寫入計量。您可以選擇不同的時間範圍，並使用篩選器檢視全部、讀取、寫入或元資料操作。</block>
   <block id="56dacd4284bdced92c0b004472a11758" category="list-text">*AI 分析*：顯示更深入的調查，以確定具體的根本原因和潛在的補救步驟。</block>
   <block id="633009349fd0d4ddd69254b14ddb614b" category="list-text">*詳細延遲分析*：顯示受影響 Volume 的 CloudWatch 計量互動式圖表。圖表顯示延遲、IOPS 和處理量隨時間的變化。根據觸發事件的警示類型，圖表會顯示讀取或寫入計量。您可以選擇不同的時間範圍，並使用篩選器檢視全部、讀取、寫入或元資料操作。</block>
   <block id="b40f6683a1eb1ae3afa3737db2b06397" category="list-text">審查 *Basic* 索引標籤。如果已連接連結，請開啟組件分解圖，查看延遲來源。如果未連接任何連結，請選擇提示以連結一個連結，以便分析各個組件。</block>
-  <block id="48b3037533aefc21a7c0b33e38b9d2cf" category="list-text">在「AI 分析」標籤中，選擇「分析」以檢視更深入的調查結果，例如可能的資料或叢集問題。這有助於確定具體的根本原因和潛在的補救步驟。</block>
   <block id="92ffa2df9924192cd277aff197d336a5" category="list-text">選擇 *View full analysis* 以檢視 AI 分析的完整結果，包括效能圖表，這些圖表顯示所選時間段內來自 CloudWatch 計量的 Volume 延遲、IOPS 和處理量。</block>
   <block id="ac750ed2f2d8556a0303fc989b1e0872" category="list-text">*監控趨勢*：定期檢查延遲高於臨界值的 Volumes 表，以發現可能指向組態問題的模式或重複出現的問題。</block>
   <block id="22da945b536d75359bd27d704612a787" category="summary">使用互動式圖表分析一段時間內的 Volume 延遲趨勢、識別模式，並追蹤補救措施的效果。</block>
@@ -1051,4 +984,113 @@
   <block id="6b0164f0c47ac1625dba2aff92f54ca0" category="list-text">使用峰值標記和違規摘要（例如，「在此時間範圍內偵測到 1 個關鍵違規」）將延遲增加與 IOPS 和處理量變化相關聯。</block>
   <block id="e40e1e13d45e3125fff8c83420101578" category="list-text">將滑鼠懸停在違規標記上，即可檢視違規詳情（嚴重性、偵測到的時間、CW 中位數延遲和 QoS 延遲元件）。</block>
   <block id="d55195576b5cc1af51f0d8ba78078a8c" category="admonition">圖表使用 CloudWatch 計量。這些計量可能與 QoS 報告的延遲元件略有不同，因為它們的收集方式不同。</block>
+  <block id="1eda45f1f79ca6e9d6b738032665f7c6" category="doc">AI 延遲分析及成本控制</block>
+  <block id="b171182b7dc211a76d3e7cecbdf5e425" category="paragraph">身為 Workload Factory 系統管理員，您可以控制整個組織對 AI 延遲分析的存取。</block>
+  <block id="4c9d3f8b46f94437f92a47d3612a2829" category="list-text">*NetApp 代管 AI 額度*：如果您的系統管理員啟用此功能，您可以透過 NetApp 的代管 Amazon Bedrock 整合使用 AI 分析。無需額外設定。您的每月使用量受分配的預算限制。如果您達到每月限額，AI 功能將停用，您將會看到一則訊息。</block>
+  <block id="67ee5da1047f90d8a684f7e0d2ca1944" category="list-text">*系統管理員已停用*：如果您的系統管理員關閉了 AI 功能，則 AI 分析選項將呈灰色顯示，並且您會看到一則訊息，提示該功能已關閉。</block>
+  <block id="69e316ff96b412dd2a5045f8dd2f433c" category="section-title">彈性處理量增加管理</block>
+  <block id="a01f5f5609c9aee121b699114cfe006f" category="paragraph">現在，您可以從 EDA 概述頁面管理一個或多個選定的 FSx for ONTAP 檔案系統的處理量增加行為。</block>
+  <block id="9c3ee7dcbca3424fcc3c760549aa303d" category="list-text">*模式選擇*：選擇 *Automate* 或 *Recommend*。</block>
+  <block id="b9722197734c8293fedc4e7c6db77abe" category="list-text">*批次更新*：選擇一個或多個檔案系統，並在單一行動中套用模式和參數變更。</block>
+  <block id="1a97c66f134399c6e8ddf03e8cd9055e" category="list-text">*變更處理量管理對話方塊*：在對話方塊中使用 EDA 預設值編輯處理量增加設定。</block>
+  <block id="0e71e5ed033b79a12a3d33146bbef832" category="list-text">*進階設定*：在可展開的*進階組態*區段中設定其他處理量決策參數。</block>
+  <block id="3c559babe76da927fd273d0640ba2089" category="list-text">*表格可見度*：叢集表中新增了 *處理量管理* 欄，可透過欄設定啟用。</block>
+  <block id="b353daec82916c89eec0f9b0557132c1" category="list-text">*上位卡組態*：上位卡現在支援處理量提升模式組態，類似 SSD 管理。</block>
+  <block id="e6ae1bdcdd4c1d6a5bc23c326f27ff3f" category="inline-link-macro">了解如何使用概覽儀表板</block>
+  <block id="070faad8fac25fb3d4c659a4b7497b19" category="paragraph"><block ref="0a3eee7cb6c31ec86c09cd7ae18ee1d3" category="inline-link-macro-rx"></block>。</block>
+  <block id="21b694dc2503eab08ab245a8bcfe9f1c" category="inline-link">了解 AI 管理</block>
+  <block id="95586dc24a07faa8b220610ee081b258" category="admonition">如果您的帳戶系統管理員已關閉 AI 功能，您將看到一則訊息，並且將無法使用 AI 分析。請聯絡您的系統管理員或<block ref="8a07854225cea4e549749d8d6bd03ae4" category="inline-link-rx"></block>。</block>
+  <block id="8aa7f64b5600149a4f1b16f3cd4cdf44" category="paragraph">AI 分析可用度取決於您的帳戶設定：</block>
+  <block id="79280f8412f92a7b9f71d47cf17b93e8" category="list-text">*NetApp 代管 AI 積分已啟用*：無需額外的 Bedrock 設定即可執行 AI 分析。</block>
+  <block id="b22abc9ad9d115a1ead6c959afc1a6d3" category="list-text">*系統管理員已停用*：AI 選項無法使用。</block>
+  <block id="10fe983c3658bd7369e2e51b32dd02b0" category="paragraph">如果已啟用 NetApp 代管 AI 積分，但您的每月預算已用完，則 AI 分析將無法使用，並會顯示一則訊息。</block>
+  <block id="de79278e73fba0adc101d9d3c999eb2d" category="paragraph">概覽儀表板為 IT 系統管理員提供了一個集中監控多個 FSx for ONTAP 檔案系統上的 EDA 工作負載的位置。使用它可以快速檢查系統健全狀況和使用情況、選擇新 Volume 或作業的放置位置、尋找可能需要移動的 Volume 或 SVM，以及了解何時需要增加容量或處理量。</block>
+  <block id="2f25e466d496297f51432be2f864f308" category="list-text">*叢集健全狀況*：頂部的總結顯示檔案系統中的延遲事件、SSD 使用率、處理量模式狀態、容量建議和 ONTAP EMS 事件。</block>
+  <block id="929261095300bce39be28cdc60e46b85" category="list-text">*檔案系統應變彈性*</block>
+  <block id="20ed77fd0e548f70d1a8b8bd340ed628" category="list-text">*SSD 容量*：顯示有多少檔案系統使用「自動」、「建議」或「無」來管理 SSD 容量。</block>
+  <block id="f811d9a1edf56398351dffaef0b6506e" category="list-text">*處理量*：顯示有多少檔案系統使用「自動」、「推薦」或「無」來管理處理量。</block>
+  <block id="94e78450902ff8802101a87715f2120e" category="paragraph">選擇檔案系統以開啟叢集詳細資訊，包括叢集資訊、SSD 容量值和 SSD Capacity Over Time 圖表。</block>
+  <block id="7ae10da71cdf204162f214a176b66232" category="list-text">*僅通知（建議模式）*</block>
+  <block id="a50d39f8ae7bb4152ca8de0ad153c7d5" category="list-text">如果您尚未啟用 SSD 容量管理，系統將不會提供容量建議或執行自動化動作。如果您想自行管理容量，請使用此選項。</block>
+  <block id="f015d9c2fdd7ed0dc64dd7b4f0a18c1f" category="list-text">*Lookahead*（1-200 小時）</block>
+  <block id="38c7d65d5f4a826a4cbebb3cbd830aa7" category="section-title">處理量管理</block>
+  <block id="2d348ce7eda962f77c6f3fda676f0ef3" category="paragraph">您可以為一個或多個檔案系統設定彈性處理量增加行為。</block>
+  <block id="9742c6be7550041a8a978c20a7f329b5" category="list-text">Workload Factory 會評估處理量壓力，並提供建議供您應用。</block>
+  <block id="2f882e10485d69032dad3d1a3d01d0c8" category="list-text">當設定的條件符合時，Workload Factory 會自動提高處理量。</block>
+  <block id="a405996fe13edb89232941c32273c746" category="list-text">如果您尚未啟用處理量管理，系統將不會提供建議或執行自動化動作。如果您想自行管理容量，請使用此選項。</block>
+  <block id="d3aed1774bd96469066136147ccf776d" category="section-title">處理量參數</block>
+  <block id="f4df5bd5733eb09f7877774ff6b6785e" category="paragraph">處理量組態對話框包括：</block>
+  <block id="cefa84109bb319467bf84082791215a9" category="list-text">*使用率臨界值*（50-100%，預設 80%）：觸發建議或自動化的處理量使用率百分比。</block>
+  <block id="88e1a3bdc81a3ce0c3ca08f4b614c81b" category="paragraph">進階處理量參數可在可展開的 *Advanced configuration* 區段中找到。</block>
+  <block id="9ca0190a3d03e23e117e89b8b7ddadea" category="list-text">*評估視窗（小時）*（12-72 小時，預設 24）</block>
+  <block id="58238753e59408aed401e0d78bd759e8" category="list-text">*Breached metrics (%)* （預設值 66%）：用於判定違規的百分比臨界值</block>
+  <block id="b193a1ca71211b390aed1c0437449230" category="list-text">*連續違規窗口（小時）*（1-5 小時，預設 2）</block>
+  <block id="5f66ad8118a41aafd37415323727b06c" category="list-text">*連續違規計量（%）*（預設值 95%）</block>
+  <block id="622a5b145e5cdfd92b8124baf3f8e5d7" category="list-text">*最小延遲（毫秒）*（預設值 10 毫秒）</block>
+  <block id="4067af77fe7df9f9047c8c4eeb9490b5" category="list-text">*最大處理量 SKU*（預設：無）</block>
+  <block id="e4612c732ae1c64db60c83cb8cae8381" category="section-title">檔案系統應變彈性建議</block>
+  <block id="cc8b8287cb9875fcd93e6deecaaa1c10" category="paragraph">當 Workload Factory 處於 Automate 或 Recommend 模式時，它會自動檢查每個 FSx for ONTAP 檔案系統，並執行容量建議演算法。系統會定期掃描，以確定是否需要調整 SSD 容量或處理量。</block>
+  <block id="1c5b8d97751372161e201f333f1b4f62" category="list-text">透過篩選叢集表格，識別具有建議的檔案系統。</block>
+  <block id="25dc82340ec038ecbda8ab79823e242a" category="list-text">當系統偵測到需要更多 SSD 容量時，就會出現此提示。如果容量尚未增加，這些提示點可能每 30 分鐘出現一次。圖表會盡可能顯示每個提示點。如果選定的時間範圍過於密集，則會將這些點合併在一起。</block>
+  <block id="d5781ee1e2ae2729d18fc69fc41ec67a" category="paragraph">您只能選擇已設定連結的檔案系統。<block ref="959c1faca1dbb57f8dac1b5058bf9c58" category="inline-link-macro-rx"></block>。</block>
+  <block id="eccc4e57aadb72693d5183af6a022273" category="paragraph">設定延遲臨界值，以便在效能問題影響模擬運行時間之前主動識別並解決這些問題。設定警告和關鍵警示、設定電子郵件或 SNS 通知以接收即時警示、運用自動化基本分析，並可選擇使用 AI 分析來處理複雜場景。</block>
+  <block id="4e63edb8bda7c519ba5aff97d0f43dc4" category="admonition">使用延遲監控功能也需要 AWS 憑證，該功能會收集 CloudWatch 計量以進行 Volume 效能分析。若要接收延遲事件通知，請在 Workload Factory 設定中設定通知偏好設定。啟用 NetApp 代管 AI 分析後，即可針對複雜延遲情境使用選用的 AI 分析。<block ref="9a573596af789d1f770a6210c953bdc7" category="inline-link-macro-rx"></block>。</block>
+  <block id="3807ad76b2b22289bd370b283d385057" category="list-text">檔案系統必須設定連結。<block ref="959c1faca1dbb57f8dac1b5058bf9c58" category="inline-link-macro-rx"></block>。</block>
+  <block id="a027a945e2e098018b818ab7e14eca34" category="paragraph">您必須在 Workload Factory 中設定 AWS 憑證，並至少賦予其對通用儲存的讀取（檢視）權限。不支援 _Basic_ 憑證，因為它們不包含 CloudWatch 計量所需的讀取權限。</block>
+  <block id="2733df4f5d332cf0fbf7a918cce60410" category="inline-link-macro">啟用並設定 SSD 容量管理模式</block>
+  <block id="806c2769f2f8cebfc3e1fb594f627f17" category="list-text"><block ref="4f6b89d6de6199c28054a07fffc78ba6" category="inline-link-macro-rx"></block>（Recommend、Automate 或 None）</block>
+  <block id="c3bb386a8cfadc37852e3ce68761e026" category="inline-link-macro">啟用和設定處理量管理模式</block>
+  <block id="ef059ce8f7b1372dd14393349e748478" category="list-text"><block ref="5d06130fa1ae401255bccec02e322846" category="inline-link-macro-rx"></block>（Recommend、Automate 或 None）</block>
+  <block id="683bf754f6d5b462112697dff4acbaff" category="paragraph">「延遲超過臨界值的 Volume」表顯示延遲超過警告或關鍵延遲臨界值的 Volume。</block>
+  <block id="43e51668c0ad9e465aa60ee53e88035c" category="paragraph">延遲分析可協助您快速找出導致速度變慢的原因，而無需手動調查。</block>
+  <block id="ebd4b28f0632a0dc47fff6d0e28857b1" category="inline-link-macro">管理 AI 功能</block>
+  <block id="5b06554fbb08d458e1042daf51052ac2" category="admonition">若要使用 AI 分析，您必須啟用 NetApp 代管 AI。如需詳細資訊，請參閱 <block ref="69e7c47a4606efdcdab5ffc01c37b56c" category="inline-link-macro-rx"></block>。</block>
+  <block id="d4aa2b3d15c42ad4fd480c90a0dd2ff0" category="paragraph">AI 分析可用度取決於您的帳戶設定。如果 NetApp 代管 AI 已啟用，則無需設定 Bedrock 即可執行 AI 分析。如果達到每月信用額度上限或系統管理員停用 AI 功能，則 AI 分析將無法使用。</block>
+  <block id="d8f181efec7f7692ea2986c04f76ad86" category="list-text">在「AI 分析」標籤中，選擇「分析」（如有）以檢視更深入的調查結果，例如可能的資料或叢集問題。這有助於確定具體的根本原因和潛在的補救步驟。</block>
+  <block id="6b8fd76380721adcae59e2f78429da04" category="paragraph">如果您尚未設定 AWS 憑證，請參閱 <block ref="53eda59ec5ff13cb6e6660c47027e8c7" category="inline-link-macro-rx"></block>。</block>
+  <block id="4a8ea5fe52d04902d327965c730c1ad7" category="paragraph">有關建立和關聯連結的說明，請參閱<block ref="27f80dd01569e18971f783f257cc7294" category="inline-link-macro-rx"></block>。</block>
+  <block id="b13e77bb3b51ad8a4cb2477cb77b8724" category="section-title">開啟 AI 設定</block>
+  <block id="c7eb3bf26071ff1a6e729a2e8e5e9474" category="paragraph">如果您的帳戶管理員已關閉 AI 功能，您將看到一則訊息，並且無法使用 AI 分析。請聯絡您的系統管理員或參閱 <block ref="a4efb9d0168cfdc15063741b91ed0040" category="inline-link-macro-rx"></block>。</block>
+  <block id="cb3c4d469cc9b1d3a35815fa8abbc3e3" category="paragraph">Workload Factory 會收集與您的 AWS 憑證關聯的所有 FSx for ONTAP 磁碟區的延遲指標。超出您設定閾值的磁碟區會出現在延遲事件表中。</block>
+  <block id="4f6828db383900c2a44b6c32349373a7" category="paragraph">若要啟用通知，請參閱<block ref="760d5a248a4ffda4abc117648b19c119" category="inline-link-macro-rx"></block>。</block>
+  <block id="42e48676b85dbff1f2792294e6831dc0" category="list-text">選擇 *新增篩選條件*。</block>
+  <block id="c71e0da6508887a77f334a554ab5495a" category="summary">使用概覽儀表板監控叢集健全狀況、檢視容量建議、管理 SSD 和處理量設定，並分析 FSx for ONTAP 檔案系統的效能趨勢。</block>
+  <block id="4c3cb97ad8dafb44b4527de840549941" category="paragraph">使用概覽儀表板檢查 FSx for ONTAP 檔案系統的健全狀況和容量。您可以篩選資料、查看容量建議、調整 SSD 和處理量設定，以及審查效能趨勢，以協助決定 Volume 的放置位置以及何時擴展容量。</block>
+  <block id="3e245db3deb2fe7b566f9dfe8f122ad3" category="list-text">*檔案系統應變彈性*：</block>
+  <block id="f3e0de8b6d05c856fde2eaa835f504ef" category="section-title">檢視並套用容量或處理量建議</block>
+  <block id="e07b408f972ad269d9fed5451f31d8c9" category="paragraph">Workload Factory 會自動為每個 FSx for ONTAP 檔案系統執行建議。您可以透過篩選「叢集」表來尋找具有建議的檔案系統。</block>
+  <block id="134805f5ae47607c74a2fad588bcc889" category="list-text">在「叢集」表中，依相關的時間或詳細資料欄進行篩選。</block>
+  <block id="24d2cca093d1c5de7004998f60efdd3e" category="paragraph">具有容量或處理量建議的檔案系統會顯示在表格頂端。</block>
+  <block id="165679cbea8b2f7dd4336d430e4dd726" category="list-text">在表格中選擇檔案系統名稱以開啟叢集詳細資料。</block>
+  <block id="33c83a7b34dbfa47935b0be5b097865d" category="list-text">審查建議和圖表。</block>
+  <block id="fd896caec9b1904e01ed5b6a90b096d9" category="paragraph">這張圖表顯示目前使用情況及歷史趨勢。</block>
+  <block id="7269a303313716fe145ba2b18acc49d7" category="list-text">在圖表右上角、選取時間範圍以變更顯示的期間。</block>
+  <block id="c7ac58faf1984cf107f3421908d2207c" category="list-text">選擇 *Enable SSD capacity management*，然後選擇 *Apply*。</block>
+  <block id="da35cbad278570472c076b6042a5b528" category="list-text">設定 SSD 容量管理參數：</block>
+  <block id="166c4a53ef8fc50b9b03ca91c1c677bc" category="list-text">*臨界值 (%)*：觸發建議的 SSD 使用率百分比</block>
+  <block id="87ad0cdc7f64b3a67d168c0b688707d9" category="list-text">*Lookback (%)*：用於分析的歷史使用資料週期</block>
+  <block id="c145adb97f2b8334fc44cf65b5905694" category="list-text">*Lookahead (%)*：未來容量規劃的預期使用量</block>
+  <block id="b1cdaa357e55e42271ce9aa34e86e440" category="section-title">更改處理量管理模式</block>
+  <block id="86161e58ce8677bff58de719cb9f29a8" category="paragraph">針對每個檔案系統，選擇如何管理處理量的增加。</block>
+  <block id="441fc54d05bba2a603a05c500cf068c7" category="list-text">在 *Overview* 索引標籤中，在「叢集」表中選取一個或多個檔案系統。</block>
+  <block id="0231f044766e71e4fe49a62ba8e8bbbe" category="list-text">選擇 *Change throughput management*。</block>
+  <block id="652aab445f49bb41fa3e8774b5719cf2" category="list-text">選擇 *啟用處理量管理*，然後選擇 *套用*。</block>
+  <block id="16393cf33b95f8ff007d76d513b875d7" category="list-text">在對話方塊中，設定處理量管理參數：</block>
+  <block id="083678f0efe5919237188ee0ee5d0b90" category="list-text">*評估視窗（小時）*：用於分析處理量模式的時間段</block>
+  <block id="ed38b15c549d9cd41a86a3787f5fee23" category="list-text">*Breached metrics (%)*：用於確定違規情況的百分比臨界值</block>
+  <block id="5e1e1daa7e6d115a54180e147895003e" category="list-text">*連續違規窗口期（小時）*：採取行動前連續違規行為的持續時間</block>
+  <block id="91455d18a42b79b1a34df0d97bfbaffd" category="list-text">*最小延遲（毫秒）*：用於確定處理量增加的延遲臨界值</block>
+  <block id="0a2daf37cc4cac8c9a3da95290e9a399" category="list-text">*最大處理量（SKUs）*：允許的最大處理量 SKU</block>
+  <block id="6b482ace535080820ca5dea3bb557cb6" category="paragraph">選定的檔案系統會立即切換至新的處理量模式。</block>
+  <block id="be76a5f710c434b57d7bb9106913548d" category="section-title">批次編輯管理參數</block>
+  <block id="399db4c92643ea16a6e10865b34f5b4f" category="paragraph">一次變更多個檔案系統的設定，使相同的設定套用至您的所有叢集。</block>
+  <block id="93343e8a72e86eb0283fa9c6fb77b48b" category="list-text">在表格上方選擇「變更 SSD 容量管理」或「變更處理量管理」。</block>
+  <block id="a707a072d0b2b11d2c3e5a2160f9cd48" category="list-text">在編輯對話方塊中，根據需要調整參數。</block>
+  <block id="80c68bda2149e685b2c9d4a63c1abe0b" category="paragraph">所有選定檔案系統的參數都會更新。處於「推薦」或「自動」模式的檔案系統會立即使用新參數進行分析和決策。</block>
+  <block id="232af3ec8ca37d39f0b49ddb6c81830a" category="list-text">*建議決策點*：容量建議演算法識別出需要額外的 SSD 容量。</block>
+  <block id="0d606a9207ef786e2b3dc99ea3fe3ad8" category="list-text">**設定明確的臨界值**：選擇符合您的工作負載和容量規劃的 SSD 使用臨界值和處理量參數。</block>
+  <block id="c6e183b5112db7515b7bc4904a3b374b" category="list-text">**快速審查建議**：篩選叢集表，尋找具有容量或處理量建議的檔案系統。檢查並採取相應措施，以避免空間不足。</block>
+  <block id="0ecfcdfed86b687b39299cccc3380def" category="list-text">**選擇合適的模式**：如果您希望自行審批容量或處理量變更，請使用 **Recommend** 模式。如果您希望系統自動管理容量或處理量，請使用 **Automate** 模式。</block>
+  <block id="88a7c4b8bd498e193a117097af5581b1" category="list-text">**批次編輯**：管理多個檔案系統時，使用批次編輯來保持設定一致。</block>
+  <block id="951a51b60db3d63eb71726cd5fe6fbad" category="section-title">2026年8月3日</block>
 </blocks>

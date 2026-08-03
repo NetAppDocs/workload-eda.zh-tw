@@ -53,7 +53,7 @@ link:task-configure-project-dashboard.html["了解如何設定專案儀表板"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]設定 FSx for ONTAP 延遲分析
 [role="quick-margin-para"]
-設定延遲閾值，以便在效能問題影響模擬執行時間之前主動識別並解決這些問題。設定警告和嚴重警示，設定電子郵件或 SNS 通知以接收即時警示，利用自動化基本分析，還可透過設定 Amazon Bedrock 模型 ARN 來啟用 AI 分析（針對複雜情境）。
+設定延遲臨界值，以便在效能問題影響模擬運行時間之前主動識別並解決這些問題。設定警告和關鍵警示、設定電子郵件或 SNS 通知以接收即時警示、運用自動化基本分析，並可選擇使用 AI 分析來處理複雜場景。
 
 [role="quick-margin-para"]
 link:task-configure-latency-monitoring.html["了解如何設定延遲監控"^]。偵測到事件後，您可以使用互動式圖表link:task-analyze-latency-trends.html["分析延遲趨勢"^]。

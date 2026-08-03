@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: learn-overview-dashboard.html 
-keywords: cluster overview, cluster dashboard, FSx for ONTAP, cluster health, EMS events, latency events, SSD management, capacity automation, capacity recommendations, decision points 
+keywords: cluster overview, cluster dashboard, FSx for ONTAP, cluster health, EMS events, latency events, SSD management, throughput management, capacity automation, capacity recommendations, decision points 
 summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大規模監控 FSx for ONTAP 叢集的運作狀況、容量和吞吐量。 
 ---
 = 了解 Workload Factory for EDA 中的 Overview 儀表板
@@ -11,7 +11,7 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 
 
 [role="lead"]
-概覽儀表板為 IT 管理員提供了一個集中監控多個 FSx for ONTAP 檔案系統上的 EDA 工作負載的位置。您可以使用它快速檢查系統運作狀況和使用情況，選擇新磁碟區或作業的放置位置，尋找可能需要移動的磁碟區或 SVM，以及了解何時需要增加容量或吞吐量。
+概覽儀表板為 IT 系統管理員提供了一個集中監控多個 FSx for ONTAP 檔案系統上的 EDA 工作負載的位置。使用它可以快速檢查系統健全狀況和使用情況、選擇新 Volume 或作業的放置位置、尋找可能需要移動的 Volume 或 SVM，以及了解何時需要增加容量或處理量。
 
 
 
@@ -22,7 +22,7 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 
 其中包括：
 
-* *叢集健康狀態*：頂端摘要會醒目顯示檔案系統中的延遲事件、SSD 使用情況、容量建議和 ONTAP EMS 事件。
+* *叢集健全狀況*：頂部的總結顯示檔案系統中的延遲事件、SSD 使用率、處理量模式狀態、容量建議和 ONTAP EMS 事件。
 * *叢集表格*：一個可搜尋的表格，顯示每個叢集的使用情況和效能。您可以篩選和排序資料、翻頁以及將其匯出為 CSV 檔案。
 
 
@@ -50,7 +50,14 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 健康狀態包括下列領域：
 
 *延遲*:: 顯示在所選檔案系統中發現的延遲事件數量。此資訊僅在啟用延遲監控時顯示。
-*SSD 容量管理*:: 顯示 SSD 使用率超過 80% 的檔案系統數量以及具有主動容量建議的檔案系統數量。這有助於您快速識別可能需要容量關注的檔案系統。
+*檔案系統應變彈性*::
++
+--
+* *SSD 容量*：顯示有多少檔案系統使用「自動」、「建議」或「無」來管理 SSD 容量。
+* *處理量*：顯示有多少檔案系統使用「自動」、「推薦」或「無」來管理處理量。
+
+
+--
 *ONTAP 事件*:: 顯示偵測到的 EMS 事件數量，按容量、可用性與保護以及安全性與其他類別進行分類。
 
 
@@ -70,6 +77,8 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 * 選擇多個叢集進行批次參數更新
 
 
+選擇檔案系統以開啟叢集詳細資訊，包括叢集資訊、SSD 容量值和 SSD Capacity Over Time 圖表。
+
 
 
 [[ssd-capacity-management]]
@@ -80,26 +89,10 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 [[management-modes]]
 === 管理模式
 
+*僅通知（建議模式）*:: Workload Factory 會分析您如何使用 SSD，並建議何時增加容量。您可以查看這些建議並決定是否採納。這樣，您既可以完全掌控容量變更，又能從自動化分析中受益。
 *自動化*:: Workload Factory 會在 SSD 使用量達到設定限制時自動增加更多 SSD 空間。它會自動處理此操作，無需手動操作。這對於偏好自動化管理的環境來說非常適用。
-*建議*:: Workload Factory 會分析您如何使用 SSD，並建議何時增加容量。您可以查看這些建議並決定是否採納。這樣，您既可以完全掌控容量變更，又能從自動化分析中受益。
-*無*:: 系統不會提供容量建議或執行自動操作。如果您想自行管理容量，請使用此選項。
+*無*:: 如果您尚未啟用 SSD 容量管理，系統將不會提供容量建議或執行自動化動作。如果您想自行管理容量，請使用此選項。
 
-
-
-
-[[capacity-recommendations]]
-=== 容量建議
-
-當 Workload Factory 處於 Automate 或 Recommend 模式時，它會自動檢查每個 FSx for ONTAP 檔案系統，並執行容量建議演算法。系統每 24 小時掃描一次，以確定是否需要調整 SSD 容量。
-
-當識別出建議時：
-
-* 您將根據 Workload Factory 的通知設定立即收到通知。
-* 透過使用「上次 SSD 增加時間戳記」或「上次 SSD 增加描述」欄篩選叢集表，識別具有建議的檔案系統。
-* 介面顯示目前具有有效建議的檔案系統總數。
-
-
-該建議解釋了建議的變更及其背後的原因，例如：_我們建議您根據檔案系統的 SSD 使用模式增加 SSD 容量。_
 
 
 
@@ -110,10 +103,63 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 
 *臨界值* （10-90%）:: 觸發容量建議或自動化操作的 SSD 使用率百分比。例如，閾值設為 80% 表示當 SSD 使用率達到 80% 時，系統將執行相應的建議或操作。此設定在「建議」模式和「自動化」模式下均可使用。
 *Lookback*（1-200 小時）:: 用於分析歷史 SSD 使用模式的時間段。更長的回溯期可為容量決策提供更多歷史背景資訊。僅在 Automate 模式下可用。
-*提前* （1-200 小時）:: 用於預測未來容量需求的時段。預測時段越長，對未來容量成長的規劃就越長遠。僅在自動模式下可用。
+*Lookahead*（1-200 小時）:: 用於預測未來容量需求的時段。預測時段越長，對未來容量成長的規劃就越長遠。僅在自動模式下可用。
 
 
 您可以為每個檔案系統單獨設定這些參數，也可以使用批次編輯將相同的設定套用至多個檔案系統。
+
+
+
+[[throughput-management]]
+== 處理量管理
+
+您可以為一個或多個檔案系統設定彈性處理量增加行為。
+
+
+
+[[management-modes]]
+=== 管理模式
+
+*僅通知（建議模式）*:: Workload Factory 會評估處理量壓力，並提供建議供您應用。
+*自動化*:: 當設定的條件符合時，Workload Factory 會自動提高處理量。
+*無*:: 如果您尚未啟用處理量管理，系統將不會提供建議或執行自動化動作。如果您想自行管理容量，請使用此選項。
+
+
+
+
+[[throughput-parameters]]
+=== 處理量參數
+
+處理量組態對話框包括：
+
+* *使用率臨界值*（50-100%，預設 80%）：觸發建議或自動化的處理量使用率百分比。
+
+
+進階處理量參數可在可展開的 *Advanced configuration* 區段中找到。
+
+* *評估視窗（小時）*（12-72 小時，預設 24）
+* *Breached metrics (%)* （預設值 66%）：用於判定違規的百分比臨界值
+* *連續違規窗口（小時）*（1-5 小時，預設 2）
+* *連續違規計量（%）*（預設值 95%）
+* *最小延遲（毫秒）*（預設值 10 毫秒）
+* *最大處理量 SKU*（預設：無）
+
+
+
+
+[[file-system-elasticity-recommendations]]
+== 檔案系統應變彈性建議
+
+當 Workload Factory 處於 Automate 或 Recommend 模式時，它會自動檢查每個 FSx for ONTAP 檔案系統，並執行容量建議演算法。系統會定期掃描，以確定是否需要調整 SSD 容量或處理量。
+
+當識別出建議時：
+
+* 您將根據 Workload Factory 的通知設定立即收到通知。
+* 透過篩選叢集表格，識別具有建議的檔案系統。
+* 介面顯示目前具有有效建議的檔案系統總數。
+
+
+該建議解釋了建議的變更及其背後的原因，例如：_我們建議您根據檔案系統的 SSD 使用模式增加 SSD 容量。_
 
 
 
@@ -122,7 +168,7 @@ summary: 了解 Workload Factory for EDA 中的概覽儀表板如何協助您大
 
 SSD 使用圖會標記系統何時提出容量建議或執行自動操作。這些標記顯示容量管理演算法隨時間推移的運作方式。
 
-*建議決策點*:: 當系統偵測到需要更多 SSD 容量時，就會出現此提示。如果容量尚未增加，這些提示點可能每 30 分鐘出現一次。圖表會盡可能顯示每個決策點。如果選定的時間範圍過於密集，則會將這些點合併在一起。
+*建議決策點*:: 當系統偵測到需要更多 SSD 容量時，就會出現此提示。如果容量尚未增加，這些提示點可能每 30 分鐘出現一次。圖表會盡可能顯示每個提示點。如果選定的時間範圍過於密集，則會將這些點合併在一起。
 *自動化決策點*:: 當自動化系統嘗試增加 SSD 容量時，就會出現這些提示。它們會顯示操作成功或失敗的情況。
 
 

@@ -25,11 +25,10 @@ summary: 檢視並分析延遲事件，以尋找 FSx for ONTAP Volume 的效能�
 [[view-volumes-with-latency-above-threshold]]
 == 檢視延遲高於臨界值的 Volume
 
-「延遲超過臨界值的 Volume」表顯示過去 72 小時內延遲超過警告或關鍵延遲臨界值的 Volume。
+「延遲超過臨界值的 Volume」表顯示延遲超過警告或關鍵延遲臨界值的 Volume。
 
 .關於此任務
 * 每個磁碟區僅顯示最近一次資料外洩事件。同一磁碟區之前的外洩事件不會顯示。
-* 事件會在 72 小時後自動刪除。
 * 最多顯示 200 個事件。隨著新事件的新增，較舊的事件將被移除。
 * 即使沒有檔案系統連結，事件也會顯示。若要檢視基本分析詳細資料或執行 AI 分析，則需要連結。
 
@@ -51,8 +50,10 @@ summary: 檢視並分析延遲事件，以尋找 FSx for ONTAP Volume 的效能�
 [[analyze-a-latency-event]]
 == 分析延遲事件
 
-.開始之前
-在 Workload Factory 設定中設定 Amazon Bedrock 模型 ARN，請參閱 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/requirements-knowledge-base.html#basic-genai-requirements["基本 GenAI 需求"^]。
+延遲分析可協助您快速找出導致速度變慢的原因，而無需手動調查。
+
+
+NOTE: 若要使用 AI 分析，您必須啟用 NetApp 代管 AI。如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html["管理 AI 功能"^]。
 
 基本分析功能可以幫助您快速找到導致速度變慢的原因，而無需手動調查。
 
@@ -63,7 +64,7 @@ summary: 檢視並分析延遲事件，以尋找 FSx for ONTAP Volume 的效能�
 
 在 *Severity* 欄位中選取延遲事件，即可開啟該事件的延遲分析面板。此面板包含多個索引標籤，可提供延遲事件的不同檢視。
 
-如果已設定 Amazon Bedrock 模型 ARN，則可以對資料和叢集場景執行 AI 分析。如果未設定 Bedrock，則會提供該檔案系統的 Storage Workloads 組態頁面連結，您可以在該頁面設定 Bedrock 存取。
+AI 分析可用度取決於您的帳戶設定。如果 NetApp 代管 AI 已啟用，則無需設定 Bedrock 即可執行 AI 分析。如果達到每月信用額度上限或系統管理員停用 AI 功能，則 AI 分析將無法使用。
 
 * *基本*：顯示自動分析結果。如果已連結到檔案系統，則會顯示組件分解訊息，並指出導致延遲的組件。如果未連結到檔案系統，系統會提示您新增連結。畫面會顯示受影響 Volume 的 CloudWatch 計量互動式延遲圖。根據觸發事件的警示，該圖會顯示讀取或寫入計量。您可以選擇不同的時間範圍，並使用篩選器檢視全部、讀取、寫入或元資料操作。
 * *AI 分析*：顯示更深入的調查，以確定具體的根本原因和潛在的補救步驟。
@@ -80,7 +81,7 @@ summary: 檢視並分析延遲事件，以尋找 FSx for ONTAP Volume 的效能�
 . 在 *Latency* 標籤中，找到要分析的事件。
 . 在 *Severity* 欄位中，選擇一個延遲事件，開啟該事件的分析面板。
 . 審查 *Basic* 索引標籤。如果已連接連結，請開啟組件分解圖，查看延遲來源。如果未連接任何連結，請選擇提示以連結一個連結，以便分析各個組件。
-. 在「AI 分析」標籤中，選擇「分析」以檢視更深入的調查結果，例如可能的資料或叢集問題。這有助於確定具體的根本原因和潛在的補救步驟。
+. 在「AI 分析」標籤中，選擇「分析」（如有）以檢視更深入的調查結果，例如可能的資料或叢集問題。這有助於確定具體的根本原因和潛在的補救步驟。
 +
 查看結果，包括：
 
