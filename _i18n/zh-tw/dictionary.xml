@@ -621,11 +621,6 @@
   <block id="fa0b4e3f4266abe4ec93e3058cfcd2aa" category="section-title">了解容量決策點</block>
   <block id="c27f88e562f3ed3c4000570673348297" category="list-text">*建議決策點*</block>
   <block id="153ea1a28a0f56dba57777e1680e1f76" category="list-text">*自動化決策點*</block>
-  <block id="8aa0b0a22cf225f503177c8f1de7df3c" category="list-text">了解需要進行容量調整的頻率</block>
-  <block id="dc036d0aefd6c43f7e0e90f879128e16" category="list-text">評估自動化或建議模式是否更適合您的工作負載模式</block>
-  <block id="274e06045627d8934cd9bb52e8c64f53" category="list-text">識別反覆出現的容量限制</block>
-  <block id="38e979158d55ae25a36aba4d97b0a8b4" category="list-text">根據成長趨勢規劃未來的容量需求</block>
-  <block id="2814ccd9bf1ef1faffa5931e29ee7f74" category="list-text">疑難排解失敗的自動化嘗試</block>
   <block id="0a77401b929110d42e7c36ac77c37872" category="inline-link-macro">啟動 Overview 儀表板</block>
   <block id="b20e509aee340813d832ff54146a6123" category="list-text"><block ref="b20e509aee340813d832ff54146a6123" category="inline-link-macro-rx"></block></block>
   <block id="a35e94495c93c5d785f8b1240c15be6a" category="inline-link-macro">使用概覽儀表板</block>
@@ -739,21 +734,9 @@
   <block id="76a0ca3e805dbf2778413ce26855f65b" category="paragraph">圖表也會顯示建議決策點和自動化決策點（如果啟用了自動化模式）。將滑鼠懸停在任何決策點上，即可查看該時刻的容量建議或自動化操作的詳細資訊。</block>
   <block id="37b5b20fd94de2275a255ae79e7ac8f0" category="list-text">若要套用建議，請遵循建議訊息中提供的指引。</block>
   <block id="95138c66b91ee03084dfba9068536d5e" category="section-title">變更 SSD 管理模式</block>
-  <block id="6d8ccfb06da581a2d86feacefa3b4869" category="inline-image-macro">動作功能表圖示</block>
-  <block id="c9eecdb0eb0ca75174ea4d40e628f365" category="list-text">在 Clusters 表格中找到檔案系統名稱。在其旁邊，開啟 <block ref="db26b5e8c520e1d883813594c799d7f7" category="inline-image-macro-rx" type="image"></block> 並選取 *Change SSD capacity management*。</block>
   <block id="b689124bbd04a08329d8f616990fa06d" category="list-text">選擇您偏好的模式：</block>
-  <block id="cc009bfb1b3b40af528a54a164d8b953" category="list-text">從 *Overview* 標籤中，選取表格中要編輯的檔案系統。</block>
-  <block id="8cd7391e66f29fd726ffdf9a59961f54" category="admonition">您可以選取個別檔案系統，或使用標題核取方塊來選取所有可見的檔案系統。</block>
-  <block id="b97c770bb654f2ef0b93eb759a99c159" category="list-text">選擇您偏好的模式。</block>
-  <block id="43c2e4748a7a87eb44a6cb86329b0750" category="paragraph">每個參數欄位都包含一個工具提示，描述其用途和有效範圍。對話方塊會根據您的選擇顯示目前值或預設值。</block>
-  <block id="3f254e874f94d9cc6daffdbea2c76012" category="list-text">選擇 *Apply* 以將變更套用到所有選定的檔案系統。</block>
   <block id="84a7874f129070a914f70dd3d70a6716" category="section-title">分析容量趨勢與決策點</block>
   <block id="4dbca2bab9fb0222adee0d079e0d2127" category="paragraph">圖表上的決策點表示：</block>
-  <block id="322cceacdd52c951c88a1d93df7f0dd8" category="list-text">從 *Overview* 標籤中，選取表格中的檔案系統名稱。</block>
-  <block id="c7967065af6ac7703ee14f60f2812ccb" category="list-text">檢閱顯示歷史容量趨勢的 SSD 使用圖表。</block>
-  <block id="6f6089a81e1a8064861733b4969654d6" category="list-text">選擇不同的時間範圍，以檢視不同期間的容量行為。</block>
-  <block id="8d33ce28efafbfe7600930c556bcfd55" category="list-text">將滑鼠游標暫留在圖表上的決策點上，即可檢視特定時刻的建議或自動化動作的詳細資訊。</block>
-  <block id="4d43a6d1e695bf0a99e5bc33d3ca3fda" category="list-text">使用圖表中的深入見解來：</block>
   <block id="e307894bdae8efc4f4fdacf666cf2573" category="section-title">使用叢集表</block>
   <block id="88dc1144edaa697995919551780b6e93" category="list-text">從 *Overview* 標籤檢視叢集表。</block>
   <block id="8e6be07248fc78ed27f8d01305999436" category="list-text">使用搜尋方塊依名稱尋找特定檔案系統。</block>
@@ -827,7 +810,6 @@
   <block id="a3eb814e72de4d40c0767efe37beafe1" category="list-text">介面顯示目前具有有效建議的檔案系統總數。</block>
   <block id="f7f59f0b5632d026e80fe90b1eec8f63" category="list-text">觸發容量建議或自動化操作的 SSD 使用率百分比。例如，閾值設為 80% 表示當 SSD 使用率達到 80% 時，系統將執行相應的建議或操作。此設定在「建議」模式和「自動化」模式下均可使用。</block>
   <block id="d5a40446a028d90d5bf46fe40624722d" category="paragraph">您可以為每個檔案系統單獨設定這些參數，也可以使用批次編輯將相同的設定套用至多個檔案系統。</block>
-  <block id="1b07a2acaea0fa364496ba3afb977975" category="paragraph">SSD 使用圖會標記系統何時提出容量建議或執行自動操作。這些標記顯示容量管理演算法隨時間推移的運作方式。</block>
   <block id="47daf1022723b90d90f96e2d735e2267" category="list-text">當自動化系統嘗試增加 SSD 容量時，就會出現這些提示。它們會顯示操作成功或失敗的情況。</block>
   <block id="5d75c0e68111b8bb5d2e043a495c6e39" category="paragraph">使用 SSD 使用歷史圖表可以：</block>
   <block id="9515f88eb47a770a2eae21e430e5b3ff" category="list-text">查看您需要多久更改一次儲存容量</block>
@@ -1008,7 +990,6 @@
   <block id="929261095300bce39be28cdc60e46b85" category="list-text">*檔案系統應變彈性*</block>
   <block id="20ed77fd0e548f70d1a8b8bd340ed628" category="list-text">*SSD 容量*：顯示有多少檔案系統使用「自動」、「建議」或「無」來管理 SSD 容量。</block>
   <block id="f811d9a1edf56398351dffaef0b6506e" category="list-text">*處理量*：顯示有多少檔案系統使用「自動」、「推薦」或「無」來管理處理量。</block>
-  <block id="94e78450902ff8802101a87715f2120e" category="paragraph">選擇檔案系統以開啟叢集詳細資訊，包括叢集資訊、SSD 容量值和 SSD Capacity Over Time 圖表。</block>
   <block id="7ae10da71cdf204162f214a176b66232" category="list-text">*僅通知（建議模式）*</block>
   <block id="a50d39f8ae7bb4152ca8de0ad153c7d5" category="list-text">如果您尚未啟用 SSD 容量管理，系統將不會提供容量建議或執行自動化動作。如果您想自行管理容量，請使用此選項。</block>
   <block id="f015d9c2fdd7ed0dc64dd7b4f0a18c1f" category="list-text">*Lookahead*（1-200 小時）</block>
@@ -1028,7 +1009,6 @@
   <block id="622a5b145e5cdfd92b8124baf3f8e5d7" category="list-text">*最小延遲（毫秒）*（預設值 10 毫秒）</block>
   <block id="4067af77fe7df9f9047c8c4eeb9490b5" category="list-text">*最大處理量 SKU*（預設：無）</block>
   <block id="e4612c732ae1c64db60c83cb8cae8381" category="section-title">檔案系統應變彈性建議</block>
-  <block id="cc8b8287cb9875fcd93e6deecaaa1c10" category="paragraph">當 Workload Factory 處於 Automate 或 Recommend 模式時，它會自動檢查每個 FSx for ONTAP 檔案系統，並執行容量建議演算法。系統會定期掃描，以確定是否需要調整 SSD 容量或處理量。</block>
   <block id="1c5b8d97751372161e201f333f1b4f62" category="list-text">透過篩選叢集表格，識別具有建議的檔案系統。</block>
   <block id="25dc82340ec038ecbda8ab79823e242a" category="list-text">當系統偵測到需要更多 SSD 容量時，就會出現此提示。如果容量尚未增加，這些提示點可能每 30 分鐘出現一次。圖表會盡可能顯示每個提示點。如果選定的時間範圍過於密集，則會將這些點合併在一起。</block>
   <block id="d5781ee1e2ae2729d18fc69fc41ec67a" category="paragraph">您只能選擇已設定連結的檔案系統。<block ref="959c1faca1dbb57f8dac1b5058bf9c58" category="inline-link-macro-rx"></block>。</block>
@@ -1064,7 +1044,6 @@
   <block id="33c83a7b34dbfa47935b0be5b097865d" category="list-text">審查建議和圖表。</block>
   <block id="fd896caec9b1904e01ed5b6a90b096d9" category="paragraph">這張圖表顯示目前使用情況及歷史趨勢。</block>
   <block id="7269a303313716fe145ba2b18acc49d7" category="list-text">在圖表右上角、選取時間範圍以變更顯示的期間。</block>
-  <block id="c7ac58faf1984cf107f3421908d2207c" category="list-text">選擇 *Enable SSD capacity management*，然後選擇 *Apply*。</block>
   <block id="da35cbad278570472c076b6042a5b528" category="list-text">設定 SSD 容量管理參數：</block>
   <block id="166c4a53ef8fc50b9b03ca91c1c677bc" category="list-text">*臨界值 (%)*：觸發建議的 SSD 使用率百分比</block>
   <block id="87ad0cdc7f64b3a67d168c0b688707d9" category="list-text">*Lookback (%)*：用於分析的歷史使用資料週期</block>
@@ -1073,19 +1052,11 @@
   <block id="86161e58ce8677bff58de719cb9f29a8" category="paragraph">針對每個檔案系統，選擇如何管理處理量的增加。</block>
   <block id="441fc54d05bba2a603a05c500cf068c7" category="list-text">在 *Overview* 索引標籤中，在「叢集」表中選取一個或多個檔案系統。</block>
   <block id="0231f044766e71e4fe49a62ba8e8bbbe" category="list-text">選擇 *Change throughput management*。</block>
-  <block id="652aab445f49bb41fa3e8774b5719cf2" category="list-text">選擇 *啟用處理量管理*，然後選擇 *套用*。</block>
-  <block id="16393cf33b95f8ff007d76d513b875d7" category="list-text">在對話方塊中，設定處理量管理參數：</block>
   <block id="083678f0efe5919237188ee0ee5d0b90" category="list-text">*評估視窗（小時）*：用於分析處理量模式的時間段</block>
   <block id="ed38b15c549d9cd41a86a3787f5fee23" category="list-text">*Breached metrics (%)*：用於確定違規情況的百分比臨界值</block>
-  <block id="5e1e1daa7e6d115a54180e147895003e" category="list-text">*連續違規窗口期（小時）*：採取行動前連續違規行為的持續時間</block>
   <block id="91455d18a42b79b1a34df0d97bfbaffd" category="list-text">*最小延遲（毫秒）*：用於確定處理量增加的延遲臨界值</block>
   <block id="0a2daf37cc4cac8c9a3da95290e9a399" category="list-text">*最大處理量（SKUs）*：允許的最大處理量 SKU</block>
   <block id="6b482ace535080820ca5dea3bb557cb6" category="paragraph">選定的檔案系統會立即切換至新的處理量模式。</block>
-  <block id="be76a5f710c434b57d7bb9106913548d" category="section-title">批次編輯管理參數</block>
-  <block id="399db4c92643ea16a6e10865b34f5b4f" category="paragraph">一次變更多個檔案系統的設定，使相同的設定套用至您的所有叢集。</block>
-  <block id="93343e8a72e86eb0283fa9c6fb77b48b" category="list-text">在表格上方選擇「變更 SSD 容量管理」或「變更處理量管理」。</block>
-  <block id="a707a072d0b2b11d2c3e5a2160f9cd48" category="list-text">在編輯對話方塊中，根據需要調整參數。</block>
-  <block id="80c68bda2149e685b2c9d4a63c1abe0b" category="paragraph">所有選定檔案系統的參數都會更新。處於「推薦」或「自動」模式的檔案系統會立即使用新參數進行分析和決策。</block>
   <block id="232af3ec8ca37d39f0b49ddb6c81830a" category="list-text">*建議決策點*：容量建議演算法識別出需要額外的 SSD 容量。</block>
   <block id="0d606a9207ef786e2b3dc99ea3fe3ad8" category="list-text">**設定明確的臨界值**：選擇符合您的工作負載和容量規劃的 SSD 使用臨界值和處理量參數。</block>
   <block id="c6e183b5112db7515b7bc4904a3b374b" category="list-text">**快速審查建議**：篩選叢集表，尋找具有容量或處理量建議的檔案系統。檢查並採取相應措施，以避免空間不足。</block>
@@ -1093,4 +1064,30 @@
   <block id="88a7c4b8bd498e193a117097af5581b1" category="list-text">**批次編輯**：管理多個檔案系統時，使用批次編輯來保持設定一致。</block>
   <block id="951a51b60db3d63eb71726cd5fe6fbad" category="section-title">2026年8月3日</block>
   <block id="73c57946c156d22b4a35f2e089180ab4" category="list-text">您將立即收到一封電子郵件或架構完善的通知（不包含在每週總結中）。</block>
+  <block id="08b543f700a568688a9f78d874d0ce8b" category="doc">增強型 SSD 容量通知</block>
+  <block id="f37e9239265205bdf39af7b4def6f75a" category="paragraph">SSD 容量管理通知現在包含詳細的錯誤訊息，用於疑難排解自動化故障。系統會在容量增加成功、增加操作期間出錯、容量檢查失敗、達到臨界值警告以及提出建議時發送通知。錯誤詳情包括具體的故障原因，例如缺少權限、正在進行的並行更新、AWS 冷卻期或 CloudWatch 計量擷取問題。</block>
+  <block id="4a3354724a06bbb8040fa512f39a5e07" category="inline-link-macro">了解 SSD 容量管理</block>
+  <block id="3e69b701694082d892b97eb050525650" category="paragraph"><block ref="bc2811c6501476df42adeca777dc6dd3" category="inline-link-macro-rx"></block>。</block>
+  <block id="b1b09cb9ca77b33ed95a7406fab56623" category="section-title">延遲圖表的一週時間範圍</block>
+  <block id="a5ff2097c50c86e897e35110fe5629d9" category="paragraph">延遲分析圖表現在除了現有的選項（1 小時、3 小時、12 小時、24 小時、72 小時）外，還支援 1 週的時間範圍。使用週檢視可以識別 Volume 延遲行為的長期模式和趨勢。</block>
+  <block id="8d6933264e6e5f9ec4a93a7936daf177" category="inline-link-macro">了解延遲趨勢分析</block>
+  <block id="f00c9e117aa43f7e65780e53b18b74a8" category="paragraph"><block ref="8280dff077bedc5ff5df29e3a9ab24f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="dad79f11b2960d3be921e97689e00796" category="section-title">介面中檔案系統可見度提升</block>
+  <block id="856b733ee2011b50fb74e26e28353b8c" category="paragraph">Workload Factory 現在在介面中提供更清晰的檔案系統檢視。您可以直接從檔案系統總覽中檢視 SSD 容量和處理量使用趨勢、工作負載摘要以及詳細的組態資訊。</block>
+  <block id="05d2715aacab706b61cab6ab5eae577f" category="paragraph">選擇檔案系統以檢視叢集詳細資料，包括叢集資訊、SSD 容量和圖表。在叢集詳細資料檢視中，使用 *處理量* 和 *SSD 容量* 選項來切換檢視。</block>
+  <block id="44ad493c3ed3456875890a0633967832" category="paragraph">處理量檢視顯示用戶端處理量和資源使用率。SSD 容量檢視顯示 SSD 使用趨勢和容量建議。</block>
+  <block id="0575d3bb4ddf703c8919e95c56fd6669" category="paragraph">當 Workload Factory 處於「自動」或「建議」模式時，它會自動檢查每個 FSx for ONTAP 檔案系統，並建議容量變更。它會定期掃描系統，以確定是否需要調整 SSD 容量或處理量。啟用管理功能後，檔案系統詳情頁面會顯示 SSD 容量和處理量，以及歷史趨勢和建議的調整點。</block>
+  <block id="3b39aa368232f477c3b4544b63a58a94" category="paragraph">SSD 使用情況圖表顯示系統何時建議變更容量或進行自動調整。這些標記指出系統如何隨時間代管容量。如果 SSD 容量管理已關閉，則圖表僅顯示過去的使用情況，不會顯示建議或自動行動。</block>
+  <block id="cc23b0ef8b8c73f4efb0ced4281250f3" category="list-text">在叢集表中尋找並選擇檔案系統名稱，然後選擇 *變更 SSD 容量管理*。</block>
+  <block id="d9a44929e0eea557983dbb6917008a70" category="list-text">選擇 *啟用處理量管理*。</block>
+  <block id="1cbae666f242dee35d801763ff6c587f" category="list-text">在 *使用率臨界值（%）* 中設定觸發建議或自動化行動的使用率層級。</block>
+  <block id="e920df7cb27871af178ff85a428a8b4e" category="list-text">在 *進階組態* 中，設定處理量管理參數：</block>
+  <block id="39122245b5363dc3871538d2ef59784e" category="list-text">*連續違規窗口期（小時）*：採取行動前連續違規行為的持續時間</block>
+  <block id="a9d111294543c201d767519d991c1b8d" category="list-text">*連續違規計量（%）*：用於確定連續違規的百分比臨界值</block>
+  <block id="d385fd0ac858ff17553d407851f64c48" category="paragraph">如果關閉 SSD 容量管理，圖表將僅顯示過去的使用情況，而不顯示建議或自動化決策。</block>
+  <block id="1de4de358ec9c3a1cd36180e2c13a443" category="list-text">在 *總覽* 標籤中，選擇表格中的檔案系統名稱。在叢集詳細資料檢視中，選擇 *處理量* 或 *SSD 容量* 選項來切換圖表顯示。</block>
+  <block id="a01346bc61a98c025144199b0893e264" category="paragraph">如果您選擇 *處理量*，圖表會顯示用戶端處理量和使用率，以便您將需求與設定的處理量層級和臨界值進行比較。</block>
+  <block id="e56ecd5b4053d7385c23bb7c3422bdd5" category="paragraph">如果選擇 *SSD 容量*，圖表會顯示 SSD 使用情況，包括歷史容量趨勢和容量決策點。</block>
+  <block id="d73906b15c9fc84c1806084ce8720a42" category="paragraph">選擇不同的時間範圍，檢視不同期間的處理量或容量趨勢。。將滑鼠懸停在圖表上的決策點，即可檢視特定時刻的建議或自動化行動的詳細資訊。。利用圖表中的洞察資訊來： * 瞭解需要調整容量的頻率 * 評估自動化或建議模式是否更適合您的工作負載模式 * 識別反覆出現的容量限制 * 根據成長趨勢規劃未來的容量需求 * 疑難排解失敗的自動化嘗試</block>
+  <block id="301497b54979bb49bba5249c4f44b4ad" category="section-title">2026 年 9 月 27 日</block>
 </blocks>
