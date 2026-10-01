@@ -1089,5 +1089,5 @@
   <block id="a01346bc61a98c025144199b0893e264" category="paragraph">如果您選擇 *處理量*，圖表會顯示用戶端處理量和使用率，以便您將需求與設定的處理量層級和臨界值進行比較。</block>
   <block id="e56ecd5b4053d7385c23bb7c3422bdd5" category="paragraph">如果選擇 *SSD 容量*，圖表會顯示 SSD 使用情況，包括歷史容量趨勢和容量決策點。</block>
   <block id="d73906b15c9fc84c1806084ce8720a42" category="paragraph">選擇不同的時間範圍，檢視不同期間的處理量或容量趨勢。。將滑鼠懸停在圖表上的決策點，即可檢視特定時刻的建議或自動化行動的詳細資訊。。利用圖表中的洞察資訊來： * 瞭解需要調整容量的頻率 * 評估自動化或建議模式是否更適合您的工作負載模式 * 識別反覆出現的容量限制 * 根據成長趨勢規劃未來的容量需求 * 疑難排解失敗的自動化嘗試</block>
-  <block id="301497b54979bb49bba5249c4f44b4ad" category="section-title">2026 年 9 月 27 日</block>
+  <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">2026 年 9 月 30 日</block>
 </blocks>
