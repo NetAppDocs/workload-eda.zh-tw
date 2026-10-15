@@ -1090,4 +1090,51 @@
   <block id="e56ecd5b4053d7385c23bb7c3422bdd5" category="paragraph">如果選擇 *SSD 容量*，圖表會顯示 SSD 使用情況，包括歷史容量趨勢和容量決策點。</block>
   <block id="d73906b15c9fc84c1806084ce8720a42" category="paragraph">選擇不同的時間範圍，檢視不同期間的處理量或容量趨勢。。將滑鼠懸停在圖表上的決策點，即可檢視特定時刻的建議或自動化行動的詳細資訊。。利用圖表中的洞察資訊來： * 瞭解需要調整容量的頻率 * 評估自動化或建議模式是否更適合您的工作負載模式 * 識別反覆出現的容量限制 * 根據成長趨勢規劃未來的容量需求 * 疑難排解失敗的自動化嘗試</block>
   <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">2026 年 9 月 30 日</block>
+  <block id="e52235241b1ae81de07e54f4309b150e" category="summary">關於 NetApp Workload Factory for EDA 的常見問題。</block>
+  <block id="f66051160a7d32c47d92cf8ad2688857" category="doc">Workload Factory for EDA 常見問題解答</block>
+  <block id="cc33bbbbd3f9fbb3177da0c1c61f4634" category="paragraph">本常見問題解答了有關 EDA 的 NetApp Workload Factory 的常見問題。它重點介紹在設定監控、分析延遲事件、設定儀表板和管理 CI/CD 工作流程時有用的概念、術語和行為。</block>
+  <block id="0991282cbc6d85f17ff2290119dbcaeb" category="section-title">延遲監控與分析</block>
+  <block id="bb07c794537866c8a9ca3520557374c2" category="paragraph-title">為什麼我的 FSx for ONTAP 檔案系統需要關聯連結？</block>
+  <block id="c8ba3fe8e424cc216dc03824f4422a78" category="paragraph">需要連結才能檢視基本延遲分析中的元件細分。如果沒有連結，您仍然可以檢視延遲、IOPS 和處理量圖表，但無法檢視詳細的細分資訊。如需詳細資訊，請參閱 <block ref="5391d41e89444e55506cba0d78a3bf04" category="inline-link-macro-rx"></block>。</block>
+  <block id="0241c8a6f9524f1566b690099ca0ba15" category="paragraph-title">延遲警報是如何觸發的？</block>
+  <block id="d536fed3472bf6a28c09bd448f33a8c2" category="paragraph">只有當相同操作類型（讀取或寫入）的延遲臨界值和 IOPS 臨界值同時超過，且這兩個條件在整個選定時間範圍內持續存在時，才會觸發警報。同時滿足這兩個條件可以確保高延遲發生在系統處理實際工作負載期間，進而減少誤報。如需詳細資訊，請參閱 <block ref="c41a62cb0a3dab1edd093b9069c9ad81" category="inline-link-macro-rx"></block>。</block>
+  <block id="4ecd3aed2a37c04fa8132c145afed8f5" category="paragraph-title">為什麼基本分析和 CloudWatch 圖表之間的延遲值可能會有差異？</block>
+  <block id="2ccd6d09fd6ae707d6b599be5d499dda" category="paragraph">基本分析使用 ONTAP QoS 延遲中心計量，而延遲圖表則使用 CloudWatch 資料，這兩個資料來源收集資料的方式不同，因此預期會有細微差異。根目錄原因識別本身依賴 ONTAP QoS 資料。如需詳細資訊，請參閱 <block ref="c41a62cb0a3dab1edd093b9069c9ad81" category="inline-link-macro-rx"></block>。</block>
+  <block id="8c1d5de09dd1820da35fc8fefd8f7940" category="paragraph-title">延遲事件的基礎分析和 AI 分析有什麼區別？</block>
+  <block id="3298d11cdf027bd4a1925dbe10985c2a" category="paragraph">基本分析會在每次延遲事件發生時自動執行，並使用 ONTAP QoS 延遲中心計量來識別是哪個元件（例如 FlexCache、容量資源池、QoS 限制、磁碟、資料或叢集）導致速度變慢。AI 分析是選用的，可針對複雜的資料或叢集問題提供更深入的調查，包括潛力的根目錄原因、受影響的 EC2 用戶端清單，以及兩個或多個修復步驟。如需詳細資訊，請參閱 <block ref="2db98c179e2782eb204e0186a0cf0ccd" category="inline-link-macro-rx"></block>。</block>
+  <block id="3dea98759fa9a3fcdb6250eac1152597" category="paragraph-title">為什麼我無法對延遲事件執行 AI 分析？</block>
+  <block id="ea2b499adf49fa56488706338e037d36" category="paragraph">如果您的帳戶系統管理員已停用 AI 功能，或者已啟用 NetApp 代管的 AI 額度但已達到每月預算，則 AI 分析將無法使用。在這兩種情況下，系統都會顯示一則訊息，您將無法使用 AI 分析。</block>
+  <block id="82039348f85a637ee0440d1460f30440" category="paragraph-title">事件表中顯示了多少個延遲事件？</block>
+  <block id="4317ecdc0c7ba026aa7044aeb4f50058" category="paragraph">每個 Volume 僅顯示最近一次洩漏事件；同一 Volume 之前的洩漏事件不會顯示。總共最多顯示 200 個事件，隨著新事件的新增，較早的事件將被移除。</block>
+  <block id="0856cbcbcf82fc641c03b6efb11201da" category="paragraph-title">我多久會收到一次延遲事件通知？</block>
+  <block id="91ec5e4ca2fe56d38aad436140deced3" category="paragraph">您可以選擇兩種通知頻率：*每天提醒*（建議），該設定會在 24 小時後再次發送相同檔案系統的通知；或*出現任何延遲異常時通知*，該設定最多每 20 分鐘通知一次。通知是按檔案系統發送，而不是按 Volume 發送，會將所有受影響的 Volume 分組到單一警報中（電子郵件中最多顯示 10 個 Volume）。如需詳細資訊，請參閱 <block ref="5391d41e89444e55506cba0d78a3bf04" category="inline-link-macro-rx"></block>。</block>
+  <block id="d50d912a4729c0ca5c0328c04216f93e" category="paragraph-title">帳戶層級和 Volume 層級延遲臨界值之間如何互動？</block>
+  <block id="5e96712dd54e1e7f13500cf721f6fecc" category="paragraph">您在 EDA 中設定的延遲臨界值預設會套用到整個帳戶。您也可以在一般儲存工作負載中設定個別 Volume 延遲臨界值，且這些 Volume 層級設定對該 Volume 具有優先權。在 EDA 中更新帳戶層級臨界值不會變更任何現有的 Volume 層級設定。如需詳細資訊，請參閱 <block ref="5391d41e89444e55506cba0d78a3bf04" category="inline-link-macro-rx"></block>。</block>
+  <block id="74b91551d0adb88afedf4cad04a23698" category="paragraph-title">為什麼我無法儲存延遲臨界值組態？</block>
+  <block id="60840cfc3f99f12c310d896f46fe71fa" category="paragraph">關鍵事件臨界值必須高於警告臨界值。如果關鍵臨界值低於警告臨界值，系統將顯示錯誤，並且無法儲存組態。</block>
+  <block id="0ba8adc53c16a6ffe145978e834b02f8" category="section-title">儀表板</block>
+  <block id="53ac9b54e69f5b1478c97b32f478b57e" category="paragraph-title">SSD 容量和處理量管理的「自動化」、「建議」和「無」模式之間有什麼區別？</block>
+  <block id="a56f40201cc9c500cf8e7143fa0c8fa9" category="paragraph">*僅通知（建議）*：Workload Factory 會分析使用情況並提出變更建議，但您可以自行決定是否套用這些建議，讓您保有完全的控制權。*自動化*：當符合設定的條件時，Workload Factory 會自動進行容量或處理量變更，無需任何手冊工作。*無*：系統不提供任何建議或自動化動作，因此您需要自行管理容量。如需詳細資訊，請參閱 <block ref="7f18cd3895a733dc80417785cac6d994" category="inline-link-macro-rx"></block>。</block>
+  <block id="6cb7c0bcff05e3fcfe2edb04f9a34089" category="paragraph-title">我可以在「專案」儀表板建立多少個自訂篩選器？誰可以管理這些篩選器？</block>
+  <block id="b7482b1bee62898fcdc326829c1fd9e5" category="paragraph">您可以根據 AWS 標籤設定最多五個自訂篩選器，每個篩選器都包含篩選標籤、AWS 標籤鍵名和選擇類型（單一或多重選擇）。只有第一位開啟專案儀表板的系統管理員才能建立、變更或刪除自訂篩選器——所有其他使用者（包括其他系統管理員）只能檢視篩選器。如需詳細資訊，請參閱 <block ref="6d56be44586b2e0e82a2c9be80bc8297" category="inline-link-macro-rx"></block>。</block>
+  <block id="94f584d9f623d6dee69c257f53d0d03a" category="paragraph-title">如果我不在「專案」儀表板設定自訂篩選器會發生什麼？</block>
+  <block id="10c1249fb7a3b883167bbde007712f11" category="paragraph">如果您未設定任何自訂篩選器，預設篩選器（檔案系統、Volume 類型和時間範圍）仍然可用，因此您可以繼續檢視和使用儀表板。如需詳細資訊，請參閱 <block ref="d6a6a413d8b4b405d1bc73fbad4548fa" category="inline-link-macro-rx"></block>。</block>
+  <block id="fbde9402fc7b4ebaabdfef2cfa1775fb" category="paragraph-title">專案儀表板的 Volume 檢視中顯示了多少 Volume？</block>
+  <block id="6a6bb54b545fe522e3b8298213c445b0" category="paragraph">Volume 檢視僅顯示每個計量（已使用容量、IOPS、處理量）排名前 10 的 Volume。如果您有超過 10 個 Volume，則某些 Volume 將不會顯示在詳細檢視中。如需詳細資訊，請參閱 <block ref="d6a6a413d8b4b405d1bc73fbad4548fa" category="inline-link-macro-rx"></block>。</block>
+  <block id="2c4805d197c75188b1055241f883313e" category="section-title">CI/CD 和 Perforce 整合</block>
+  <block id="b17d7b01f1da248caf80ecf798b89f7a" category="paragraph-title">EDA CI/CD 中的專案和工作區是什麼？</block>
+  <block id="b10a59662e36ef0e2bc4826f9f37a0ca" category="paragraph">專案會指派一個 Volume 來代表您的軟體環境與成品。當您更新軟體時，您可以為 Volume 建立快照，以標記已知的版本。特定軟體版本的 Clone（用於開發、QA 或建置程序）稱為工作區。如需詳細資訊，請參閱 <block ref="0b528335e20bd32b905bad6284bc2bd6" category="inline-link-macro-rx"></block>。</block>
+  <block id="b0a3a0823736576c66901dd2c3a4f261" category="paragraph-title">刪除專案時，快照和 Clone 會發生什麼情況？</block>
+  <block id="ee778915372af70d65a4567406b43c7d" category="paragraph">刪除專案時，與該專案相關的任何程式碼或成品都會從 Volume 中刪除。不過，專案的快照和 Clone 會予以保留。如需詳細資訊，請參閱 <block ref="cfa49dbefa0c5a4fe81b5ed7dd36e956" category="inline-link-macro-rx"></block>。</block>
+  <block id="891d28f85425b3f6f627a7639eec589d" category="paragraph-title">我可以對專案 Clone 設定哪些限制？</block>
+  <block id="f485748bb343fe24102d50993e0d3542" category="paragraph">建立專案時，您可以設定操作原則，包括最大保留天數（超過此天數後 Workload Factory 將移除 Clone）、每個使用者或群組的最大 Clone 數量，以及最大 Clone 大小（以 GiB 為單位）。如需詳細資訊，請參閱 <block ref="cfa49dbefa0c5a4fe81b5ed7dd36e956" category="inline-link-macro-rx"></block>。</block>
+  <block id="4973303b5265a1a055acabd176496148" category="paragraph-title">如何將 Workload Factory for EDA 與 Perforce 整合？</block>
+  <block id="114aec9c8f37978318b25d9af48891f4" category="paragraph">下載 P4V 整合檔案，開啟 P4V 並前往 *工具* &gt; *管理工具* &gt; *HTML 標籤*，選擇 *匯入 HTML 標籤*，選擇整合 XML 檔案，然後前往 *檢視* &gt; *Workload Factory*。Workload Factory for EDA Web UI 接著會以 HTML 標籤的形式顯示在 P4V 用戶端中。如需詳細資訊，請參閱 <block ref="055bb1c33675bd9570a395ef859c7385" category="inline-link-macro-rx"></block>。</block>
+  <block id="7b6d05204723699789ef2f86d141ec22" category="paragraph-title">Codebox 是什麼？它如何幫助自動化 EDA 工作負載？</block>
+  <block id="5e83f1e7c06bac4c0aa97b880ffb70f9" category="paragraph">Codebox 是 Workload Factory 內建的基礎架構即程式碼（IaC）輔助工具，可協助您產生程式碼以執行 Workload Factory 支援的任何操作。它可在建立資源期間產生程式碼片段，充當開發人員與 DevOps 開發維運的 IaC 輔助工具，並提供程式碼檢視器和自動化目錄以便快速重複使用。如需詳細資訊，請參閱 <block ref="a4c49356aa390f5fde59164fa8bed4fa" category="inline-link-macro-rx"></block>。</block>
+  <block id="db5eb84117d06047c97c9a0191b5fffe" category="section-title">支援</block>
+  <block id="30da9e9f55076827965f5bb2f2dacb45" category="paragraph-title">FSx for ONTAP 與 Workload Factory 本身的支援分別由誰提供？</block>
+  <block id="944e61de0f91bfc0cd15e211ebfe75af" category="inline-link-macro">獲得 EDA 方面的協助</block>
+  <block id="1b3bafacd5fad351f7d20e33c6af1735" category="paragraph">Amazon FSx for NetApp ONTAP 是 AWS 的第一方解決方案，因此如需支援，請使用 AWS 管理主控台中的支援中心，並選擇「FSx for ONTAP」來開啟案例。如需有關 Workload Factory 或其應用程式與服務的一般問題，請參閱 <block ref="b373eb075b7d6f2dc82d0ceae72b0277" category="inline-link-macro-rx"></block>。</block>
+  <block id="7e286d8febc5746f20c7282a62edee9c" category="sidebar">NetApp Workload Factory for EDA 常見問題解答</block>
 </blocks>
