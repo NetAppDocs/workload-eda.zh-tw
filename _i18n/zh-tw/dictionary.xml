@@ -720,9 +720,6 @@
   <block id="b6c7799b0c3cb63df1897b6e33e5ffe9" category="list-text">*憑證*：如果您配置了多個 AWS 憑證，請按特定憑證進行篩選</block>
   <block id="dd10257a52cc4af5c67ff37ab0bb4d74" category="list-text">*區域*：依一個或多個 AWS 區域篩選</block>
   <block id="fb3123e7d905f809c3bdf82e3ceca6af" category="section-title">檢視叢集健全狀況狀態</block>
-  <block id="7da261fafbc98c685b2c0c780ccdbcf1" category="paragraph">叢集健全狀況包括下列關鍵領域：</block>
-  <block id="ac97fe213f96cc9db6b4ee38d70f798b" category="list-text">*延遲*：偵測到的延遲事件數量</block>
-  <block id="a51f6183fddbec434723cff9a6cb22f0" category="list-text">*ONTAP 事件*：依類別劃分的 EMS 事件數量（容量、可用性與保護、安全性及其他）</block>
   <block id="c569953f651916e8d6fb2a2e26996486" category="list-text">檢閱儀表板頂端的叢集健全狀況狀態。</block>
   <block id="45cd3072594a40004f1648f957b11b4f" category="list-text">檢視延遲事件：</block>
   <block id="9bab24fe4c951c13841b658922a21a8b" category="list-text">選取 *Review* 以導覽至 *Latency* 索引標籤</block>
@@ -735,8 +732,6 @@
   <block id="37b5b20fd94de2275a255ae79e7ac8f0" category="list-text">若要套用建議，請遵循建議訊息中提供的指引。</block>
   <block id="95138c66b91ee03084dfba9068536d5e" category="section-title">變更 SSD 管理模式</block>
   <block id="b689124bbd04a08329d8f616990fa06d" category="list-text">選擇您偏好的模式：</block>
-  <block id="84a7874f129070a914f70dd3d70a6716" category="section-title">分析容量趨勢與決策點</block>
-  <block id="4dbca2bab9fb0222adee0d079e0d2127" category="paragraph">圖表上的決策點表示：</block>
   <block id="e307894bdae8efc4f4fdacf666cf2573" category="section-title">使用叢集表</block>
   <block id="88dc1144edaa697995919551780b6e93" category="list-text">從 *Overview* 標籤檢視叢集表。</block>
   <block id="8e6be07248fc78ed27f8d01305999436" category="list-text">使用搜尋方塊依名稱尋找特定檔案系統。</block>
@@ -890,7 +885,6 @@
   <block id="5b9d5469c481b2fd86bb70731779a54a" category="paragraph">對於每個檔案系統，選擇如何管理 SSD 容量：接收手動建議或允許自動擴充。</block>
   <block id="75be33f2f4cc39082bea6e44e8406df7" category="paragraph">檔案系統會立即切換到新模式。如果您選擇「建議」或「自動」，系統將使用設定的參數來分析儲存容量並做出決策。</block>
   <block id="65bd457971cf8d44b2a0e065d040b668" category="paragraph">使用 SSD 使用情況圖表查看儲存使用情況隨時間的變化，並找出規律。</block>
-  <block id="adcae559988943cef6bf4b9ce78904b2" category="list-text">*自動化決策點*：自動化系統嘗試增加 SSD 容量。這些點顯示操作成功或失敗的情況。</block>
   <block id="27e86a81d2f78cd7f4181479163bbbeb" category="paragraph">叢集表詳細列出每個 FSx for ONTAP 檔案系統的效能和使用情況指標。</block>
   <block id="27a39463cff24c056326230d2490c6d4" category="list-text">*定期監控*：經常查看儀表板，以便在趨勢演變成問題之前發現它們。</block>
   <block id="5f387dd12e491b49648cab4ae9d1263e" category="list-text">**使用篩選器**：套用區域和帳戶篩選器，以便專注於您想要查看的基礎架構部分。</block>
@@ -935,7 +929,6 @@
   <block id="7e9591a005bdef4cdf16dfd575186f3b" category="paragraph">您可以調整檢視，並將延遲峰值與 IOPS 和處理量的變化關聯起來。違規標記和懸停細節可協助您查看何時超過臨界值，並審查偵測到的違規行為的關鍵計量。</block>
   <block id="94865ed9933801afc860536ada02e496" category="summary">檢視並分析延遲事件，以尋找 FSx for ONTAP Volume 的效能問題。使用基本分析和可選的 AI 分析來確定根本原因並提供建議的修復方案。</block>
   <block id="939c818555e5fa65655d447cc97817ae" category="section-title">檢視延遲高於臨界值的 Volume</block>
-  <block id="f06921222f3510361d45443110e72880" category="list-text">審查表格中每個事件的資訊。</block>
   <block id="3cd32cbc73706e6bc220ece19622d604" category="list-text">延遲分析面板可快速檢視違規情況，包括延遲圖表以及時間範圍和類型控制選項。選取 *檢視完整分析* 可開啟詳細的延遲分析頁面，其中包含基本分析、AI 分析（可選）和其他圖表。詳情請參閱 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>。</block>
   <block id="0665519f24690502dfcb8f5913d6b056" category="paragraph">在 *Severity* 欄位中選取延遲事件，即可開啟該事件的延遲分析面板。此面板包含多個索引標籤，可提供延遲事件的不同檢視。</block>
   <block id="0f76eb72044a145a7b1eb778e6653a96" category="list-text">*基本*：顯示自動分析結果。如果已連結到檔案系統，則會顯示組件分解訊息，並指出導致延遲的組件。如果未連結到檔案系統，系統會提示您新增連結。畫面會顯示受影響 Volume 的 CloudWatch 計量互動式延遲圖。根據觸發事件的警示，該圖會顯示讀取或寫入計量。您可以選擇不同的時間範圍，並使用篩選器檢視全部、讀取、寫入或元資料操作。</block>
@@ -1035,7 +1028,6 @@
   <block id="42e48676b85dbff1f2792294e6831dc0" category="list-text">選擇 *新增篩選條件*。</block>
   <block id="c71e0da6508887a77f334a554ab5495a" category="summary">使用概覽儀表板監控叢集健全狀況、檢視容量建議、管理 SSD 和處理量設定，並分析 FSx for ONTAP 檔案系統的效能趨勢。</block>
   <block id="4c3cb97ad8dafb44b4527de840549941" category="paragraph">使用概覽儀表板檢查 FSx for ONTAP 檔案系統的健全狀況和容量。您可以篩選資料、查看容量建議、調整 SSD 和處理量設定，以及審查效能趨勢，以協助決定 Volume 的放置位置以及何時擴展容量。</block>
-  <block id="3e245db3deb2fe7b566f9dfe8f122ad3" category="list-text">*檔案系統應變彈性*：</block>
   <block id="f3e0de8b6d05c856fde2eaa835f504ef" category="section-title">檢視並套用容量或處理量建議</block>
   <block id="e07b408f972ad269d9fed5451f31d8c9" category="paragraph">Workload Factory 會自動為每個 FSx for ONTAP 檔案系統執行建議。您可以透過篩選「叢集」表來尋找具有建議的檔案系統。</block>
   <block id="134805f5ae47607c74a2fad588bcc889" category="list-text">在「叢集」表中，依相關的時間或詳細資料欄進行篩選。</block>
@@ -1057,7 +1049,6 @@
   <block id="91455d18a42b79b1a34df0d97bfbaffd" category="list-text">*最小延遲（毫秒）*：用於確定處理量增加的延遲臨界值</block>
   <block id="0a2daf37cc4cac8c9a3da95290e9a399" category="list-text">*最大處理量（SKUs）*：允許的最大處理量 SKU</block>
   <block id="6b482ace535080820ca5dea3bb557cb6" category="paragraph">選定的檔案系統會立即切換至新的處理量模式。</block>
-  <block id="232af3ec8ca37d39f0b49ddb6c81830a" category="list-text">*建議決策點*：容量建議演算法識別出需要額外的 SSD 容量。</block>
   <block id="0d606a9207ef786e2b3dc99ea3fe3ad8" category="list-text">**設定明確的臨界值**：選擇符合您的工作負載和容量規劃的 SSD 使用臨界值和處理量參數。</block>
   <block id="c6e183b5112db7515b7bc4904a3b374b" category="list-text">**快速審查建議**：篩選叢集表，尋找具有容量或處理量建議的檔案系統。檢查並採取相應措施，以避免空間不足。</block>
   <block id="0ecfcdfed86b687b39299cccc3380def" category="list-text">**選擇合適的模式**：如果您希望自行審批容量或處理量變更，請使用 **Recommend** 模式。如果您希望系統自動管理容量或處理量，請使用 **Automate** 模式。</block>
@@ -1084,11 +1075,8 @@
   <block id="e920df7cb27871af178ff85a428a8b4e" category="list-text">在 *進階組態* 中，設定處理量管理參數：</block>
   <block id="39122245b5363dc3871538d2ef59784e" category="list-text">*連續違規窗口期（小時）*：採取行動前連續違規行為的持續時間</block>
   <block id="a9d111294543c201d767519d991c1b8d" category="list-text">*連續違規計量（%）*：用於確定連續違規的百分比臨界值</block>
-  <block id="d385fd0ac858ff17553d407851f64c48" category="paragraph">如果關閉 SSD 容量管理，圖表將僅顯示過去的使用情況，而不顯示建議或自動化決策。</block>
-  <block id="1de4de358ec9c3a1cd36180e2c13a443" category="list-text">在 *總覽* 標籤中，選擇表格中的檔案系統名稱。在叢集詳細資料檢視中，選擇 *處理量* 或 *SSD 容量* 選項來切換圖表顯示。</block>
   <block id="a01346bc61a98c025144199b0893e264" category="paragraph">如果您選擇 *處理量*，圖表會顯示用戶端處理量和使用率，以便您將需求與設定的處理量層級和臨界值進行比較。</block>
   <block id="e56ecd5b4053d7385c23bb7c3422bdd5" category="paragraph">如果選擇 *SSD 容量*，圖表會顯示 SSD 使用情況，包括歷史容量趨勢和容量決策點。</block>
-  <block id="d73906b15c9fc84c1806084ce8720a42" category="paragraph">選擇不同的時間範圍，檢視不同期間的處理量或容量趨勢。。將滑鼠懸停在圖表上的決策點，即可檢視特定時刻的建議或自動化行動的詳細資訊。。利用圖表中的洞察資訊來： * 瞭解需要調整容量的頻率 * 評估自動化或建議模式是否更適合您的工作負載模式 * 識別反覆出現的容量限制 * 根據成長趨勢規劃未來的容量需求 * 疑難排解失敗的自動化嘗試</block>
   <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">2026 年 9 月 30 日</block>
   <block id="e52235241b1ae81de07e54f4309b150e" category="summary">關於 NetApp Workload Factory for EDA 的常見問題。</block>
   <block id="f66051160a7d32c47d92cf8ad2688857" category="doc">Workload Factory for EDA 常見問題解答</block>
@@ -1137,4 +1125,42 @@
   <block id="944e61de0f91bfc0cd15e211ebfe75af" category="inline-link-macro">獲得 EDA 方面的協助</block>
   <block id="1b3bafacd5fad351f7d20e33c6af1735" category="paragraph">Amazon FSx for NetApp ONTAP 是 AWS 的第一方解決方案，因此如需支援，請使用 AWS 管理主控台中的支援中心，並選擇「FSx for ONTAP」來開啟案例。如需有關 Workload Factory 或其應用程式與服務的一般問題，請參閱 <block ref="b373eb075b7d6f2dc82d0ceae72b0277" category="inline-link-macro-rx"></block>。</block>
   <block id="7e286d8febc5746f20c7282a62edee9c" category="sidebar">NetApp Workload Factory for EDA 常見問題解答</block>
+  <block id="c13ffbb74415f75e6bfbceb28746aa00" category="doc">延遲分析中的 Volume 詳細資料</block>
+  <block id="e702df4af5908b691938e2a636bf0d11" category="paragraph">現在您可以在 *詳細延遲分析* 頁面中檢視額外的 Volume 詳細資料 *Volume 類型*（RW/DP）、*Volume 樣式*（FlexVol 與 FlexGroup）。</block>
+  <block id="84040e078366ab4b302c9f45a3caa89d" category="section-title">針對延遲事件的檔案系統壓力檢查</block>
+  <block id="06aefa6560003b3171cd7662ef2b3d9d" category="paragraph">對於存在延遲警報的 Volume，您現在可以檢查事件發生時檔案系統是否承受了足以影響效能的壓力。您可以檢視事件發生前 40 分鐘的 CloudWatch 資料，並透過連結前往檔案系統以進行進一步調查。</block>
+  <block id="3e7850720206a5fe00f7310f49f139ef" category="inline-link-macro">了解如何分析延遲趨勢</block>
+  <block id="4082bd9c59dc64a78f083ec07f0f1ade" category="paragraph"><block ref="e0c19bfe1186d72bb091851a5915268f" category="inline-link-macro-rx"></block>。</block>
+  <block id="84ae0158deb3f95e6027fdf8d5ff467d" category="section-title">處理量決策點</block>
+  <block id="d561222faafa1c2e107d8307549a4372" category="paragraph">現在您可以查看用戶端處理量建議和自動化決策點。將游標停留在決策點上即可檢視詳細資訊，例如目前和建議的 SKU 或時間範圍內的超標計量（%）。</block>
+  <block id="e7e1d8130eb396a11055ef0aad27b20c" category="inline-link-macro">了解決策點</block>
+  <block id="b1b6afda8cefc68653435f204de78f32" category="paragraph"><block ref="c182c1de3b13ab1f612ac32dab94169a" category="inline-link-macro-rx"></block>。</block>
+  <block id="1e67c2facf6c9ccaed8c578497980ba2" category="section-title">重新執行延遲分析</block>
+  <block id="95386ac844fe5334b9e7743d6098dfab" category="paragraph">現在您可以選擇 *再次執行分析* 來產品發表 Volume 的新延遲分析，並隨需重新整理結果。</block>
+  <block id="1e2beb43d53ce6e7e78ce598ad680f34" category="inline-link-macro">了解如何分析延遲問題</block>
+  <block id="7ab17ff19aa466bc8531cc7568dea5a6" category="paragraph"><block ref="13291cb64cb4778475d22fb041bce2e0" category="inline-link-macro-rx"></block>。</block>
+  <block id="faffdafc286086cc0dbf1bbb1be9ad24" category="section-title">檔案系統壓力</block>
+  <block id="b174f2d4d910ae1039afecd55cf7605d" category="paragraph">對於存在延遲警報的 Volume，您可以執行隨需檢查，以確定事件發生時檔案系統是否承受了足以影響效能的壓力。該檢查會審查事件發生前 40 分鐘的 CloudWatch 資料，並傳回 *Pressured* 或 *Not pressured*。已受壓的結果表示檔案系統壓力影響效能和延遲的可能性超過 80%。該檢查還包含指向 FSx for ONTAP 資源的連結，以便您可以審查相關計量。</block>
+  <block id="e886df54588d52e0380fc881467880b0" category="section-title">了解處理量決策點</block>
+  <block id="d5b00b16ab6db83fdf23282158c24ffc" category="paragraph">用戶端處理量圖表會顯示系統建議處理量何時變更或處理量何時自動調整。這些標記也會顯示在圖表圖例中。如果處理量管理已關閉，則圖表僅顯示歷史處理量，不會顯示建議或自動調整。</block>
+  <block id="1478d9dba08b46cdbef08e98cdb80335" category="list-text">當系統偵測到處理量需要提升時，會顯示此資訊。將滑鼠懸停在決策點上即可查看詳情。如果相同時間戳出現多個建議，則該點會顯示建議數量以及最新建議的詳細資訊。</block>
+  <block id="0c990789e7c8c34746cdf8245924ae90" category="list-text">當自動化系統嘗試提高處理量時，會顯示此資訊。將滑鼠懸停在決策點上即可查看詳細資訊。如果提高成功，也會顯示新的 SKU。如果失敗，則會顯示簡短的說明。如果同時發生多次失敗，該點會顯示失敗次數以及最近一次失敗的詳細資訊。</block>
+  <block id="c6f02cbeb83957a98e034aa44ac8d06b" category="paragraph">使用用戶端處理量圖表可以：</block>
+  <block id="bcc32ea0c2c748a56864977ad681aae4" category="list-text">查看您有多常需要更多處理量</block>
+  <block id="627aca367632fb159e4a6c08e87b8226" category="list-text">選擇自動化或推薦模式何者更適合您的需求</block>
+  <block id="c44c2990e89eee02f130dbf8adf9df07" category="list-text">識別重複出現的處理量限制</block>
+  <block id="47c3141ddd1f9f9483f34cdb8af8ae43" category="list-text">隨著使用量隨時間成長，規劃未來的處理量需求</block>
+  <block id="77940ad0aaabd15b52dda5e8a86f480b" category="list-text">若要更新結果，請選擇 *再次執行分析*。系統將對 Volume 重新開始分析，分析完成後面板將更新。</block>
+  <block id="6f751f6512545197043d490e308e9992" category="section-title">分析容量與處理量趨勢及決策點</block>
+  <block id="322cceacdd52c951c88a1d93df7f0dd8" category="list-text">在 *總覽* 標籤中，選擇表格中的檔案系統名稱。</block>
+  <block id="ddbda74454b43f792ee3816b12e08af9" category="list-text">在叢集詳細資料檢視中，選擇 *處理量* 或 *SSD 容量* 選項來切換圖表顯示。</block>
+  <block id="d92136d041599b752e93710c829f0583" category="list-text">選擇不同的時間範圍，檢視不同期間的處理量或容量趨勢。</block>
+  <block id="8d33ce28efafbfe7600930c556bcfd55" category="list-text">將滑鼠懸停在圖表上的決策點，即可檢視特定時刻的建議或自動化行動的詳細資訊。</block>
+  <block id="4d43a6d1e695bf0a99e5bc33d3ca3fda" category="list-text">使用圖表中的深入見解來：</block>
+  <block id="8aa0b0a22cf225f503177c8f1de7df3c" category="list-text">了解需要進行容量調整的頻率</block>
+  <block id="dc036d0aefd6c43f7e0e90f879128e16" category="list-text">評估自動化或建議模式是否更適合您的工作負載模式</block>
+  <block id="274e06045627d8934cd9bb52e8c64f53" category="list-text">識別反覆出現的容量限制</block>
+  <block id="38e979158d55ae25a36aba4d97b0a8b4" category="list-text">根據成長趨勢規劃未來的容量需求</block>
+  <block id="2814ccd9bf1ef1faffa5931e29ee7f74" category="list-text">疑難排解失敗的自動化嘗試</block>
+  <block id="7dc50386b3284326e1114e4e7f4eb3fd" category="section-title">2026年11月1日</block>
 </blocks>

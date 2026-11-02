@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-use-overview-dashboard.html 
-keywords: cluster overview, filter dashboard, cluster health, capacity recommendations, SSD management, throughput management, bulk edit, decision points, clusters table, ONTAP events, latency events 
+keywords: cluster overview, filter dashboard, cluster health, capacity recommendations, SSD management, throughput management, bulk edit, decision points, throughput decision points, clusters table, ONTAP events, latency events 
 summary: 使用概覽儀表板監控叢集健全狀況、檢視容量建議、管理 SSD 和處理量設定，並分析 FSx for ONTAP 檔案系統的效能趨勢。 
 ---
 = 使用 Workload Factory 中的 Overview 儀表板進行 EDA
@@ -47,19 +47,6 @@ summary: 使用概覽儀表板監控叢集健全狀況、檢視容量建議、�
 == 檢視叢集健全狀況狀態
 
 在儀錶板頂部，您可以看到所選檔案系統的運作狀況和活動摘要。只有當至少有一個 FSx for ONTAP 連結連接到您的檔案系統時，才會顯示此摘要。
-
-.關於此任務
-叢集健全狀況包括下列關鍵領域：
-
-* *延遲*：偵測到的延遲事件數量
-* *檔案系統應變彈性*：
-+
-** *SSD 容量*：顯示有多少檔案系統使用「自動」、「建議」或「無」來管理 SSD 容量。
-** *處理量*：顯示有多少檔案系統使用「自動」、「推薦」或「無」來管理處理量。
-
-
-* *ONTAP 事件*：依類別劃分的 EMS 事件數量（容量、可用性與保護、安全性及其他）
-
 
 .步驟
 . 檢閱儀表板頂端的叢集健全狀況狀態。
@@ -169,30 +156,31 @@ Workload Factory 會自動為每個 FSx for ONTAP 檔案系統執行建議。您
 
 
 
-[[analyze-capacity-trends-and-decision-points]]
-== 分析容量趨勢與決策點
+[[analyze-capacity-and-throughput-trends-and-decision-points]]
+== 分析容量與處理量趨勢及決策點
 
 使用 SSD 使用情況圖表查看儲存使用情況隨時間的變化，並找出規律。
 
-.關於此任務
-圖表上的決策點表示：
-
-* *建議決策點*：容量建議演算法識別出需要額外的 SSD 容量。
-* *自動化決策點*：自動化系統嘗試增加 SSD 容量。這些點顯示操作成功或失敗的情況。
-+
-如果關閉 SSD 容量管理，圖表將僅顯示過去的使用情況，而不顯示建議或自動化決策。
-
-
-
 .步驟
-. 在 *總覽* 標籤中，選擇表格中的檔案系統名稱。在叢集詳細資料檢視中，選擇 *處理量* 或 *SSD 容量* 選項來切換圖表顯示。
+. 在 *總覽* 標籤中，選擇表格中的檔案系統名稱。
+. 在叢集詳細資料檢視中，選擇 *處理量* 或 *SSD 容量* 選項來切換圖表顯示。
++
+** 如果您選擇 *處理量*，圖表會顯示用戶端處理量和使用率，以便您將需求與設定的處理量層級和臨界值進行比較。
+** 如果選擇 *SSD 容量*，圖表會顯示 SSD 使用情況，包括歷史容量趨勢和容量決策點。
 
 
-如果您選擇 *處理量*，圖表會顯示用戶端處理量和使用率，以便您將需求與設定的處理量層級和臨界值進行比較。
+. 選擇不同的時間範圍，檢視不同期間的處理量或容量趨勢。
+. 將滑鼠懸停在圖表上的決策點，即可檢視特定時刻的建議或自動化行動的詳細資訊。
+. 使用圖表中的深入見解來：
++
+** 了解需要進行容量調整的頻率
+** 評估自動化或建議模式是否更適合您的工作負載模式
+** 識別反覆出現的容量限制
+** 根據成長趨勢規劃未來的容量需求
+** 疑難排解失敗的自動化嘗試
 
-如果選擇 *SSD 容量*，圖表會顯示 SSD 使用情況，包括歷史容量趨勢和容量決策點。
 
-選擇不同的時間範圍，檢視不同期間的處理量或容量趨勢。。將滑鼠懸停在圖表上的決策點，即可檢視特定時刻的建議或自動化行動的詳細資訊。。利用圖表中的洞察資訊來： * 瞭解需要調整容量的頻率 * 評估自動化或建議模式是否更適合您的工作負載模式 * 識別反覆出現的容量限制 * 根據成長趨勢規劃未來的容量需求 * 疑難排解失敗的自動化嘗試
+
 
 
 
