@@ -19,3 +19,10 @@ summary: 已知限制標識了該產品的此版本不支援或無法與其正�
 == 需要操作員權限
 
 NetApp Workload Factory for EDA 需要操作員權限才能正常運作。
+
+
+
+[[latency-breakdown-for-dp-volumes]]
+== DP Volume 的延遲細分
+
+基本延遲分析中的元件細分不適用於資料保護（DP）Volume。

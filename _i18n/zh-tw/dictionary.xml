@@ -687,7 +687,6 @@
   <block id="91b5f8f96066d41fb5057458a69d5f81" category="list-text"><block ref="91b5f8f96066d41fb5057458a69d5f81" category="inline-link-macro-rx"></block></block>
   <block id="7c7708c4a86b73bb59e5e08ced5293bf" category="doc">分析 Workload Factory for EDA 中的延遲問題</block>
   <block id="ed960c97b9cba50c54da4a4beb0cddea" category="paragraph">您必須先擁有 <block ref="1a49b94c8c033bb71bcc3614a6b897ae" category="inline-link-macro-rx"></block> 才能檢視和分析延遲事件。</block>
-  <block id="d5f97a1cb8e0382743f28559f0c6ace7" category="list-text">潛在根本原因說明</block>
   <block id="0a3d11a9c21fb1f2a4dc021dc4a83aad" category="list-text">建議的補救步驟</block>
   <block id="f6da12ee5ed910433c51d88e2e61a406" category="paragraph">分析延遲問題時，請考慮以下建議：</block>
   <block id="9a573596af789d1f770a6210c953bdc7" category="list-text"><block ref="9a573596af789d1f770a6210c953bdc7" category="inline-link-macro-rx"></block></block>
@@ -931,7 +930,6 @@
   <block id="939c818555e5fa65655d447cc97817ae" category="section-title">檢視延遲高於臨界值的 Volume</block>
   <block id="3cd32cbc73706e6bc220ece19622d604" category="list-text">延遲分析面板可快速檢視違規情況，包括延遲圖表以及時間範圍和類型控制選項。選取 *檢視完整分析* 可開啟詳細的延遲分析頁面，其中包含基本分析、AI 分析（可選）和其他圖表。詳情請參閱 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>。</block>
   <block id="0665519f24690502dfcb8f5913d6b056" category="paragraph">在 *Severity* 欄位中選取延遲事件，即可開啟該事件的延遲分析面板。此面板包含多個索引標籤，可提供延遲事件的不同檢視。</block>
-  <block id="0f76eb72044a145a7b1eb778e6653a96" category="list-text">*基本*：顯示自動分析結果。如果已連結到檔案系統，則會顯示組件分解訊息，並指出導致延遲的組件。如果未連結到檔案系統，系統會提示您新增連結。畫面會顯示受影響 Volume 的 CloudWatch 計量互動式延遲圖。根據觸發事件的警示，該圖會顯示讀取或寫入計量。您可以選擇不同的時間範圍，並使用篩選器檢視全部、讀取、寫入或元資料操作。</block>
   <block id="56dacd4284bdced92c0b004472a11758" category="list-text">*AI 分析*：顯示更深入的調查，以確定具體的根本原因和潛在的補救步驟。</block>
   <block id="633009349fd0d4ddd69254b14ddb614b" category="list-text">*詳細延遲分析*：顯示受影響 Volume 的 CloudWatch 計量互動式圖表。圖表顯示延遲、IOPS 和處理量隨時間的變化。根據觸發事件的警示類型，圖表會顯示讀取或寫入計量。您可以選擇不同的時間範圍，並使用篩選器檢視全部、讀取、寫入或元資料操作。</block>
   <block id="b40f6683a1eb1ae3afa3737db2b06397" category="list-text">審查 *Basic* 索引標籤。如果已連接連結，請開啟組件分解圖，查看延遲來源。如果未連接任何連結，請選擇提示以連結一個連結，以便分析各個組件。</block>
@@ -1163,4 +1161,24 @@
   <block id="38e979158d55ae25a36aba4d97b0a8b4" category="list-text">根據成長趨勢規劃未來的容量需求</block>
   <block id="2814ccd9bf1ef1faffa5931e29ee7f74" category="list-text">疑難排解失敗的自動化嘗試</block>
   <block id="7dc50386b3284326e1114e4e7f4eb3fd" category="section-title">2026年11月1日</block>
+  <block id="d27242d4c09d8c87514da12ce13686cf" category="doc">追蹤 Volume 以進行自動 AI 分析</block>
+  <block id="68eb2bcf977ad1777848c2763968bf76" category="paragraph">您可以標記 Volume，以便在偵測到延遲問題時進行自動 AI 分析。分析結果將儲存 72 小時，並包含在通知電子郵件中，因此您無需自行執行分析即可審查原因。</block>
+  <block id="7c957c99db335692d391818317e98469" category="section-title">AI 分析中根目錄原因的更清晰解釋</block>
+  <block id="5d5ae6579cd363d7050ca9ed9dc36998" category="paragraph">利用 AI 分析，可以更清楚地了解導致延遲事件的原因。此分析會檢查與 FlexCache 容量資源池和檔案系統相關的問題，以及處理量和 IOPS 限制、SSD 使用率過高、寫入飽和，以及其他使用相同資源的 Volume。</block>
+  <block id="d8b3a98e16ebd6e698fb6c48570112ff" category="section-title">延遲分析結果保留 72 小時</block>
+  <block id="d880e6876de7da75b637df83143f9c3e" category="paragraph">延遲分析結果現在可在介面中查看 72 小時而不是 24 小時，因此您可以審查先前對某個 Volume 的分析。</block>
+  <block id="764f20ec2dd6a78505eaec1ab08fa0fb" category="section-title">DP Volume 的延遲細分</block>
+  <block id="45d5d8eb50bda01c3e493da6cbdf9431" category="paragraph">基本延遲分析中的元件細分不適用於資料保護（DP）Volume。</block>
+  <block id="c30b2280622d8f52334fe836e0543dd5" category="list-text">*基本*：顯示自動分析的結果。如果已連結到檔案系統，則會顯示元件細分，並指出哪個元件導致了延遲。如果沒有連結，系統會提示您新增連結。對於資料保護（DP）Volume，無法使用元件細分。系統會顯示受影響 Volume 的 CloudWatch 計量互動式延遲圖。視觸發事件的警示而定，它會顯示讀取或寫入計量。您可以選擇不同的時間範圍，並使用篩選器檢視所有、讀取、寫入或中繼資料作業。</block>
+  <block id="c6c30df2997883eea8c8f301f7a599ac" category="list-text">潛在根目錄原因解釋，檢查 FlexCache®、容量資源池和檔案系統原因、處理量和 IOPS 限制、高 SSD 使用率、寫入飽和，以及使用相同資源的其他 Volume。</block>
+  <block id="f28679041ebdc639726306886c3536d4" category="section-title">追蹤 Volume 以進行自動分析</block>
+  <block id="5cc00eaaa4ee3f52f70cedfb04df2a66" category="paragraph">當偵測到延遲事件時，追蹤的 Volume 會自動進行 AI 分析，因此您可以審查原因而無需啟動分析。</block>
+  <block id="be8385142d03432caa2702e8fa2ff77d" category="list-text">若要追蹤 Volume，請選擇一個或多個 Volume 並將其標記為已追蹤。若要停止追蹤，請取消選擇它們。</block>
+  <block id="2d589364448aa47e5d0c3915699388c3" category="list-text">追蹤的 Volume 會在 AI 分析指標旁顯示追蹤指標。您可以篩選表格，僅顯示追蹤的 Volume。</block>
+  <block id="65263ccaebb6988b3467ecddae578d0d" category="list-text">分析結果將保留 72 小時，包括手冊分析。自動分析結果會顯示時間戳記，並出現在右側面板的 *AI 分析* 區段以及詳細分析頁面上。</block>
+  <block id="6729823054470da17caf1edccc7bd348" category="list-text">只有當發生新的延遲事件或自上次分析以來已過 24 小時時，才會再次執行自動分析。</block>
+  <block id="0ce9ecf0ee56adb4193e9b9818ce529c" category="list-text">如果手動執行分析，則會取代目前結果。</block>
+  <block id="9d421cf9cf97c7b1555ec3673f553a82" category="list-text">追蹤的 Volume 將在 30 天後自動取消選取。</block>
+  <block id="c555be87e5b227321ac7fe2dedfa27aa" category="list-text">通知郵件中包含自動分析結果。</block>
+  <block id="5fd02484bbe1124b48ec6e3c36e522cb" category="section-title">2026 年 11 月 26 日</block>
 </blocks>
