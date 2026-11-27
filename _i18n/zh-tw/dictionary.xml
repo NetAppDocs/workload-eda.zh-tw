@@ -76,7 +76,6 @@
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*附件（選購）*：一次最多上傳五個附件。</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每個附件檔案大小限制為 25 MB。支援以下檔案副檔名：txt、log、pdf、jpg/jpeg、rtf、doc/docx、xls/xlsx 和 csv。</block>
   <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">建立案例表單的螢幕截圖，可讓您向NetApp支援建立案例。</block>
-  <block id="b0c6c3ee60a29925d3f09cd609b79483" category="paragraph"><block ref="b0c6c3ee60a29925d3f09cd609b79483" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成後</block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">將會出現一個彈出窗口，其中顯示您的支援案例編號。NetApp支援專家將審查您的案例並儘快回覆您。</block>
   <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">若要查看支援案例的歷史記錄，您可以選擇*設定&gt;時間軸*並尋找名為「建立支援案例」的操作。最右邊的按鈕可讓您展開操作以查看詳細資訊。</block>
@@ -104,21 +103,15 @@
   <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">在「組織的案例」下，選擇「查看」以查看與您的公司相關的所有案例。</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">透過選擇精確的日期範圍或選擇不同的時間範圍來修改日期範圍。</block>
   <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">案例管理頁面表格上方選項的螢幕截圖，可讓您選擇確切的日期範圍或過去 7 天、30 天或 3 個月。</block>
-  <block id="4f7062c5c309a833cf46e4a1a5a5d366" category="paragraph"><block ref="4f7062c5c309a833cf46e4a1a5a5d366" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">過濾列的內容。</block>
   <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">狀態列中的篩選選項的螢幕截圖，可讓您篩選出符合特定狀態（例如「活動」或「已關閉」）的案例。</block>
-  <block id="8f624dee500d9670a27c4404084a7a62" category="paragraph"><block ref="8f624dee500d9670a27c4404084a7a62" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">表格中出現的加號圖標</block>
-  <block id="002f1c0a8cf4a68b888010ddef3a7f7e" category="list-text">透過選擇<block ref="e55ec8dc42ae68d9326c51261c8a5f4f" category="inline-image-macro-rx" type="image"></block>然後選擇您想要顯示的列。</block>
   <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">螢幕截圖顯示了您可以在表格中顯示的列。</block>
-  <block id="72c5c65442a2c44e7f2546b8b4c957df" category="paragraph"><block ref="72c5c65442a2c44e7f2546b8b4c957df" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">表格最後一列出現的帶有三個點的圖標</block>
-  <block id="000a1376035909240f559b8ab724030c" category="list-text">透過選擇管理現有案例<block ref="54181d1b918b28e5f92545f8b3b4a30c" category="inline-image-macro-rx" type="image"></block>並選擇其中一個可用選項：</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*查看案例*：查看有關特定案例的完整詳細資訊。</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*更新案例說明*：提供有關您的問題的更多詳細信息，或選擇*上傳文件*以附加最多五個文件。</block>
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*結案*：提供有關結案原因的詳細信息，然後選擇*結案*。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕截圖顯示了選擇表格最後一列的選單後可以採取的動作。</block>
-  <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e2c3d4fe26e2a57771176f8d971d83e0" category="summary">了解如何將EDA與Perforce整合。</block>
   <block id="cdca25b114cc65b57af3f2dc65baa554" category="paragraph">將 EDA 與 Perforce Helix Visual Client (P4V) 集成，以便開發人員可以使用 Perforce CLI 管理您的工作區。這使得開發人員能夠快速地在專案和工作區之間切換，從而節省開發時間。</block>
   <block id="46a36d37c0e9a3ece7f56b7e840f1b27" category="inline-link">P4V整合文件</block>
@@ -291,7 +284,6 @@
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">若要確認註冊過程是否成功，請選擇「幫助」圖標，然後選擇「*支援*」。</block>
   <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">「資源」頁面應該顯示您的帳戶已註冊以獲得支援。</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">螢幕截圖顯示了帳戶序號、綠色複選框和「已註冊以獲得支援」字樣。</block>
-  <block id="fa7897454f637026faa3e00ccbfec239" category="paragraph"><block ref="fa7897454f637026faa3e00ccbfec239" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9094354ffd09e4644caa0010edc66d24" category="paragraph">請注意，如果其他NetApp Console使用者尚未將NetApp支援網站帳戶與其NetApp Console登入關聯，則他們將看不到此相同的支援註冊狀態。但這並不意味著您的NetApp帳戶未註冊以獲得支援。只要帳戶中有一個使用者有按照這些步驟操作過，那麼你的帳戶就註冊成功了。</block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">現有客戶但沒有 NSS 帳戶</block>
   <block id="a8f62b208e5177a219f0b0d4ce88e0a9" category="paragraph">如果您是NetApp 的現有客戶，擁有現有授權和序號，但沒有 NSS 帳戶，則需要建立 NSS 帳戶並將其與您的NetApp Console登入關聯。</block>
@@ -304,7 +296,6 @@
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp新使用者且沒有 NSS 帳戶，請依照下列步驟操作。</block>
   <block id="f5d7029ed18f998c0a9d780b2554e538" category="list-text">請在支援資源頁面上尋找您的帳戶 ID 序號。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">幫助選單的螢幕截圖，其中支援是第一個選項</block>
-  <block id="55adf589d087b17fca134b34f65498ed" category="paragraph"><block ref="55adf589d087b17fca134b34f65498ed" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp 的支援註冊網站</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">導航至<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block>並選擇*我不是註冊的NetApp客戶*。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">填寫必填欄位（帶有紅色星號的欄位）。</block>
@@ -1181,4 +1172,13 @@
   <block id="9d421cf9cf97c7b1555ec3673f553a82" category="list-text">追蹤的 Volume 將在 30 天後自動取消選取。</block>
   <block id="c555be87e5b227321ac7fe2dedfa27aa" category="list-text">通知郵件中包含自動分析結果。</block>
   <block id="5fd02484bbe1124b48ec6e3c36e522cb" category="section-title">2026 年 11 月 26 日</block>
+  <block id="6a01d74a3f012349cadafc7f0c97c86d" category="paragraph"><block ref="6a01d74a3f012349cadafc7f0c97c86d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ad4ae3a62c11eaba515c9696b34ded0" category="paragraph"><block ref="6ad4ae3a62c11eaba515c9696b34ded0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2ac657f93a04d54466e8963848cea900" category="paragraph"><block ref="2ac657f93a04d54466e8963848cea900" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e461a14ef18284f75a2b6063d614da64" category="list-text">選取 <block ref="561341289de713dd5ea2cd49d1743cab" category="inline-image-macro-rx" type="image"></block>，然後選擇要顯示的欄，即可變更表格中顯示的欄。</block>
+  <block id="120d129dd0543570cd3b7bea4c5da65b" category="paragraph"><block ref="120d129dd0543570cd3b7bea4c5da65b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb70a108f4a6413201209cb4b6024938" category="list-text">透過選取 <block ref="babe7781192bcd33c63a8532a0937e8b" category="inline-image-macro-rx" type="image"></block> 並選取其中一個可用選項來管理現有案例：</block>
+  <block id="6278374dd69ba277d86d94a2ccc3a54a" category="paragraph"><block ref="6278374dd69ba277d86d94a2ccc3a54a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3c460367238bec35c329060785031e2f" category="paragraph"><block ref="3c460367238bec35c329060785031e2f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9c0825883c050c64e9b59af470120939" category="paragraph"><block ref="9c0825883c050c64e9b59af470120939" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

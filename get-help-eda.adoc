@@ -7,7 +7,7 @@ summary: 'NetApp以多種方式為 Workload Factory 及其雲端服務提供支�
 = 取得 Workload Factory for EDA 的協助
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: https://docs.netapp.com/us-en/workload-family/media/
 
 
 [role="lead"]
@@ -81,7 +81,7 @@ link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fs
 
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-create-case.png["建立案例表單的螢幕截圖，可讓您向NetApp支援建立案例。"]
+image:screenshot-create-case.png["建立案例表單的螢幕截圖，可讓您向NetApp支援建立案例。"]
 
 
 
@@ -141,19 +141,19 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 ** 在「組織的案例」下，選擇「查看」以查看與您的公司相關的所有案例。
 ** 透過選擇精確的日期範圍或選擇不同的時間範圍來修改日期範圍。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-date-range.png["案例管理頁面表格上方選項的螢幕截圖，可讓您選擇確切的日期範圍或過去 7 天、30 天或 3 個月。"]
+image:screenshot-case-management-date-range.png["案例管理頁面表格上方選項的螢幕截圖，可讓您選擇確切的日期範圍或過去 7 天、30 天或 3 個月。"]
 
 ** 過濾列的內容。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-filter.png["狀態列中的篩選選項的螢幕截圖，可讓您篩選出符合特定狀態（例如「活動」或「已關閉」）的案例。"]
+image:screenshot-case-management-filter.png["狀態列中的篩選選項的螢幕截圖，可讓您篩選出符合特定狀態（例如「活動」或「已關閉」）的案例。"]
 
-** 透過選擇image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-columns.png["表格中出現的加號圖標"]然後選擇您想要顯示的列。
+** 選取 image:icon-table-columns.png["表格中出現的加號圖標"]，然後選擇要顯示的欄，即可變更表格中顯示的欄。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-columns.png["螢幕截圖顯示了您可以在表格中顯示的列。"]
+image:screenshot-case-management-columns.png["螢幕截圖顯示了您可以在表格中顯示的列。"]
 
 
 
-. 透過選擇管理現有案例image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-action.png["表格最後一列出現的帶有三個點的圖標"]並選擇其中一個可用選項：
+. 透過選取 image:icon-table-action.png["表格最後一列出現的帶有三個點的圖標"] 並選取其中一個可用選項來管理現有案例：
 +
 ** *查看案例*：查看有關特定案例的完整詳細資訊。
 ** *更新案例說明*：提供有關您的問題的更多詳細信息，或選擇*上傳文件*以附加最多五個文件。
@@ -164,6 +164,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-actions.png["螢幕截圖顯示了選擇表格最後一列的選單後可以採取的動作。"]
+image:screenshot-case-management-actions.png["螢幕截圖顯示了選擇表格最後一列的選單後可以採取的動作。"]
 
 

@@ -7,7 +7,7 @@ summary: 在向NetApp技術支援開立支援案例之前，您需要將NetApp�
 = 註冊以取得 Workload Factory for EDA 的支援
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: https://docs.netapp.com/us-en/workload-family/media/
 
 
 [role="lead"]
@@ -55,7 +55,7 @@ link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fs
 「資源」頁面應該顯示您的帳戶已註冊以獲得支援。
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-support-registration.png["螢幕截圖顯示了帳戶序號、綠色複選框和「已註冊以獲得支援」字樣。"]
+image:screenshot-support-registration.png["螢幕截圖顯示了帳戶序號、綠色複選框和「已註冊以獲得支援」字樣。"]
 
 +
 請注意，如果其他NetApp Console使用者尚未將NetApp支援網站帳戶與其NetApp Console登入關聯，則他們將看不到此相同的支援註冊狀態。但這並不意味著您的NetApp帳戶未註冊以獲得支援。只要帳戶中有一個使用者有按照這些步驟操作過，那麼你的帳戶就註冊成功了。
@@ -93,7 +93,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 . 請在支援資源頁面上尋找您的帳戶 ID 序號。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-serial-number.png["幫助選單的螢幕截圖，其中支援是第一個選項"]
+image:screenshot-serial-number.png["幫助選單的螢幕截圖，其中支援是第一個選項"]
 
 . 導航至 https://register.netapp.com["NetApp 的支援註冊網站"^]並選擇*我不是註冊的NetApp客戶*。
 . 填寫必填欄位（帶有紅色星號的欄位）。
